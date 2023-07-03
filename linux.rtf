@@ -290,6 +290,311 @@ In this virtual box, we have to create virtual computer with ubuntu operating sy
 \par
 ubuntu software must be required.\par
  download ubuntu from ubuntu.com\par
+\par
+\par
+1. ls command:\par
+- - - - - - - - - - - \par
+list out all files and directories present in the given directory.If we are not providing any directory then it will list out in current working directory.\par
+$ ls dir1\par
+$ ls\par
+$ man command\par
+$ man ls\par
+various options for ls commands:  \par
+- - - - - - - - - - - - - - - - - - - - - - - - \par
+1. ls \par
+It will list out all files and directories present in current working directory in alphabetical order.\par
+2. ls -r \par
+-r means reverse \par
+It will list out all files and directories  in riverse of alphabetical order.\par
+\par
+3. ls -l \par
+To display in long listing form \par
+\par
+-rw-r - - r - - 1  durga durga                0  Mar 23  12:40  abcdef.txt\par
+ \par
+\par
+4. ls -t\par
+-t means creation or last modified time.\par
+Most recent will be at the top and old are at the bottom.\par
+5. ls -ltr\par
+old files should be at top and most recent should be at bottom.\par
+6. ls -a \par
+ -a means all.\par
+7. ls -A\par
+-A means almost all\par
+except  . and . .  all remaining things will be displayed \tab\par
+8. ls -F\par
+To display all files by type\par
+directory  ----> /\par
+executable file ----> *\par
+link file -----> @\par
+9. ls -f \par
+list out all files including hidden files but disable  colors.\par
+10. ls  -i\par
+To display all files including inode number \par
+inode ===>index node\par
+i- node is the adress of location where file attributes are stored. file attributes includes\par
+The size of the file.\par
+The number of links in the file.\par
+owner name\par
+group name\par
+creation time\par
+last modified time\par
+11. ls -R\par
+  -R Means recursive\par
+which is used to show all sub directories in each individual sub directory.\par
+12. ls -s \par
+-s means size \par
+the number of blocs used \par
+1 block =1kB or 4KB\par
+13. ls -h\par
+-h means human readable form for memory statistics.\par
+\par
+Note:\par
+ls  -l  /etc  ===> 212 entries\par
+ls  -l  |  head  ====> top 10 entries\par
+ls   -l  | head  -20  ===> top 20 entries\par
+ls   -l  | head -30   ====> top 30 entries\par
+ls   -l   | tail   ===> last 10 lines\par
+\par
+ls  -l  /etc  | more   ===> only in farward direction \par
+ls  -l  /etc  | less    ===> both in forward and backward direction\par
+\par
+\par
+Command Line Arguments:\par
+- - - - - - - - - - - - - - -- - - - - - \par
+The  Arguments which are passing from command prompt  ===> \par
+$   ./test.sh  10   20   30   40\par
+\tab         10,20,30,40\par
+$  ./test.sh   learning linux is very easy \par
+learning, linux, is, very,easy\par
+$ #  ----> Number of arguments  (5)\par
+$ 0  -----> Script Name (./test.sh)     test.sh ====> /home/durga/ scripts /test.sh\par
+$ 1  -----> First argument (learning) \par
+$ 2  -----> Second argument (linux)\par
+$ 3  ----- > Third argument (is)\par
+$ 4 -----> Fourth argument ( very)\par
+$ 5  -----> Fifth argument (easy)\par
+$ *  ------> all arguments  (learning linux is very easy)\par
+$ @ ------> All arguments ( learning linux is very easy)\par
+$ ?  -------> Represents exit code of Previuosly executed  command or Script.\par
+\par
+test.sh File \par
+#!   /bin /bash\par
+echo   "The number of arguments  : $#"\par
+echo  "Script file name : $0"\par
+echo "First argument :$1"\par
+echo "Second argument: $2"\par
+echo "Third argument : $3"\par
+echo "Fourth argument :$4"\par
+echo "Fifth  argument :$5"\par
+echo "All arguments with * : $*"\par
+echo "all arguments with @ :$@"\par
+\par
+Difference between $@ and $*:\par
+- - - - - - - - - - - - - - - - -- - - - - -\par
+$@:  -----> All commands line arguments with space seperator.\par
+                     "$1"    "$2"   "$3"   "$4"    "$5"\par
+                     learning linux is very easy\par
+$*   ------>  All  command line arguments as single  string .\par
+                     "$1c$2c$3c$4c$5"\par
+                     where c is the first charecter of the IFS  (Internal file seperator) . The default is \tab\tab     space .\par
+\tab    learning  linux is very easy.\par
+\par
+How to check default  IFS :\par
+- - - - - - - - - - - - - - - - -  - - -\par
+$ set  | grep  "IFS"\par
+\par
+IFS =$  '   \\t\\n'\par
+\b\par
+What is the main purpuse of command line arguments:\par
+- - - - - - - - - - - - - - - - -  - - - - -  - - - - - -- - - - - - - - - - - - - - - \par
+\par
+\b0 we can customize behaviour  of the script Based on our arguments the script will work.\par
+\par
+test.sh:\par
+- - - - - \par
+\par
+#! /bin/bash\par
+len = $(echo -n "APPLE" | wc -c)\par
+echo "The length of given string :$len"\par
+\par
+The script will always work for the string :APPLE\par
+\par
+test.sh:\par
+- - - - - -\par
+#! /bin /bash\par
+\par
+len =$(echo -n "1$" |wc -c)\par
+echo "The length of given String $1 : $len"\par
+\par
+\par
+\b Variable Substitution and command substitution:\par
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -\par
+\par
+write a script to create a log file with time stamp:\par
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  - -\par
+\par
+\b0 test.sh:\par
+- - - - - \par
+#!  /bin/bash\par
+\par
+timestamp = $ (date  +%d_%m_%Y_%H_%M_%S)\par
+\par
+echo "Hello " > abc.text   overwrite existing data\par
+echo "Hello"  >> abc.txt   append to existing data\par
+echo  "This is data to log file " >> $ \{timestamp\}.log\par
+date  >> $ \{timestamp\}.log\par
+\par
+\par
+\par
+\b\fs32 How to view content of the file:\par
+\b0\fs28 - - - - - - - - - -  - - - - - - - - - - - - - - - - - - -\par
+we can view the content of the file by using the following commands:\par
+\par
+1. cat \par
+2. tac\par
+3. rev\par
+4. head\par
+5. tail\par
+6. more \par
+7. less\par
+ \par
+\b View content by using cat:\par
+- - - - - - - - - - - - - - - - - - - - -\par
+\b0 cat  < file.txt\par
+where  < is optional.\par
+cat file1.txt\par
+\par
+while display data if we want line numbers, we have to use -n option.\par
+cat  -n file1.txt\par
+\par
+Numbering skipped for blank lines then we should use -b option\par
+\par
+\b To View Multiple files content simultanously:\par
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - \par
+\b0 cat file1.txt   file2.txt    file3.txt   \par
+\par
+\b Various utilities of cat command:\b0\par
+- - - - - - - - - - - - - - - - - - - - - - - - - \par
+\par
+1. create a new file with some content \par
+\par
+cat > file1.txt\par
+required data\par
+ctrl+d   ---> to save and exit\par
+\par
+2. To append some extra data to an existing file:\par
+\par
+cat  > > file1.txt\par
+some more extra data\par
+ctrl+d  ----> to save and exit\par
+\par
+3. To view content of the \tab file:\par
+\par
+cat < file1.txt      or     cat  file1.txt\par
+\par
+4 . To copy content of one file to onether file:\par
+\par
+cp file.txt    file2.txt\par
+\par
+cat file1.txt   > file2.txt\par
+\par
+5. To append one file to onether file:\par
+\par
+cat    file1.txt  >>   file2.txt\par
+\par
+6. To copy contents of multiple files to a single file:\par
+\par
+cat  a.txt    b.txt    c.txt   d.txt     >total.txt\par
+\par
+\b\fs32 2. tac command\par
+\par
+\b0\fs28 It is the reverse of cat \par
+\par
+It will display file content in riverse order of lines.\par
+\par
+this is vertical riversal.\par
+\par
+\par
+Sunny \par
+Bunny \par
+chinny\par
+vinny\par
+pinny\par
+\par
+\par
+Pinny\par
+vinny\par
+chinny\par
+bunny\par
+sunny\par
+\par
+\b\fs32 3. rev command:\par
+\b0\fs28\par
+rev means reversal.\par
+Here each line will be reversed.\par
+It is horizontal reversal.\par
+\par
+\par
+Sunny \par
+Bunny\par
+Chinny\par
+Vinny\par
+Pinny\par
+\par
+\par
+\par
+ynnuS\par
+ynnuB\par
+ynnuhC\par
+ynnuV\par
+ynnuP\par
+\par
+\par
+cat command will display total file content at a time. It is best suitable for small files. If the file contains thousands of lines it is not recommended to use cat command. For this requirement we should go for\par
+\par
+head \par
+tail\par
+more \par
+less\par
+\par
+\par
+\b\fs32 head command:\b0\fs28  \par
+- - - - - - - - - -- - - - - \par
+\par
+To view specified number of lines from top of the file \par
+\par
+head  abc.txt\par
+\par
+It will display only 10 lines from top of file .\par
+10 is the default value for head command.\par
+\par
+head  -n  15 abc.txt     or    head    -15    abc.txt\par
+\par
+head -5  abc.txt\par
+\par
+head  -n   -5  abc.txt \par
+It will display all lines from top except last 5 lines.\par
+\par
+head -c  100  abc.txt\par
+\par
+It will display the first 100 charectors of the file \par
+\par
+In linux every charector will take one byte. Hence it will display first 100 bytes of the file  Content. \par
+\par
+\par
+\par
+\par
+     \par
+\par
+\b\fs32\par
+\b0\fs28\par
+\par
+\par
+\par
  \fs22\par
+
+\pard\sa200\sl276\slmult1\par
 }
  
