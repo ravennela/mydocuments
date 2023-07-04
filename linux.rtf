@@ -583,6 +583,159 @@ It will display the first 100 charectors of the file \par
 \par
 In linux every charector will take one byte. Hence it will display first 100 bytes of the file  Content. \par
 \par
+\b\fs32 tail command:\b0\fs28  \par
+- - - - - - - - - - - -- - \par
+\par
+To view file content from bottom of the file  ---> tail command \par
+It is opposit to head command.\par
+\par
+1. tail   abc.txt\par
+Last 10 lines will be dispayed\par
+\par
+2. tail -n 5  abc.txt\par
+ Last 5 lines \par
+\par
+ tail -5  abc .txt \par
+  Last 5 lines \par
+\par
+tail -5 -n abc.txt\par
+Last 5 lines           //in head command except last 5 remaining will display but here that is not implimented\par
+\par
+3. tail -c 100 abc.txt\par
+    It will display 100 bytes of content from bottom of the file.\par
+\par
+Q. Assume file contains enough data. \par
+\par
+write command to display from 3rd line to 7th line?\par
+\par
+head  -7 abc.txt  | tail -5 \par
+\par
+\b\fs32 Word count command ( wc command ) :\par
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -\par
+\par
+\b0\fs28 we can use wc command to count number of lines,words and charectors present in the given file\par
+\par
+$ wc  filename \par
+ \par
+no_of_lines       no_of_words      no_of_charectors    file_name\par
+\par
+durga@durga - VirtualBox:~/Desktop$   wc file1.txt\par
+ 4    24     135   file1.txt \par
+\par
+\par
+4  -----> No of lines\par
+24 -----> No of words \par
+135 ----> No of charectors ( no of bytes or filesize)\par
+\par
+we can use the following options with wc command \par
+\par
+-l      ====> To print only number of lines \par
+-w    ====> To print only number of words \par
+-c     ====> To print only number of charectors\par
+-lw   ====> To print only number of lines and words\par
+-lc    ====> To print only number of lines and charectors\par
+-wc  ====> To print only number of words  and charectors\par
+-L     =====>To print number of charectors present in Longest Line \par
+\par
+We can use  wc command for multiple files simultanously.\par
+\par
+wc  a.txt  b.txt  c.txt\par
+\par
+durga@durga - VirtualBox:~/Desktop$   wc file1.txt    file2.txt   file3.txt\par
+\par
+4    24    135    file1.txt\par
+4    24    135   file2.txt\par
+3    9      47      file3.txt\par
+11  57   317    total\par
+\par
+\par
+\par
+\b\fs32 What is Piping:\b0\fs28   \par
+- - - - - - - - - - - - - \par
+some times we can use output of one command as an input to other command. This concept is called piping.\par
+\par
+By using piping, multiple commands will work together to fulfill  our requirements\par
+\par
+we can implement piping by using vertical bar  (|)\par
+\par
+eg-1:\par
+durga@durga-VirtualBox:~Desktop$   ls -l  /etc | wc -l\par
+222\par
+\par
+standard output of ls command will become standard input to wc command \par
+\par
+eg -2:\par
+ls -l /etc  | more\par
+\par
+eg -3:\par
+ls -l  /etc  |  head -5\par
+\par
+eg -4 : ls -l  /etc  | wc  |wc -1\par
+\par
+the output is always 1.\par
+\par
+\b Requirement:\b0  \par
+The output of ls command should be saved to the file  output.txt  and should be provided as input to wc command ?\par
+\par
+ls - l  > output.txt  | wc  -l\par
+\par
+In the middle of piping if we use redirection then it breaks piping concept.\par
+\par
+ls -l\par
+\par
+\par
+\b tee command:\par
+- - - - - - - - - - - \par
+\par
+\b0 ls  - l  | tee  output.txt  |wc\par
+\par
+In piping, if we want to save the output of one command to a file and if we want to pass that output as input to next command simoultaniously  then we should use tee command .\par
+\par
+eg1:  To save the output of ls command to a fille and display to the terminal simultaneously\par
+\par
+ls   - l   | tee output.txt\par
+\par
+eg 2:\par
+If i want to save the result of ls -l in output.txt and pass the output to wc command and save that output in wc.txt ?\par
+\par
+ls -l  | tee output.txt |wc  | tee  wc.txt\par
+\par
+\par
+\b Requirement 2:\par
+- - - - - - - - - - - \par
+ \b0 Assume input.txt  contains filenames.\par
+\par
+input.txt\par
+- - - - - - \par
+\par
+file1.txt \par
+file2.txt\par
+file3.txt\par
+\par
+Read file names from the input.txt  and remove each file.\par
+\par
+cat input.txt  ===> standard output \par
+rm  file1.txt    file2.txt   file3.txt    ===>  remove 3 files\par
+\par
+remove command always expecting from command line arguments only.\par
+ But in piping the input is always stream.\par
+\par
+cat   input.txt | rm\par
+\par
+we have to convert that stream into command line arguments\par
+\par
+xargs  command:\par
+- - - - - - - - - - - - \par
+cat  input.txt  | xargs  rm\par
+\par
+xargs command:  to convert output stream into command line argument  \b\par
+\par
+\par
+\par
+\b0\par
+\par
+\b\fs32\par
+\b0\fs28\par
 \par
 \par
 \par
