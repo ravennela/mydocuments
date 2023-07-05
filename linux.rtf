@@ -728,8 +728,209 @@ xargs  command:\par
 - - - - - - - - - - - - \par
 cat  input.txt  | xargs  rm\par
 \par
-xargs command:  to convert output stream into command line argument  \b\par
+xargs command:  to convert output stream into command line argument  \par
 \par
+\par
+eg2: Assume input.txt contains multiple file names. Read all these file names from input.txt and display the files content to the terminal ?\par
+\par
+cat input.txt \par
+       a.txt\par
+\tab\tab b.txt\par
+\tab\tab c.txt\par
+\par
+cat a.txt  b.txt   cat c.txt\par
+\par
+cat input.txt  |  xargs  cat\par
+\par
+eg3: Display the output of date command by using echo command with piping concept?\par
+\par
+date | xargs echo\par
+\par
+eg:4\par
+List out all contents of  /dev folder and save to file1.txt\b\par
+\b0 List out all contents of /bin folder and save to file2.txt\par
+\par
+write a single pipeline for the following requirement:\par
+read contents of file1.txt and file2.txt and save to file3.txt. By using  sort command reverse the content of  file3.txt and saved to sorted.txt file.\par
+\par
+ls  /dev  >file1.txt \par
+\par
+ls  /bin  > file2.txt\par
+\par
+ // cat file1.txt   file2.txt   >file3.txt  sort   -r  file3.txt  >  sorted.txt\par
+\par
+cat file1.txt  file2.txt | tee file3.txt | sort  -r >sorted.txt\par
+\par
+\par
+\par
+\b\fs36 Command  Aliasing:\par
+\b0\fs28 - - - - - - - - - - - - - - - - - - -\par
+\par
+Alias means alternative name or nick name.\par
+\par
+we can give our own more convinient nicknames for unix commands. This concept is called command aliasing.\par
+\par
+How to create alias name:\par
+- - - - - - - - - - - - - - - - - - - \par
+we have to use alias command \par
+$ alias\par
+\par
+\par
+$ alias nickname='original command '\par
+\par
+$ alias nickname="original command"\par
+\par
+$ alias nickname=original command\par
+\par
+Note: No spaces allowed before or after = symbol .\par
+\par
+How to remove alias name:\par
+- - - - - - - - - - - - - - - - - - - - \par
+we have to use unalias\par
+\par
+$ unalias   command_name\par
+\par
+$ unalias  cls\par
+\par
+$ unalias  -a\par
+ \par
+\par
+I want to define alias name, but how to check is it available already?\par
+\par
+Just use type command\par
+\par
+\par
+\par
+durga@durga - VirtualBox:~/Desktop$  type cls\par
+\par
+cls is alialsed to clear\par
+\par
+durga@durga - VirtualBox:~/Desktop$ type cls1\par
+\par
+bash:type :cls1: not found\par
+\par
+\par
+Where we can use aliasing :\par
+- - - - - - - - - - - - - - - - - - - - -\par
+1. If any lengthy command repeatedly required, then we can create shortcut alias name and we can use that shortcut everytime.\par
+\par
+eg:\par
+mkdir dir1;  touch dir1/file1\{1..20\}.txt\par
+\par
+alias d20f ='mkdir dir1;  touch dir1/file1\{1..20\}.txt'\par
+\par
+eg2: To list out all files present in current working directory, save this data to output.txt  and display the number of lines to the terminal. Define alias name  'current'  for this total activity?\par
+\par
+alias  current = 'ls-l | tee  output. txt  | wc -l'\par
+\par
+2. To use our home operating  system commands in linux directoly \par
+\par
+windows \par
+mac\par
+ alias  cls ='clear'\par
+ alias  rename ='mv'\par
+\par
+3. To handle typing mistakes\par
+\par
+grep \par
+grpe\par
+alias grpe='grep'\par
+\par
+4. To handle language barriers:\par
+- - - - - - - - - - - - - - - - - - - - - - - \par
+\par
+In germany =====>datum\par
+\par
+alias datum = 'date'\par
+\par
+cp \par
+koopy\par
+\par
+alias koopy = 'cp'\par
+\par
+How to persist aliases perminently:\par
+- - - - - - - - - - - - - - - - - - - - - - - - - -\par
+we can make our created aliases permanently in our system by using 2 ways \par
+\par
+1st way:\par
+- - - - - -\par
+.bashrc  file inside our user home directory\par
+\par
+# my own aliases \par
+\par
+alias  cls='clear'\par
+alias  ddd='date;date;date'\par
+alias  dd='date;date;\par
+\par
+To reflect these changes  we have to restart terminal\par
+\par
+instead of restarting terminal we can use       source   .bashrc     // not working\par
+\par
+2nd way:\par
+- - - - - - - \par
+Instead of editing  .bashrc file, we can create our own file to maintain our defined aliases .\par
+\par
+The name of the file should be  .bash_aliasis and should be present in our home directory.\par
+ \par
+\b\fs36 Regular expressions :\par
+\b0\fs28 - - - - - - - - - - - - - - - - - - - - - \par
+\par
+1. To list out all files present in current working directory?\par
+\par
+$ ls  *\par
+\par
+2. To list out all files with some extension?\par
+$ ls  *.*\par
+\par
+3. To list out all  .txt files\par
+$ ls  *.txt\par
+\par
+4. To list out only  .java files \par
+ $ ls  * .java\par
+\par
+5. To list out all files starts with  a\par
+$ la a*\par
+\par
+6. To list out all files where file name contains only  2 charectors and first charectors should be  a\par
+\par
+$ ls  a?\par
+\par
+7. To list out all files where file name contains only  2 charectors \par
+\par
+$ ls   ??\par
+\par
+8. To list out all files where file name contains only  3 charectors \par
+$ ls  ???\par
+\par
+9. To list out all files where file name contains atleast 3 charectors \par
+$ ls  ???*\par
+\par
+10. To list out all files where file name starts with a or b or c\par
+\par
+$ ls  [abc] *\par
+\par
+11. To list out all files where file name should not starts with a or b or c\par
+\par
+$ ls  [!abc]*\par
+\par
+12. To list out all files where file name starts with lowercase alphabet symbol?\par
+\par
+$ ls [a-z] *\par
+$ ls [[:lower:]]*\par
+\par
+13.To list out all files where file name starts with uppercase alphabet symbol?\par
+\par
+$ ls  [A-Z]*\par
+$ ls [[:upper:]]*\par
+\par
+14. To list out all files where file name starts with digit?\par
+$ ls [0-9]*\par
+$ ls [[:digit:]]*\par
+\par
+\par
+ \par
+\par
+\b\par
 \par
 \par
 \b0\par
