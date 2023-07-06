@@ -927,6 +927,261 @@ $ ls [[:upper:]]*\par
 $ ls [0-9]*\par
 $ ls [[:digit:]]*\par
 \par
+15. To list out  all files where first letter should be upper case alphabet symbol, second letter should be digit and third letter should be lower case alphabet symbol?\par
+\par
+$ ls [A-Z] [0-9] [a-z]\par
+$ ls [[:upper:]] [0-9] [[:lower:]]\par
+$ ls [[:upper:]] [[:digit:]] [[:lower:]]\par
+\par
+16. To list out all files starts with special symbol.\par
+$ ls [![:alnum:]]*\par
+\par
+17.To list out all files with .java or .py extension?\par
+$  ls \{* .java, * .py\}\par
+$  ls *.\{java ,py\}\par
+\par
+Note: we can use regular expression and wild card charecters with other commands also  like  rm,cp, mv, etc\par
+\par
+18. To copy all files starts with digit to dir1 directory?\par
+\par
+cp [0-9]*  dir1\par
+\par
+cp [[:digit:]]*  dir1\par
+\par
+19. To move all files starts with alphabet symbol and with  .txt extension to dir2  directory?\par
+\par
+$  mv [[:alpha:]]* .txt    dir2\par
+\par
+20. Remove all files starts with a or b or c and ends with e or t?\par
+\par
+$ rm [abc]* [et]\par
+\par
+\par
+Q1: which command will list all files that has exactly three charecters present in current working directory?\par
+\par
+$ ls ???\par
+\par
+Q2: which command will copy all files that ends with  .pdf to dir1?\par
+\par
+cp  * .pdf   dir1\par
+\par
+Q3: which command will move all the files that begins with letter a and ends with letter n to dir1?\par
+$ mv a* n  dir1\par
+\par
+Q4: which command will display content of all files that begins with a digit and ends with a or e or i or o or u?\par
+\par
+cat [0-9] * [aeiou]\par
+\par
+cat [[:digit:]] * [aeiou]\par
+\par
+Q5:which command will list all files that begins with a lower case alphabet symbol and has a letter d in the third charecter position, and ends  with an upper case letter?\par
+\par
+$ ls [[: lower :]] ? d*[[:upper:]]\par
+\par
+Q6: which command will list all  .jpg files present in Pictures  directory ?\par
+\par
+ls  /home/durga/Pictures/ *.jpg\par
+\par
+ls ~/Pictures/*.jpg\par
+\par
+Q7. which of the following regular expression will match file named with demoA.txt?\par
+\par
+demoA.txt\par
+\par
+A) *\par
+B)  demo ? .txt\par
+C) demo*\par
+D) * .txt\par
+E) demo [A-Z].txt\par
+F) All of the above\par
+\par
+Ans: F\par
+\par
+Q8. which of the following regular expressions can represent the files:\par
+student_reportA.pdf\par
+student_reportB.pdf\par
+student_reportC.pdf\par
+\par
+a) ??.\par
+b) report*.pdf\par
+c) *[A-Z]\par
+d) student*.pdf\par
+\par
+Ans:c,d\par
+\par
+\par
+\b\fs32 JACKPOT ASSIGNMENT :\par
+\b0\fs28 - - - - - - - - - - -  - - - - - - - - - -\par
+\par
+mkdir  jackpot /dir\{1..100\}\par
+touch jackpot/dir\{1..100\}/file\{1..100\}.txt\par
+\par
+touch jackpot/dir $ (shuf -i  1-100  -n 1) /sunny.txt\par
+\par
+find sunny.txt and move to desktop\par
+\par
+find jackpot  -type  f  -name  'sunnt.txt'  -exec  mv  \{ \}  ~/Desktop  \\;\par
+\par
+mv sunny.txt   ~/Desktop\par
+\par
+Remove all text files in jackpot directory\par
+\par
+find  jackpot  -type  f  -name  '*.txt'  -exec  rm \{ \}  \\;\par
+\par
+Remove all files inside jackpot directory including jackpot directory\par
+\par
+find jackpot  -type  d -exec  rm -r  \{\}  \\;\par
+\par
+Q1: The command uses a database to search files and directories?\par
+\par
+a) true\par
+b) false\par
+\par
+Q2: To find files and directories inside  /dev folder and limits its search to only 2 levels of depth?\par
+find   /dev   -maxdepth  2\par
+\par
+Q3: To find only directories inside   /dev  folder and limits its search to only 2 levels of depth?\par
+\par
+find   /dev   -maxdepth  2  -type d\par
+\par
+Q4: To find only files starts from root directory  (/) where file name ends with  .txt?\par
+\par
+find / -type  f  -name  ' *.txt'\par
+\par
+find  / -type  f -iname '*.txt'\par
+\par
+Q5: To find all files and directories inside  /dev  directory  upto maximum 3 levels of deep and size is greater than  200kilo bytes?\par
+\par
+find  /dev  -maxdepth 3  -size +200k\par
+\par
+Q6: which command will find all files below our home Directory where file size is greater than 3 mega Bytes and remove all those files?\par
+\par
+find  ~  -type  f  -size  +3M  -exce rm  \{\}  \\; \par
+\par
+Q7: find command make our life is very easy to delete last 6 months files\par
+\par
+/usr/bin/find/home/stack/zabbix_metrics/*.csv  -mtime  +180  -exec  rm -rf  \{\} /; >dev/null 2>&1\par
+\par
+find   /home/stack/zabbix_metrics/*.csv  -mtime  +180  -exec  rm -rf  \{\} /; >dev/null 2>&1\par
+\par
+\par
+\b\fs36 Grep (global regular expression print):\par
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -\fs28\par
+\b0\par
+grep [options]   pattern   [file]\par
+\par
+cat filename  |  grep pattern\par
+\par
+with out any option we can use like this\par
+grep "UNIX" grepfilter.txt\par
+cat  grepfilter.txt   | grep  "Linux"\par
+\par
+Options:\par
+- - - - - - \par
+1) c:   grep  -c  pattern file  -display number of matching lines\par
+\par
+grep  -c "UNIX"  grepfilter.txt\par
+\par
+\par
+2) h:   grep -h pattern file -display all matching lines\par
+\par
+grep  -h "UNIX"  grepfilter.txt\par
+\par
+3) l:   grep -l  pattern * -display all the file names in which pattern matches\par
+\par
+grep -l "o" *\par
+\par
+4) n :   grep  -n  pattern file  -display all the matching lines with Line numbers \par
+\par
+grep -n  "UNIX" grepfilter.txt\par
+\par
+\par
+5) v:   grep  -v pattern file  -display all the non matching lines\par
+\par
+grep -v  "UNIX" grepfilter.txt\par
+\par
+6) o:   grep -o pattern file -display only the matching pattern\par
+\par
+grep -o "Unix" grepfilter.txt\par
+\par
+7) e:   grep -e pattern file  -use multiple search patterns\par
+\par
+grep  -e "UNIX"   -e  "LINUX"  grepfilter.txt\par
+\par
+8) ^:    grep ^ pattern file -match the lines which starts with given pattern\par
+\par
+grep  ^ Welcome   grepfilter.txt\par
+\par
+9) $ :   grep pattern $ file  -display the lines which ends with given pattern\par
+\par
+grep  ands$  grepfilter.txt\par
+\par
+10) i :  grep pattern file  -case insensitive searching\par
+\par
+grep -i "unix" grepfilter.txt\par
+\par
+\par
+\b egrep command:\par
+- - - - - - - - - - - - - \par
+\b0\par
+Instead of using  -e option we can use  egrep command.\par
+\par
+egrep means extended grep\par
+\par
+egrep    '(java|linux)'   demo.txt\par
+\par
+egrep  command can understand this pattern and process this pattern.\par
+\par
+grep command always looking for the match: "(java|linux)"\par
+\par
+\par
+grep command can understand patterns  --> yes but not all patterns\par
+\par
+'^linux'   is understandable by grep \par
+'(java| linux)'  cannot understandable by grep\par
+'[0-9] \{9\} ' cannot understandable by grep\par
+\par
+egrep command can understand patterns  ---> yes all patterns \par
+\par
+'^linux'\par
+'(java|linux)'\par
+\par
+\par
+grep command with -F options:\par
+- - - - - - - - - - - - - - - - - - - - - - - -\par
+-F  means Fixed Strings \par
+\par
+If we want to search for a group of fixed strings then we should go for -F option.\par
+\par
+grep  -F  "java\par
+>linux\par
+>python" demo.txt\par
+\par
+The strings should be seperated by  new line charactor.\par
+\par
+Instead of  -F option, we can use  fgrep  command \par
+\par
+fgrep  means   ----> Fixed String Global Regular Expression print\par
+\par
+fgrep command can understand patterns ---> no\par
+\par
+we have to provide only fixed strings\par
+\par
+in file1.txt \par
+java\par
+linux\par
+python\par
+\par
+we have a file called demo.txt so we need to search three words in that file those three words are java, linux, python is saved inside file1.txt\par
+\par
+fgrep  -f  file1.txt  demo.txt\par
+\par
+\par
+\par
+\par
+\par
+  \par
+\par
 \par
  \par
 \par
