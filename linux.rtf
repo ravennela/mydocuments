@@ -1,1310 +1,1618 @@
-{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}}
-{\colortbl ;\red0\green0\blue255;}
-{\*\generator Riched20 10.0.22621}\viewkind4\uc1 
-\pard\sa200\sl276\slmult1\f0\fs22\lang9\tab\tab\tab\tab\tab\fs48 Linux \par
-\par
-\fs28 what is UNIX?\par
-- - - - - - - - - - - -  -\par
+{\rtf1\adeflang1025\ansi\ansicpg1252\uc1\adeff31507\deff0\stshfdbch31505\stshfloch31506\stshfhich31506\stshfbi31507\deflang16393\deflangfe16393\themelang16393\themelangfe0\themelangcs0{\fonttbl{\f0\fbidi \froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}{\f2\fbidi \fmodern\fcharset0\fprq1{\*\panose 02070309020205020404}Courier New;}
+{\f3\fbidi \froman\fcharset2\fprq2{\*\panose 05050102010706020507}Symbol;}{\f10\fbidi \fnil\fcharset2\fprq2{\*\panose 05000000000000000000}Wingdings;}{\f34\fbidi \froman\fcharset0\fprq2{\*\panose 02040503050406030204}Cambria Math;}
+{\f37\fbidi \fswiss\fcharset0\fprq2{\*\panose 020f0502020204030204}Calibri;}{\flomajor\f31500\fbidi \froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}
+{\fdbmajor\f31501\fbidi \froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}{\fhimajor\f31502\fbidi \fswiss\fcharset0\fprq2{\*\panose 020f0302020204030204}Calibri Light;}
+{\fbimajor\f31503\fbidi \froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}{\flominor\f31504\fbidi \froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}
+{\fdbminor\f31505\fbidi \froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}{\fhiminor\f31506\fbidi \fswiss\fcharset0\fprq2{\*\panose 020f0502020204030204}Calibri;}
+{\fbiminor\f31507\fbidi \froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}{\f43\fbidi \froman\fcharset238\fprq2 Times New Roman CE;}{\f44\fbidi \froman\fcharset204\fprq2 Times New Roman Cyr;}
+{\f46\fbidi \froman\fcharset161\fprq2 Times New Roman Greek;}{\f47\fbidi \froman\fcharset162\fprq2 Times New Roman Tur;}{\f48\fbidi \froman\fcharset177\fprq2 Times New Roman (Hebrew);}{\f49\fbidi \froman\fcharset178\fprq2 Times New Roman (Arabic);}
+{\f50\fbidi \froman\fcharset186\fprq2 Times New Roman Baltic;}{\f51\fbidi \froman\fcharset163\fprq2 Times New Roman (Vietnamese);}{\f63\fbidi \fmodern\fcharset238\fprq1 Courier New CE;}{\f64\fbidi \fmodern\fcharset204\fprq1 Courier New Cyr;}
+{\f66\fbidi \fmodern\fcharset161\fprq1 Courier New Greek;}{\f67\fbidi \fmodern\fcharset162\fprq1 Courier New Tur;}{\f68\fbidi \fmodern\fcharset177\fprq1 Courier New (Hebrew);}{\f69\fbidi \fmodern\fcharset178\fprq1 Courier New (Arabic);}
+{\f70\fbidi \fmodern\fcharset186\fprq1 Courier New Baltic;}{\f71\fbidi \fmodern\fcharset163\fprq1 Courier New (Vietnamese);}{\f413\fbidi \fswiss\fcharset238\fprq2 Calibri CE;}{\f414\fbidi \fswiss\fcharset204\fprq2 Calibri Cyr;}
+{\f416\fbidi \fswiss\fcharset161\fprq2 Calibri Greek;}{\f417\fbidi \fswiss\fcharset162\fprq2 Calibri Tur;}{\f418\fbidi \fswiss\fcharset177\fprq2 Calibri (Hebrew);}{\f419\fbidi \fswiss\fcharset178\fprq2 Calibri (Arabic);}
+{\f420\fbidi \fswiss\fcharset186\fprq2 Calibri Baltic;}{\f421\fbidi \fswiss\fcharset163\fprq2 Calibri (Vietnamese);}{\flomajor\f31508\fbidi \froman\fcharset238\fprq2 Times New Roman CE;}
+{\flomajor\f31509\fbidi \froman\fcharset204\fprq2 Times New Roman Cyr;}{\flomajor\f31511\fbidi \froman\fcharset161\fprq2 Times New Roman Greek;}{\flomajor\f31512\fbidi \froman\fcharset162\fprq2 Times New Roman Tur;}
+{\flomajor\f31513\fbidi \froman\fcharset177\fprq2 Times New Roman (Hebrew);}{\flomajor\f31514\fbidi \froman\fcharset178\fprq2 Times New Roman (Arabic);}{\flomajor\f31515\fbidi \froman\fcharset186\fprq2 Times New Roman Baltic;}
+{\flomajor\f31516\fbidi \froman\fcharset163\fprq2 Times New Roman (Vietnamese);}{\fdbmajor\f31518\fbidi \froman\fcharset238\fprq2 Times New Roman CE;}{\fdbmajor\f31519\fbidi \froman\fcharset204\fprq2 Times New Roman Cyr;}
+{\fdbmajor\f31521\fbidi \froman\fcharset161\fprq2 Times New Roman Greek;}{\fdbmajor\f31522\fbidi \froman\fcharset162\fprq2 Times New Roman Tur;}{\fdbmajor\f31523\fbidi \froman\fcharset177\fprq2 Times New Roman (Hebrew);}
+{\fdbmajor\f31524\fbidi \froman\fcharset178\fprq2 Times New Roman (Arabic);}{\fdbmajor\f31525\fbidi \froman\fcharset186\fprq2 Times New Roman Baltic;}{\fdbmajor\f31526\fbidi \froman\fcharset163\fprq2 Times New Roman (Vietnamese);}
+{\fhimajor\f31528\fbidi \fswiss\fcharset238\fprq2 Calibri Light CE;}{\fhimajor\f31529\fbidi \fswiss\fcharset204\fprq2 Calibri Light Cyr;}{\fhimajor\f31531\fbidi \fswiss\fcharset161\fprq2 Calibri Light Greek;}
+{\fhimajor\f31532\fbidi \fswiss\fcharset162\fprq2 Calibri Light Tur;}{\fhimajor\f31533\fbidi \fswiss\fcharset177\fprq2 Calibri Light (Hebrew);}{\fhimajor\f31534\fbidi \fswiss\fcharset178\fprq2 Calibri Light (Arabic);}
+{\fhimajor\f31535\fbidi \fswiss\fcharset186\fprq2 Calibri Light Baltic;}{\fhimajor\f31536\fbidi \fswiss\fcharset163\fprq2 Calibri Light (Vietnamese);}{\fbimajor\f31538\fbidi \froman\fcharset238\fprq2 Times New Roman CE;}
+{\fbimajor\f31539\fbidi \froman\fcharset204\fprq2 Times New Roman Cyr;}{\fbimajor\f31541\fbidi \froman\fcharset161\fprq2 Times New Roman Greek;}{\fbimajor\f31542\fbidi \froman\fcharset162\fprq2 Times New Roman Tur;}
+{\fbimajor\f31543\fbidi \froman\fcharset177\fprq2 Times New Roman (Hebrew);}{\fbimajor\f31544\fbidi \froman\fcharset178\fprq2 Times New Roman (Arabic);}{\fbimajor\f31545\fbidi \froman\fcharset186\fprq2 Times New Roman Baltic;}
+{\fbimajor\f31546\fbidi \froman\fcharset163\fprq2 Times New Roman (Vietnamese);}{\flominor\f31548\fbidi \froman\fcharset238\fprq2 Times New Roman CE;}{\flominor\f31549\fbidi \froman\fcharset204\fprq2 Times New Roman Cyr;}
+{\flominor\f31551\fbidi \froman\fcharset161\fprq2 Times New Roman Greek;}{\flominor\f31552\fbidi \froman\fcharset162\fprq2 Times New Roman Tur;}{\flominor\f31553\fbidi \froman\fcharset177\fprq2 Times New Roman (Hebrew);}
+{\flominor\f31554\fbidi \froman\fcharset178\fprq2 Times New Roman (Arabic);}{\flominor\f31555\fbidi \froman\fcharset186\fprq2 Times New Roman Baltic;}{\flominor\f31556\fbidi \froman\fcharset163\fprq2 Times New Roman (Vietnamese);}
+{\fdbminor\f31558\fbidi \froman\fcharset238\fprq2 Times New Roman CE;}{\fdbminor\f31559\fbidi \froman\fcharset204\fprq2 Times New Roman Cyr;}{\fdbminor\f31561\fbidi \froman\fcharset161\fprq2 Times New Roman Greek;}
+{\fdbminor\f31562\fbidi \froman\fcharset162\fprq2 Times New Roman Tur;}{\fdbminor\f31563\fbidi \froman\fcharset177\fprq2 Times New Roman (Hebrew);}{\fdbminor\f31564\fbidi \froman\fcharset178\fprq2 Times New Roman (Arabic);}
+{\fdbminor\f31565\fbidi \froman\fcharset186\fprq2 Times New Roman Baltic;}{\fdbminor\f31566\fbidi \froman\fcharset163\fprq2 Times New Roman (Vietnamese);}{\fhiminor\f31568\fbidi \fswiss\fcharset238\fprq2 Calibri CE;}
+{\fhiminor\f31569\fbidi \fswiss\fcharset204\fprq2 Calibri Cyr;}{\fhiminor\f31571\fbidi \fswiss\fcharset161\fprq2 Calibri Greek;}{\fhiminor\f31572\fbidi \fswiss\fcharset162\fprq2 Calibri Tur;}
+{\fhiminor\f31573\fbidi \fswiss\fcharset177\fprq2 Calibri (Hebrew);}{\fhiminor\f31574\fbidi \fswiss\fcharset178\fprq2 Calibri (Arabic);}{\fhiminor\f31575\fbidi \fswiss\fcharset186\fprq2 Calibri Baltic;}
+{\fhiminor\f31576\fbidi \fswiss\fcharset163\fprq2 Calibri (Vietnamese);}{\fbiminor\f31578\fbidi \froman\fcharset238\fprq2 Times New Roman CE;}{\fbiminor\f31579\fbidi \froman\fcharset204\fprq2 Times New Roman Cyr;}
+{\fbiminor\f31581\fbidi \froman\fcharset161\fprq2 Times New Roman Greek;}{\fbiminor\f31582\fbidi \froman\fcharset162\fprq2 Times New Roman Tur;}{\fbiminor\f31583\fbidi \froman\fcharset177\fprq2 Times New Roman (Hebrew);}
+{\fbiminor\f31584\fbidi \froman\fcharset178\fprq2 Times New Roman (Arabic);}{\fbiminor\f31585\fbidi \froman\fcharset186\fprq2 Times New Roman Baltic;}{\fbiminor\f31586\fbidi \froman\fcharset163\fprq2 Times New Roman (Vietnamese);}}
+{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;
+\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;\red0\green0\blue0;\red0\green0\blue0;}{\*\defchp \fs22\kerning2\loch\af31506\hich\af31506\dbch\af31505 }{\*\defpap 
+\ql \li0\ri0\sa160\sl259\slmult1\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 }\noqfpromote {\stylesheet{\ql \li0\ri0\sa160\sl259\slmult1\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 \rtlch\fcs1 
+\af31507\afs22\alang1025 \ltrch\fcs0 \fs22\lang16393\langfe16393\kerning2\loch\f31506\hich\af31506\dbch\af31505\cgrid\langnp16393\langfenp16393 \snext0 \sqformat \spriority0 Normal;}{\*\cs10 \additive \ssemihidden \sunhideused \spriority1 
+Default Paragraph Font;}{\*\ts11\tsrowd\trftsWidthB3\trpaddl108\trpaddr108\trpaddfl3\trpaddft3\trpaddfb3\trpaddfr3\trcbpat1\trcfpat1\tblind0\tblindtype3\tsvertalt\tsbrdrt\tsbrdrl\tsbrdrb\tsbrdrr\tsbrdrdgl\tsbrdrdgr\tsbrdrh\tsbrdrv 
+\ql \li0\ri0\sa160\sl259\slmult1\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 \rtlch\fcs1 \af31507\afs22\alang1025 \ltrch\fcs0 
+\fs22\lang16393\langfe16393\kerning2\loch\f31506\hich\af31506\dbch\af31505\cgrid\langnp16393\langfenp16393 \snext11 \ssemihidden \sunhideused Normal Table;}}{\*\listtable{\list\listtemplateid4255512\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0
+\leveljcn0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext\leveltemplateid-1859479190\'02\'00.;}{\levelnumbers\'01;}\rtlch\fcs1 \af0 \ltrch\fcs0 \b0\fs28\fbias0 \fi-360\li720\lin720 }{\listlevel\levelnfc4\levelnfcn4\leveljc0\leveljcn0
+\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext\leveltemplateid1074331673\'02\'01.;}{\levelnumbers\'01;}\rtlch\fcs1 \af0 \ltrch\fcs0 \fi-360\li1440\lin1440 }{\listlevel\levelnfc2\levelnfcn2\leveljc2\leveljcn2\levelfollow0
+\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext\leveltemplateid1074331675\'02\'02.;}{\levelnumbers\'01;}\rtlch\fcs1 \af0 \ltrch\fcs0 \fi-180\li2160\lin2160 }{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1
+\lvltentative\levelspace0\levelindent0{\leveltext\leveltemplateid1074331663\'02\'03.;}{\levelnumbers\'01;}\rtlch\fcs1 \af0 \ltrch\fcs0 \fi-360\li2880\lin2880 }{\listlevel\levelnfc4\levelnfcn4\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative
+\levelspace0\levelindent0{\leveltext\leveltemplateid1074331673\'02\'04.;}{\levelnumbers\'01;}\rtlch\fcs1 \af0 \ltrch\fcs0 \fi-360\li3600\lin3600 }{\listlevel\levelnfc2\levelnfcn2\leveljc2\leveljcn2\levelfollow0\levelstartat1\lvltentative\levelspace0
+\levelindent0{\leveltext\leveltemplateid1074331675\'02\'05.;}{\levelnumbers\'01;}\rtlch\fcs1 \af0 \ltrch\fcs0 \fi-180\li4320\lin4320 }{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0
+{\leveltext\leveltemplateid1074331663\'02\'06.;}{\levelnumbers\'01;}\rtlch\fcs1 \af0 \ltrch\fcs0 \fi-360\li5040\lin5040 }{\listlevel\levelnfc4\levelnfcn4\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext
+\leveltemplateid1074331673\'02\'07.;}{\levelnumbers\'01;}\rtlch\fcs1 \af0 \ltrch\fcs0 \fi-360\li5760\lin5760 }{\listlevel\levelnfc2\levelnfcn2\leveljc2\leveljcn2\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext
+\leveltemplateid1074331675\'02\'08.;}{\levelnumbers\'01;}\rtlch\fcs1 \af0 \ltrch\fcs0 \fi-180\li6480\lin6480 }{\listname ;}\listid820776218}{\list\listtemplateid623137356\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0
+\levelstartat0\levelspace0\levelindent0{\leveltext\leveltemplateid-1391939260\'01-;}{\levelnumbers;}\loch\af37\hich\af37\dbch\af31505\fbias0 \fi-360\li720\lin720 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1
+\lvltentative\levelspace0\levelindent0{\leveltext\leveltemplateid1074331651\'01o;}{\levelnumbers;}\f2\fbias0 \fi-360\li1440\lin1440 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0
+{\leveltext\leveltemplateid1074331653\'01\u-3929 ?;}{\levelnumbers;}\f10\fbias0 \fi-360\li2160\lin2160 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext
+\leveltemplateid1074331649\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li2880\lin2880 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext\leveltemplateid1074331651
+\'01o;}{\levelnumbers;}\f2\fbias0 \fi-360\li3600\lin3600 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext\leveltemplateid1074331653\'01\u-3929 ?;}{\levelnumbers;}
+\f10\fbias0 \fi-360\li4320\lin4320 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext\leveltemplateid1074331649\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 
+\fi-360\li5040\lin5040 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext\leveltemplateid1074331651\'01o;}{\levelnumbers;}\f2\fbias0 \fi-360\li5760\lin5760 }{\listlevel
+\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext\leveltemplateid1074331653\'01\u-3929 ?;}{\levelnumbers;}\f10\fbias0 \fi-360\li6480\lin6480 }{\listname ;}\listid1506361939}
+{\list\listtemplateid360477380\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat0\levelspace0\levelindent0{\leveltext\leveltemplateid-1117587774\'01-;}{\levelnumbers;}\loch\af37\hich\af37\dbch\af31505\fbias0 
+\fi-360\li720\lin720 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext\leveltemplateid1074331651\'01o;}{\levelnumbers;}\f2\fbias0 \fi-360\li1440\lin1440 }{\listlevel
+\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext\leveltemplateid1074331653\'01\u-3929 ?;}{\levelnumbers;}\f10\fbias0 \fi-360\li2160\lin2160 }{\listlevel\levelnfc23\levelnfcn23\leveljc0
+\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext\leveltemplateid1074331649\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li2880\lin2880 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0
+\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext\leveltemplateid1074331651\'01o;}{\levelnumbers;}\f2\fbias0 \fi-360\li3600\lin3600 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0
+\levelindent0{\leveltext\leveltemplateid1074331653\'01\u-3929 ?;}{\levelnumbers;}\f10\fbias0 \fi-360\li4320\lin4320 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext
+\leveltemplateid1074331649\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li5040\lin5040 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext\leveltemplateid1074331651
+\'01o;}{\levelnumbers;}\f2\fbias0 \fi-360\li5760\lin5760 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext\leveltemplateid1074331653\'01\u-3929 ?;}{\levelnumbers;}
+\f10\fbias0 \fi-360\li6480\lin6480 }{\listname ;}\listid1898541615}{\list\listtemplateid1659504232\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat0\levelspace0\levelindent0{\leveltext\leveltemplateid576633500
+\'01-;}{\levelnumbers;}\loch\af37\hich\af37\dbch\af31505\fbias0 \fi-360\li720\lin720 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext\leveltemplateid1074331651
+\'01o;}{\levelnumbers;}\f2\fbias0 \fi-360\li1440\lin1440 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext\leveltemplateid1074331653\'01\u-3929 ?;}{\levelnumbers;}
+\f10\fbias0 \fi-360\li2160\lin2160 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext\leveltemplateid1074331649\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 
+\fi-360\li2880\lin2880 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext\leveltemplateid1074331651\'01o;}{\levelnumbers;}\f2\fbias0 \fi-360\li3600\lin3600 }{\listlevel
+\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext\leveltemplateid1074331653\'01\u-3929 ?;}{\levelnumbers;}\f10\fbias0 \fi-360\li4320\lin4320 }{\listlevel\levelnfc23\levelnfcn23\leveljc0
+\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext\leveltemplateid1074331649\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li5040\lin5040 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0
+\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext\leveltemplateid1074331651\'01o;}{\levelnumbers;}\f2\fbias0 \fi-360\li5760\lin5760 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0
+\levelindent0{\leveltext\leveltemplateid1074331653\'01\u-3929 ?;}{\levelnumbers;}\f10\fbias0 \fi-360\li6480\lin6480 }{\listname ;}\listid2113746879}}{\*\listoverridetable{\listoverride\listid1506361939\listoverridecount0\ls1}
+{\listoverride\listid1898541615\listoverridecount0\ls2}{\listoverride\listid2113746879\listoverridecount0\ls3}{\listoverride\listid820776218\listoverridecount0\ls4}}{\*\rsidtbl \rsid1456317\rsid5070607\rsid6254650\rsid8736750\rsid15144822\rsid15346519}
+{\mmathPr\mmathFont34\mbrkBin0\mbrkBinSub0\msmallFrac0\mdispDef1\mlMargin0\mrMargin0\mdefJc1\mwrapIndent1440\mintLim0\mnaryLim1}{\info{\operator rakesh kulla}{\creatim\yr2023\mo7\dy12\hr18\min20}{\revtim\yr2023\mo7\dy12\hr19\min44}{\version2}{\edmins84}
+{\nofpages39}{\nofwords4721}{\nofchars26912}{\nofcharsws31570}{\vern75}}{\*\xmlnstbl {\xmlns1 http://schemas.microsoft.com/office/word/2003/wordml}}\paperw12240\paperh15840\margl1440\margr1440\margt1440\margb1440\gutter0\ltrsect 
+\widowctrl\ftnbj\aenddoc\trackmoves0\trackformatting1\donotembedsysfont0\relyonvml0\donotembedlingdata1\grfdocevents0\validatexml0\showplaceholdtext0\ignoremixedcontent0\saveinvalidxml0\showxmlerrors0\horzdoc\dghspace120\dgvspace120\dghorigin1701
+\dgvorigin1984\dghshow0\dgvshow3\jcompress\viewkind1\viewscale100\rsidroot15346519 \nouicompat \fet0{\*\wgrffmtfilter 2450}\nofeaturethrottle1\ilfomacatclnup0\ltrpar \sectd \ltrsect\linex0\sectdefaultcl\sftnbj {\*\pnseclvl1
+\pnucrm\pnstart1\pnindent720\pnhang {\pntxta .}}{\*\pnseclvl2\pnucltr\pnstart1\pnindent720\pnhang {\pntxta .}}{\*\pnseclvl3\pndec\pnstart1\pnindent720\pnhang {\pntxta .}}{\*\pnseclvl4\pnlcltr\pnstart1\pnindent720\pnhang {\pntxta )}}{\*\pnseclvl5
+\pndec\pnstart1\pnindent720\pnhang {\pntxtb (}{\pntxta )}}{\*\pnseclvl6\pnlcltr\pnstart1\pnindent720\pnhang {\pntxtb (}{\pntxta )}}{\*\pnseclvl7\pnlcrm\pnstart1\pnindent720\pnhang {\pntxtb (}{\pntxta )}}{\*\pnseclvl8\pnlcltr\pnstart1\pnindent720\pnhang 
+{\pntxtb (}{\pntxta )}}{\*\pnseclvl9\pnlcrm\pnstart1\pnindent720\pnhang {\pntxtb (}{\pntxta )}}\pard\plain \ltrpar\ql \li0\ri0\sa200\sl276\slmult1\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0 \rtlch\fcs1 \af31507\afs22\alang1025 \ltrch\fcs0 
+\fs22\lang16393\langfe16393\kerning2\loch\af31506\hich\af31506\dbch\af31505\cgrid\langnp16393\langfenp16393 {\rtlch\fcs1 \af37 \ltrch\fcs0 \f37\lang9\langfe16393\kerning0\langnp9\insrsid8736750 \tab \tab \tab \tab \tab }{\rtlch\fcs1 \af37\afs48 
+\ltrch\fcs0 \f37\fs48\lang9\langfe16393\kerning0\langnp9\insrsid8736750 \hich\af37\dbch\af31505\loch\f37 Linux 
+\par 
+\par }{\rtlch\fcs1 \af37\afs28 \ltrch\fcs0 \f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 \hich\af37\dbch\af31505\loch\f37 what is UNIX?
+\par \hich\af37\dbch\af31505\loch\f37 - - - - - - - - - - - -  -
+\par }\pard \ltrpar\ql \li0\ri-449\sa200\nowidctlpar\tx142\tx426\tx994\wrapdefault\faauto\rin-449\lin0\itap0 {\rtlch\fcs1 \af37\afs28 \ltrch\fcs0 \f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 
+\par }\pard \ltrpar\ql \li0\ri-448\sa200\sl276\slmult1\nowidctlpar\tx142\tx426\tx994\wrapdefault\faauto\rin-448\lin0\itap0 {\rtlch\fcs1 \af37\afs28 \ltrch\fcs0 \f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 \hich\af37\dbch\af31505\loch\f37 
+It is an operating system created in 1960s.
+\par \hich\af37\dbch\af31505\loch\f37 with lot of extensions and impro\hich\af37\dbch\af31505\loch\f37 vements to base versions, several flavers introduced by orgonisations /companies (RedHat Linux, Ubuntu,Suse...)
+\par 
+\par }\pard \ltrpar\ql \li0\ri-449\nowidctlpar\tx142\tx426\tx994\wrapdefault\faauto\rin-449\lin0\itap0 {\rtlch\fcs1 \ab\af37\afs28 \ltrch\fcs0 \b\f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 \hich\af37\dbch\af31505\loch\f37 Charecterstics of Unix
+}{\rtlch\fcs1 \af37\afs28 \ltrch\fcs0 \f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 \hich\af37\dbch\af31505\loch\f37 :
+\par }\pard \ltrpar\ql \li0\ri-448\sa200\sl276\slmult1\nowidctlpar\tx142\tx426\tx994\wrapdefault\faauto\rin-448\lin0\itap0 {\rtlch\fcs1 \af37\afs28 \ltrch\fcs0 \f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 \hich\af37\dbch\af31505\loch\f37 
+- - - - - - - - - - - - - - - - - -
+\par \hich\af37\dbch\af31505\loch\f37 1) It is Free ware 
+\par \hich\af37\dbch\af31505\loch\f37 2) It is open source software 
+\par \hich\af37\dbch\af31505\loch\f37      It is FOSS (Free ware and O\hich\af37\dbch\af31505\loch\f37 pen source software)
+\par \hich\af37\dbch\af31505\loch\f37 3) It is multi user operating system.
+\par \hich\af37\dbch\af31505\loch\f37 4) It is Multi tasking operating system.
+\par \hich\af37\dbch\af31505\loch\f37 5) It is user friendly and supports both cui based and gui based. 
+\par \hich\af37\dbch\af31505\loch\f37 6) It is More Secure than Windows Operating System.
+\par 
+\par }\pard \ltrpar\ql \li0\ri-449\nowidctlpar\tx142\tx426\tx994\wrapdefault\faauto\rin-449\lin0\itap0 {\rtlch\fcs1 \ab\af37\afs28 \ltrch\fcs0 \b\f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 \hich\af37\dbch\af31505\loch\f37 Flavors of UNIX}{
+\rtlch\fcs1 \af37\afs28 \ltrch\fcs0 \f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 \hich\af37\dbch\af31505\loch\f37 :
+\par }\pard \ltrpar\ql \li0\ri-448\sa200\sl276\slmult1\nowidctlpar\tx142\tx426\tx994\wrapdefault\faauto\rin-448\lin0\itap0 {\rtlch\fcs1 \af37\afs28 \ltrch\fcs0 \f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 \hich\af37\dbch\af31505\loch\f37 
+- - - - - - - - - -\hich\af37\dbch\af31505\loch\f37  - -
+\par \hich\af37\dbch\af31505\loch\f37 Ubuntu 
+\par \hich\af37\dbch\af31505\loch\f37 RedHat Linux
+\par \hich\af37\dbch\af31505\loch\f37 CentOs
+\par \hich\af37\dbch\af31505\loch\f37 Fedora
+\par \hich\af37\dbch\af31505\loch\f37 slackware 
+\par \hich\af37\dbch\af31505\loch\f37 Open Solaries
+\par \hich\af37\dbch\af31505\loch\f37 Kali
+\par \hich\af37\dbch\af31505\loch\f37 Suse Linux Enterprice Server(SLES)
+\par \hich\af37\dbch\af31505\loch\f37 open Suse
+\par 
+\par }\pard \ltrpar\ql \li0\ri-449\nowidctlpar\tx142\tx426\tx994\wrapdefault\faauto\rin-449\lin0\itap0 {\rtlch\fcs1 \ab\af37\afs28 \ltrch\fcs0 \b\f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 \hich\af37\dbch\af31505\loch\f37 Components of  UNIX}{
+\rtlch\fcs1 \af37\afs28 \ltrch\fcs0 \f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 \hich\af37\dbch\af31505\loch\f37 :
+\par }\pard \ltrpar\ql \li0\ri-448\sa200\sl276\slmult1\nowidctlpar\tx142\tx426\tx994\wrapdefault\faauto\rin-448\lin0\itap0 {\rtlch\fcs1 \af37\afs28 \ltrch\fcs0 \f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 \hich\af37\dbch\af31505\loch\f37 
+- - - - - - - - - - - - - - - - - 
+\par \hich\af37\dbch\af31505\loch\f37 Two important components are there :
+\par \hich\af37\dbch\af31505\loch\f37  Shell
+\par \hich\af37\dbch\af31505\loch\f37 Kernal
+\par }\pard \ltrpar\ql \li0\ri-449\nowidctlpar\tx142\tx426\tx994\wrapdefault\faauto\rin-449\lin0\itap0 {\rtlch\fcs1 \af37\afs28 \ltrch\fcs0 \f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 \hich\af37\dbch\af31505\loch\f37 1) Shell:
+\par }\pard \ltrpar\ql \li0\ri-448\sa200\sl276\slmult1\nowidctlpar\tx142\tx426\tx994\wrapdefault\faauto\rin-448\lin0\itap0 {\rtlch\fcs1 \af37\afs28 \ltrch\fcs0 \f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 \hich\af37\dbch\af31505\loch\f37 
+  - - - - - 
+\par \hich\af37\dbch\af31505\loch\f37 It is outer layer of Unix operating system.
+\par \hich\af37\dbch\af31505\loch\f37 Shell reads commands provided by user.
+\par \hich\af37\dbch\af31505\loch\f37 Shell will check is it valid command or not.
+\par \hich\af37\dbch\af31505\loch\f37 Shell will check is it properly used or not.
+\par \hich\af37\dbch\af31505\loch\f37 If every thing is proper, then shell interprets/converts that command \hich\af37\dbch\af31505\loch\f37 into kernel understandable form and handover to that to the kernel.
+\par \hich\af37\dbch\af31505\loch\f37 shell acts as interface between user and kernel.
+\par }\pard \ltrpar\ql \li0\ri-449\nowidctlpar\tx142\tx426\tx994\wrapdefault\faauto\rin-449\lin0\itap0 {\rtlch\fcs1 \af37\afs28 \ltrch\fcs0 \f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 \hich\af37\dbch\af31505\loch\f37 2) Kernal:
+\par }\pard \ltrpar\ql \li0\ri-448\sa200\sl276\slmult1\nowidctlpar\tx142\tx426\tx994\wrapdefault\faauto\rin-448\lin0\itap0 {\rtlch\fcs1 \af37\afs28 \ltrch\fcs0 \f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 \hich\af37\dbch\af31505\loch\f37 
+  - - - - - - -
+\par \hich\af37\dbch\af31505\loch\f37 It is the core component of UNIX operating Sysytem.
+\par \hich\af37\dbch\af31505\loch\f37 It is responsible to execute our commands with the help of hardware components.
+\par \hich\af37\dbch\af31505\loch\f37 Memory allocation and processor allocation will takes care by kernel.
+\par \hich\af37\dbch\af31505\loch\f37 It acts as interface bitween shell and hardware components.
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 normal user ==> $ prompt
+\par \hich\af37\dbch\af31505\loch\f37 super user /root use\hich\af37\dbch\af31505\loch\f37 r/admin  user ==> # prompt 
+\par \hich\af37\dbch\af31505\loch\f37 sudo -i  ===>To switch to super user
+\par 
+\par }\pard \ltrpar\ql \li0\ri-449\nowidctlpar\tx142\tx426\tx994\wrapdefault\faauto\rin-449\lin0\itap0 {\rtlch\fcs1 \af37\afs28 \ltrch\fcs0 \f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 \hich\af37\dbch\af31505\loch\f37 Online UNIX  Terminal :
 
-\pard\ri-449\sa200\sl240\slmult1\tx142\tx426\tx994\par
+\par \hich\af37\dbch\af31505\loch\f37 - - - - - - - - - - - - - - - - - -
+\par }{\field{\*\fldinst {\rtlch\fcs1 \af37\afs28 \ltrch\fcs0 \f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 \hich\af37\dbch\af31505\loch\f37 HYPERLINK http://www.masswerk.at/jsuix }{\rtlch\fcs1 \af37\afs28 \ltrch\fcs0 
+\f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid15346519 {\*\datafield 
+00d0c9ea79f9bace118c8200aa004ba90b0200000003000000e0c9ea79f9bace118c8200aa004ba90b5200000068007400740070003a002f002f007700770077002e006d006100730073007700650072006b002e00610074002f006a0073007500690078000000795881f43b1d7f48af2c825dc485276300000000a5ab0003}
+}}{\fldrslt {\rtlch\fcs1 \af37\afs28 \ltrch\fcs0 \f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 \hich\af37\dbch\af31505\loch\f37 http://www.masswerk.at/jsuix}}}\sectd \ltrsect\linex0\sectdefaultcl\sftnbj {\rtlch\fcs1 \af37\afs28 \ltrch\fcs0 
+\f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 
+\par 
+\par 
+\par }{\rtlch\fcs1 \ab\af37\afs28 \ltrch\fcs0 \b\f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 \hich\af37\dbch\af31505\loch\f37 The most commonly used basic commands}{\rtlch\fcs1 \af37\afs28 \ltrch\fcs0 
+\f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 \hich\af37\dbch\af31505\loch\f37  :
+\par \hich\af37\dbch\af31505\loch\f37 - - - - - - - - -\hich\af37\dbch\af31505\loch\f37  - - - - - - - - - - - - - - - - - - - - - - - - - 
+\par \hich\af37\dbch\af31505\loch\f37 1) pwd  --> print working directory
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 2) ls  --> list out all files and directories.
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 3) mkdir --> To create/ make a directory.
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 4) cd  --> change directory
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 5) touch --> to create an empty file
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 6) rmdir --> to remove a directory
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 7) rm --> to remove a file.
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 8) cal --> display current month calender
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 9)date --> display current date and time.
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 10) help --> To display list of available commands.
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 11) clear --> \hich\af37\dbch\af31505\loch\f37 To clear the terminal.
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 12)  exit --> To logout session
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 13) hello --> To display brief system information 
+\par 
+\par 
+\par }{\rtlch\fcs1 \ab\af37\afs32 \ltrch\fcs0 \b\f37\fs32\lang9\langfe16393\kerning0\langnp9\insrsid8736750 \hich\af37\dbch\af31505\loch\f37 Linux File System :}{\rtlch\fcs1 \af37\afs28 \ltrch\fcs0 \f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 
 
-\pard\ri-448\sa200\sl276\slmult1\tx142\tx426\tx994 It is an operating system created in 1960s.\par
-with lot of extensions and improvements to base versions, several flavers introduced by orgonisations /companies (RedHat Linux, Ubuntu,Suse...)\par
-\par
+\par \hich\af37\dbch\af31505\loch\f37 - - - - - - - - - - - - - - - 
+\par 
+\par }{\rtlch\fcs1 \ab\af37\afs28 \ltrch\fcs0 \b\f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 \hich\af37\dbch\af31505\loch\f37 Types of Files in Linux:
+\par \hich\af37\dbch\af31505\loch\f37 - - - - - - - - - - - - - - - - - 
+\par 
+\par }{\rtlch\fcs1 \af37\afs28 \ltrch\fcs0 \f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 \hich\af37\dbch\af31505\loch\f37 In python everything is treated as an object.
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 In Linux everything is treated as a file.
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 1) Normal files or ordinary files.
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 2) Directory Files
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 3) Device Files.
+\par 
+\par }{\rtlch\fcs1 \ab\af37\afs28 \ltrch\fcs0 \b\f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 \hich\af37\dbch\af31505\loch\f37 1) Normal files or ordinary files:
+\par }{\rtlch\fcs1 \af37\afs28 \ltrch\fcs0 \f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 \hich\af37\dbch\af31505\loch\f37 - - - - - - - - - - - - - - - - - - - - - - - - 
+\par \hich\af37\dbch\af31505\loch\f37 These fi\hich\af37\dbch\af31505\loch\f37 les contain data. It can be normal text file or binary files (images,video,audio files etc..)
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 abc.txt
+\par \hich\af37\dbch\af31505\loch\f37 test.sh
+\par \hich\af37\dbch\af31505\loch\f37 test.py
+\par \hich\af37\dbch\af31505\loch\f37 Test.java
+\par \hich\af37\dbch\af31505\loch\f37 sunny.jpg
+\par \hich\af37\dbch\af31505\loch\f37 bahubali.mp4
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 In Linux file extension is not important. based on our content the linux can identify file type.
+\par 
+\par }{\rtlch\fcs1 \ab\af37\afs28 \ltrch\fcs0 \b\f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 \hich\af37\dbch\af31505\loch\f37 2) Di\hich\af37\dbch\af31505\loch\f37 rectory files:}{\rtlch\fcs1 \af37\afs28 \ltrch\fcs0 
+\f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 
+\par \hich\af37\dbch\af31505\loch\f37  - - - - - - - - - - - - -
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 These files represent directories .
+\par \hich\af37\dbch\af31505\loch\f37 In Windows, we can use folder terminology but in linux we can use directory terminology.
+\par \hich\af37\dbch\af31505\loch\f37 directory contains files and sub directory also.
+\par 
+\par }{\rtlch\fcs1 \ab\af37\afs28 \ltrch\fcs0 \b\f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 \hich\af37\dbch\af31505\loch\f37 2) Device files:}{\rtlch\fcs1 \af37\afs28 \ltrch\fcs0 \f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 
 
-\pard\ri-449\sl240\slmult1\tx142\tx426\tx994\b Charecterstics of Unix\b0 :\par
+\par \hich\af37\dbch\af31505\loch\f37  - - - - - - - - - - - - -
+\par \hich\af37\dbch\af31505\loch\f37 In Linux every device is represented as a file.
+\par \hich\af37\dbch\af31505\loch\f37 By using this file we can communicate with that device.
+\par \hich\af37\dbch\af31505\loch\f37 Inside  /dev directory all device related files will be th\hich\af37\dbch\af31505\loch\f37 ere.
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 tty is used to get the current terminal location.
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 terminal 1====>  /dev/pts/0
+\par \hich\af37\dbch\af31505\loch\f37 terminal 2 ====> /dev/pts/1
+\par 
+\par }{\rtlch\fcs1 \ab\af37\afs28 \ltrch\fcs0 \b\f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 \hich\af37\dbch\af31505\loch\f37 Note:
+\par }{\rtlch\fcs1 \af37\afs28 \ltrch\fcs0 \f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 \hich\af37\dbch\af31505\loch\f37 ctrl+alt+t ===> To open terminal 
+\par \hich\af37\dbch\af31505\loch\f37 ctrl+d       ===>  To close terminal
+\par 
+\par }{\rtlch\fcs1 \ab\af37\afs28 \ltrch\fcs0 \b\f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 \hich\af37\dbch\af31505\loch\f37 How to Check file type:
+\par \hich\af37\dbch\af31505\loch\f37 - - - - - - - - - - - - - - - - - - 
+\par 
+\par }{\rtlch\fcs1 \af37\afs28 \ltrch\fcs0 \f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 \hich\af37\dbch\af31505\loch\f37 In\hich\af37\dbch\af31505\loch\f37  ubuntu:
+\par \hich\af37\dbch\af31505\loch\f37 blue colour files represents :directories
+\par \hich\af37\dbch\af31505\loch\f37 remaining :ordinary files
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 we have to use ls -l   command to find out file type.
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 The First charector represents the type of file
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 d ---> directory file
+\par \hich\af37\dbch\af31505\loch\f37  -    ===> ordinary file
+\par \hich\af37\dbch\af31505\loch\f37 l   ====>link file
+\par 
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 c ===> charector special file
+\par \hich\af37\dbch\af31505\loch\f37 b ===> block special file
+\par \hich\af37\dbch\af31505\loch\f37 s ====> socket file
+\par 
+\par 
+\par }{\rtlch\fcs1 \ab\af37\afs28 \ltrch\fcs0 \b\f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 \hich\af37\dbch\af31505\loch\f37 File System navigation Commands:
+\par \hich\af37\dbch\af31505\loch\f37 -  - - - - - - - - - - - - - - - - - - - - - - - - - - 
+\par 
+\par }{\rtlch\fcs1 \af37\afs28 \ltrch\fcs0 \f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 \hich\af37\dbch\af31505\loch\f37 hidden files and hidden directories
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 ls 
+\par \hich\af37\dbch\af31505\loch\f37 ls  -a
+\par \hich\af37\dbch\af31505\loch\f37      -a means all 
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 . represents current directory
+\par \hich\af37\dbch\af31505\loch\f37 . .  represents parent directory
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 /home/durga/Desktop/dir1/dir2
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 if you are in dir2
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 current directory :dir2
+\par \hich\af37\dbch\af31505\loch\f37 parent directory :dir1
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 cd command
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 1) $ cd .
+\par \hich\af37\dbch\af31505\loch\f37   changes to current directory (useless)
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 2) $ cd . .
+\par \hich\af37\dbch\af31505\loch\f37   changes to parent directory
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 3)$ cd . ./. ./. ./. .
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 4)$ cd ~
+\par \hich\af37\dbch\af31505\loch\f37     To go to user home directory
+\par \tab \hich\af37\dbch\af31505\loch\f37   /home/durga
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 5) $ cd 
+\par \hich\af37\dbch\af31505\loch\f37     cd command   without  any argument 
+\par \tab \hich\af37\dbch\af31505\loch\f37  To go to user home directory
+\par \tab \hich\af37\dbch\af31505\loch\f37  /home/d\hich\af37\dbch\af31505\loch\f37 urga 
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 6) $ cd -
+\par \tab \hich\af37\dbch\af31505\loch\f37    If we want to go previous working directory
+\par 
+\par 
+\par 
+\par }{\rtlch\fcs1 \ab\af37\afs28 \ltrch\fcs0 \b\f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 \hich\af37\dbch\af31505\loch\f37 Linux File System Hierarchy :
+\par \hich\af37\dbch\af31505\loch\f37 - - - - - - - - - - - - - - - - - - - - - - 
+\par 
+\par }{\rtlch\fcs1 \af37\afs28 \ltrch\fcs0 \f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 \hich\af37\dbch\af31505\loch\f37 Linux file system has Tree like structure.
+\par \hich\af37\dbch\af31505\loch\f37 It starts with root(/)
+\par \hich\af37\dbch\af31505\loch\f37 / is th topmost directory
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 sub directories:
+\par \hich\af37\dbch\af31505\loch\f37 bin   etc    home     lib     dev       usr cdrom  
+\par 
+\par }{\rtlch\fcs1 \ab\af37\afs28 \ltrch\fcs0 \b\f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 \hich\af37\dbch\af31505\loch\f37 1) bin directory :}{\rtlch\fcs1 \af37\afs28 \ltrch\fcs0 \f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 
+\hich\af37\dbch\af31505\loch\f37  
+\par \hich\af37\dbch\af31505\loch\f37 - - - - - - - - - - - - -
+\par \hich\af37\dbch\af31505\loch\f37 bin means binary 
+\par \hich\af37\dbch\af31505\loch\f37 It  contains all binary excecutable related to our linux commands.
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 touch 
+\par \hich\af37\dbch\af31505\loch\f37 ls 
+\par \hich\af37\dbch\af31505\loch\f37 mkdir
+\par \hich\af37\dbch\af31505\loch\f37 cd 
+\par 
+\par }{\rtlch\fcs1 \ab\af37\afs28 \ltrch\fcs0 \b\f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 \hich\af37\dbch\af31505\loch\f37 2) sb\hich\af37\dbch\af31505\loch\f37 in directory:
+\par \hich\af37\dbch\af31505\loch\f37 - - - - - - - - - - - - - 
+\par }{\rtlch\fcs1 \af37\afs28 \ltrch\fcs0 \f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 \hich\af37\dbch\af31505\loch\f37 sbin means systembin.
+\par \hich\af37\dbch\af31505\loch\f37 normal user commands related binary executable files available in bin directory.
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 super user used commands related binary executable files available in bin directory.
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 Disk partitioning 
+\par \hich\af37\dbch\af31505\loch\f37 Network management
+\par 
+\par }{\rtlch\fcs1 \ab\af37\afs28 \ltrch\fcs0 \b\f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 \hich\af37\dbch\af31505\loch\f37 3) etc directory:
+\par \hich\af37\dbch\af31505\loch\f37 - - - - - - - - - - - - - }{\rtlch\fcs1 \af37\afs28 \ltrch\fcs0 \f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 \hich\af37\dbch\af31505\loch\f37   
+\par \hich\af37\dbch\af31505\loch\f37 This directory contains all system configuration files.
+\par \hich\af37\dbch\af31505\loch\f37 These configuration files ca\hich\af37\dbch\af31505\loch\f37 n be used by operating system itself.
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 /etc/passwd  ==> All users information.
+\par \hich\af37\dbch\af31505\loch\f37 /etc/group    ==> All groups information
+\par \hich\af37\dbch\af31505\loch\f37 /etc/hosts     ==> All hosts information( ip address and dns names).
+\par 
+\par \hich\af37\dbch\af31505\loch\f37  }{\rtlch\fcs1 \ab\af37\afs28 \ltrch\fcs0 \b\f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 \hich\af37\dbch\af31505\loch\f37 3) tmp directory:
+\par \hich\af37\dbch\af31505\loch\f37   - - - - - - - - - - - - -
+\par 
+\par 
+\par 
+\par }{\rtlch\fcs1 \ab\af37\afs36 \ltrch\fcs0 \b\f37\fs36\lang9\langfe16393\kerning0\langnp9\insrsid8736750 \hich\af37\dbch\af31505\loch\f37 Installing Linux\hich\af37\dbch\af31505\loch\f37  Operating System:
+\par \hich\af37\dbch\af31505\loch\f37 - - - - - - - - - - - - - - - - - - - - - - - - - - -
+\par 
+\par }{\rtlch\fcs1 \af37\afs28 \ltrch\fcs0 \f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 \hich\af37\dbch\af31505\loch\f37 step1: oracle virtual box installation
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 step2: Ubuntu installation
+\par 
+\par }{\rtlch\fcs1 \ab\af37\afs28 \ltrch\fcs0 \b\f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 \hich\af37\dbch\af31505\loch\f37 Need of Virtual box:}{\rtlch\fcs1 \af37\afs28 \ltrch\fcs0 \f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 
 
-\pard\ri-448\sa200\sl276\slmult1\tx142\tx426\tx994 - - - - - - - - - - - - - - - - - -\par
-1) It is Free ware \par
-2) It is open source software \par
-     It is FOSS (Free ware and Open source software)\par
-3) It is multi user operating system.\par
-4) It is Multi tasking operating system.\par
-5) It is user friendly and supports both cui based and gui based. \par
-6) It is More Secure than Windows Operating System.\par
-\par
-
-\pard\ri-449\sl240\slmult1\tx142\tx426\tx994\b Flavors of UNIX\b0 :\par
-
-\pard\ri-448\sa200\sl276\slmult1\tx142\tx426\tx994 - - - - - - - - - - - -\par
-Ubuntu \par
-RedHat Linux\par
-CentOs\par
-Fedora\par
-slackware \par
-Open Solaries\par
-Kali\par
-Suse Linux Enterprice Server(SLES)\par
-open Suse\par
-\par
-
-\pard\ri-449\sl240\slmult1\tx142\tx426\tx994\b Components of  UNIX\b0 :\par
-
-\pard\ri-448\sa200\sl276\slmult1\tx142\tx426\tx994 - - - - - - - - - - - - - - - - - \par
-Two important components are there :\par
- Shell\par
-Kernal\par
-
-\pard\ri-449\sl240\slmult1\tx142\tx426\tx994 1) Shell:\par
-
-\pard\ri-448\sa200\sl276\slmult1\tx142\tx426\tx994   - - - - - \par
-It is outer layer of Unix operating system.\par
-Shell reads commands provided by user.\par
-Shell will check is it valid command or not.\par
-Shell will check is it properly used or not.\par
-If every thing is proper, then shell interprets/converts that command into kernel understandable form and handover to that to the kernel.\par
-shell acts as interface between user and kernel.\par
-
-\pard\ri-449\sl240\slmult1\tx142\tx426\tx994 2) Kernal:\par
-
-\pard\ri-448\sa200\sl276\slmult1\tx142\tx426\tx994   - - - - - - -\par
-It is the core component of UNIX operating Sysytem.\par
-It is responsible to execute our commands with the help of hardware components.\par
-Memory allocation and processor allocation will takes care by kernel.\par
-It acts as interface bitween shell and hardware components.\par
-\par
-normal user ==> $ prompt\par
-super user /root user/admin  user ==> # prompt \par
-sudo -i  ===>To switch to super user\par
-\par
-
-\pard\ri-449\sl240\slmult1\tx142\tx426\tx994 Online UNIX  Terminal :\par
-- - - - - - - - - - - - - - - - - -\par
-{{\field{\*\fldinst{HYPERLINK http://www.masswerk.at/jsuix }}{\fldrslt{http://www.masswerk.at/jsuix\ul0\cf0}}}}\f0\fs28\par
-\par
-\par
-\b The most commonly used basic commands\b0  :\par
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - \par
-1) pwd  --> print working directory\par
-\par
-2) ls  --> list out all files and directories.\par
-\par
-3) mkdir --> To create/ make a directory.\par
-\par
-4) cd  --> change directory\par
-\par
-5) touch --> to create an empty file\par
-\par
-6) rmdir --> to remove a directory\par
-\par
-7) rm --> to remove a file.\par
-\par
-8) cal --> display current month calender\par
-\par
-9)date --> display current date and time.\par
-\par
-10) help --> To display list of available commands.\par
-\par
-11) clear --> To clear the terminal.\par
-\par
-12)  exit --> To logout session\par
-\par
-13) hello --> To display brief system information \par
-\par
-\par
-\b\fs32 Linux File System :\b0\fs28\par
-- - - - - - - - - - - - - - - \par
-\par
-\b Types of Files in Linux:\par
-- - - - - - - - - - - - - - - - - \par
-\par
-\b0 In python everything is treated as an object.\par
-\par
-In Linux everything is treated as a file.\par
-\par
-1) Normal files or ordinary files.\par
-\par
-2) Directory Files\par
-\par
-3) Device Files.\par
-\par
-\b 1) Normal files or ordinary files:\par
-\b0 - - - - - - - - - - - - - - - - - - - - - - - - \par
-These files contain data. It can be normal text file or binary files (images,video,audio files etc..)\par
-\par
-abc.txt\par
-test.sh\par
-test.py\par
-Test.java\par
-sunny.jpg\par
-bahubali.mp4\par
-\par
-In Linux file extension is not important. based on our content the linux can identify file type.\par
-\par
-\b 2) Directory files:\b0\par
- - - - - - - - - - - - - -\par
-\par
-These files represent directories .\par
-In Windows, we can use folder terminology but in linux we can use directory terminology.\par
-directory contains files and sub directory also.\par
-\par
-\b 2) Device files:\b0\par
- - - - - - - - - - - - - -\par
-In Linux every device is represented as a file.\par
-By using this file we can communicate with that device.\par
-Inside  /dev directory all device related files will be there.\par
-\par
-tty is used to get the current terminal location.\par
-\par
-terminal 1====>  /dev/pts/0\par
-terminal 2 ====> /dev/pts/1\par
-\par
-\b Note:\par
-\b0 ctrl+alt+t ===> To open terminal \par
-ctrl+d       ===>  To close terminal\par
-\par
-\b How to Check file type:\par
-- - - - - - - - - - - - - - - - - - \par
-\par
-\b0 In ubuntu:\par
-blue colour files represents :directories\par
-remaining :ordinary files\par
-\par
-we have to use ls -l   command to find out file type.\par
-\par
-The First charector represents the type of file\par
-\par
-d ---> directory file\par
- -    ===> ordinary file\par
-l   ====>link file\par
-\par
-\par
-c ===> charector special file\par
-b ===> block special file\par
-s ====> socket file\par
-\par
-\par
-\b File System navigation Commands:\par
--  - - - - - - - - - - - - - - - - - - - - - - - - - - \par
-\par
-\b0 hidden files and hidden directories\par
-\par
-ls \par
-ls  -a\par
-     -a means all \par
-\par
-. represents current directory\par
-. .  represents parent directory\par
-\par
-/home/durga/Desktop/dir1/dir2\par
-\par
-if you are in dir2\par
-\par
-current directory :dir2\par
-parent directory :dir1\par
-\par
-cd command\par
-\par
-1) $ cd .\par
-  changes to current directory (useless)\par
-\par
-2) $ cd . .\par
-  changes to parent directory\par
-\par
-3)$ cd . ./. ./. ./. .\par
-\par
-4)$ cd ~\par
-    To go to user home directory\par
-\tab   /home/durga\par
-\par
-5) $ cd \par
-    cd command   without  any argument \par
-\tab  To go to user home directory\par
-\tab  /home/durga \par
-\par
-6) $ cd -\par
-\tab    If we want to go previous working directory\par
-\par
-\par
-\par
-\b Linux File System Hierarchy :\par
-- - - - - - - - - - - - - - - - - - - - - - \par
-\par
-\b0 Linux file system has Tree like structure.\par
-It starts with root(/)\par
-/ is th topmost directory\par
-\par
-sub directories:\par
-bin   etc    home     lib     dev       usr cdrom  \par
-\par
-\b 1) bin directory :\b0  \par
-- - - - - - - - - - - - -\par
-bin means binary \par
-It  contains all binary excecutable related to our linux commands.\par
-\par
-touch \par
-ls \par
-mkdir\par
-cd \par
-\par
-\b 2) sbin directory:\par
-- - - - - - - - - - - - - \par
-\b0 sbin means systembin.\par
-normal user commands related binary executable files available in bin directory.\par
-\par
-super user used commands related binary executable files available in bin directory.\par
-\par
-Disk partitioning \par
-Network management\par
-\par
-\b 3) etc directory:\par
-- - - - - - - - - - - - - \b0   \par
-This directory contains all system configuration files.\par
-These configuration files can be used by operating system itself.\par
-\par
-/etc/passwd  ==> All users information.\par
-/etc/group    ==> All groups information\par
-/etc/hosts     ==> All hosts information( ip address and dns names).\par
-\par
- \b 3) tmp directory:\par
-  - - - - - - - - - - - - -\par
-\par
-\par
-\par
-\fs36 Installing Linux Operating System:\par
-- - - - - - - - - - - - - - - - - - - - - - - - - - -\par
-\par
-\b0\fs28 step1: oracle virtual box installation\par
-\par
-step2: Ubuntu installation\par
-\par
-\b Need of Virtual box:\b0\par
-\b - - - - - - - - - - - - - - - \par
-\b0 To run virtual computers in our system without effecting original computer \par
-\par
-Computer ===>\par
-Virtual Box ===>\par
-         Virtual computer ===> Linux \par
-\tab\tab   Virtual Computer ===> Mac\par
-         Virtual Computer ===> Sun solaries\par
-\par
-By using this virtual box we can run multiple operating system simultanously.\par
-\par
-\par
-\b Oracle Virtual Box Installation:\par
-- - - - - - - - - - - - - - - - - - - - - - - -\par
-\par
-\b0 Download virtual box software from virtualbox.org\b\par
-\b0\par
-In this virtual box, we have to create virtual computer with ubuntu operating system\par
-\par
-ubuntu software must be required.\par
- download ubuntu from ubuntu.com\par
-\par
-\par
-1. ls command:\par
-- - - - - - - - - - - \par
-list out all files and directories present in the given directory.If we are not providing any directory then it will list out in current working directory.\par
-$ ls dir1\par
-$ ls\par
-$ man command\par
-$ man ls\par
-various options for ls commands:  \par
-- - - - - - - - - - - - - - - - - - - - - - - - \par
-1. ls \par
-It will list out all files and directories present in current working directory in alphabetical order.\par
-2. ls -r \par
--r means reverse \par
-It will list out all files and directories  in riverse of alphabetical order.\par
-\par
-3. ls -l \par
-To display in long listing form \par
-\par
--rw-r - - r - - 1  durga durga                0  Mar 23  12:40  abcdef.txt\par
- \par
-\par
-4. ls -t\par
--t means creation or last modified time.\par
-Most recent will be at the top and old are at the bottom.\par
-5. ls -ltr\par
-old files should be at top and most recent should be at bottom.\par
-6. ls -a \par
- -a means all.\par
-7. ls -A\par
--A means almost all\par
-except  . and . .  all remaining things will be displayed \tab\par
-8. ls -F\par
-To display all files by type\par
-directory  ----> /\par
-executable file ----> *\par
-link file -----> @\par
-9. ls -f \par
-list out all files including hidden files but disable  colors.\par
-10. ls  -i\par
-To display all files including inode number \par
-inode ===>index node\par
-i- node is the adress of location where file attributes are stored. file attributes includes\par
-The size of the file.\par
-The number of links in the file.\par
-owner name\par
-group name\par
-creation time\par
-last modified time\par
-11. ls -R\par
-  -R Means recursive\par
-which is used to show all sub directories in each individual sub directory.\par
-12. ls -s \par
--s means size \par
-the number of blocs used \par
-1 block =1kB or 4KB\par
-13. ls -h\par
--h means human readable form for memory statistics.\par
-\par
-Note:\par
-ls  -l  /etc  ===> 212 entries\par
-ls  -l  |  head  ====> top 10 entries\par
-ls   -l  | head  -20  ===> top 20 entries\par
-ls   -l  | head -30   ====> top 30 entries\par
-ls   -l   | tail   ===> last 10 lines\par
-\par
-ls  -l  /etc  | more   ===> only in farward direction \par
-ls  -l  /etc  | less    ===> both in forward and backward direction\par
-\par
-\par
-Command Line Arguments:\par
-- - - - - - - - - - - - - - -- - - - - - \par
-The  Arguments which are passing from command prompt  ===> \par
-$   ./test.sh  10   20   30   40\par
-\tab         10,20,30,40\par
-$  ./test.sh   learning linux is very easy \par
-learning, linux, is, very,easy\par
-$ #  ----> Number of arguments  (5)\par
-$ 0  -----> Script Name (./test.sh)     test.sh ====> /home/durga/ scripts /test.sh\par
-$ 1  -----> First argument (learning) \par
-$ 2  -----> Second argument (linux)\par
-$ 3  ----- > Third argument (is)\par
-$ 4 -----> Fourth argument ( very)\par
-$ 5  -----> Fifth argument (easy)\par
-$ *  ------> all arguments  (learning linux is very easy)\par
-$ @ ------> All arguments ( learning linux is very easy)\par
-$ ?  -------> Represents exit code of Previuosly executed  command or Script.\par
-\par
-test.sh File \par
-#!   /bin /bash\par
-echo   "The number of arguments  : $#"\par
-echo  "Script file name : $0"\par
-echo "First argument :$1"\par
-echo "Second argument: $2"\par
-echo "Third argument : $3"\par
-echo "Fourth argument :$4"\par
-echo "Fifth  argument :$5"\par
-echo "All arguments with * : $*"\par
-echo "all arguments with @ :$@"\par
-\par
-Difference between $@ and $*:\par
-- - - - - - - - - - - - - - - - -- - - - - -\par
-$@:  -----> All commands line arguments with space seperator.\par
-                     "$1"    "$2"   "$3"   "$4"    "$5"\par
-                     learning linux is very easy\par
-$*   ------>  All  command line arguments as single  string .\par
-                     "$1c$2c$3c$4c$5"\par
-                     where c is the first charecter of the IFS  (Internal file seperator) . The default is \tab\tab     space .\par
-\tab    learning  linux is very easy.\par
-\par
-How to check default  IFS :\par
-- - - - - - - - - - - - - - - - -  - - -\par
-$ set  | grep  "IFS"\par
-\par
-IFS =$  '   \\t\\n'\par
-\b\par
-What is the main purpuse of command line arguments:\par
-- - - - - - - - - - - - - - - - -  - - - - -  - - - - - -- - - - - - - - - - - - - - - \par
-\par
-\b0 we can customize behaviour  of the script Based on our arguments the script will work.\par
-\par
-test.sh:\par
-- - - - - \par
-\par
-#! /bin/bash\par
-len = $(echo -n "APPLE" | wc -c)\par
-echo "The length of given string :$len"\par
-\par
-The script will always work for the string :APPLE\par
-\par
-test.sh:\par
-- - - - - -\par
-#! /bin /bash\par
-\par
-len =$(echo -n "1$" |wc -c)\par
-echo "The length of given String $1 : $len"\par
-\par
-\par
-\b Variable Substitution and command substitution:\par
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -\par
-\par
-write a script to create a log file with time stamp:\par
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  - -\par
-\par
-\b0 test.sh:\par
-- - - - - \par
-#!  /bin/bash\par
-\par
-timestamp = $ (date  +%d_%m_%Y_%H_%M_%S)\par
-\par
-echo "Hello " > abc.text   overwrite existing data\par
-echo "Hello"  >> abc.txt   append to existing data\par
-echo  "This is data to log file " >> $ \{timestamp\}.log\par
-date  >> $ \{timestamp\}.log\par
-\par
-\par
-\par
-\b\fs32 How to view content of the file:\par
-\b0\fs28 - - - - - - - - - -  - - - - - - - - - - - - - - - - - - -\par
-we can view the content of the file by using the following commands:\par
-\par
-1. cat \par
-2. tac\par
-3. rev\par
-4. head\par
-5. tail\par
-6. more \par
-7. less\par
- \par
-\b View content by using cat:\par
-- - - - - - - - - - - - - - - - - - - - -\par
-\b0 cat  < file.txt\par
-where  < is optional.\par
-cat file1.txt\par
-\par
-while display data if we want line numbers, we have to use -n option.\par
-cat  -n file1.txt\par
-\par
-Numbering skipped for blank lines then we should use -b option\par
-\par
-\b To View Multiple files content simultanously:\par
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - \par
-\b0 cat file1.txt   file2.txt    file3.txt   \par
-\par
-\b Various utilities of cat command:\b0\par
-- - - - - - - - - - - - - - - - - - - - - - - - - \par
-\par
-1. create a new file with some content \par
-\par
-cat > file1.txt\par
-required data\par
-ctrl+d   ---> to save and exit\par
-\par
-2. To append some extra data to an existing file:\par
-\par
-cat  > > file1.txt\par
-some more extra data\par
-ctrl+d  ----> to save and exit\par
-\par
-3. To view content of the \tab file:\par
-\par
-cat < file1.txt      or     cat  file1.txt\par
-\par
-4 . To copy content of one file to onether file:\par
-\par
-cp file.txt    file2.txt\par
-\par
-cat file1.txt   > file2.txt\par
-\par
-5. To append one file to onether file:\par
-\par
-cat    file1.txt  >>   file2.txt\par
-\par
-6. To copy contents of multiple files to a single file:\par
-\par
-cat  a.txt    b.txt    c.txt   d.txt     >total.txt\par
-\par
-\b\fs32 2. tac command\par
-\par
-\b0\fs28 It is the reverse of cat \par
-\par
-It will display file content in riverse order of lines.\par
-\par
-this is vertical riversal.\par
-\par
-\par
-Sunny \par
-Bunny \par
-chinny\par
-vinny\par
-pinny\par
-\par
-\par
-Pinny\par
-vinny\par
-chinny\par
-bunny\par
-sunny\par
-\par
-\b\fs32 3. rev command:\par
-\b0\fs28\par
-rev means reversal.\par
-Here each line will be reversed.\par
-It is horizontal reversal.\par
-\par
-\par
-Sunny \par
-Bunny\par
-Chinny\par
-Vinny\par
-Pinny\par
-\par
-\par
-\par
-ynnuS\par
-ynnuB\par
-ynnuhC\par
-ynnuV\par
-ynnuP\par
-\par
-\par
-cat command will display total file content at a time. It is best suitable for small files. If the file contains thousands of lines it is not recommended to use cat command. For this requirement we should go for\par
-\par
-head \par
-tail\par
-more \par
-less\par
-\par
-\par
-\b\fs32 head command:\b0\fs28  \par
-- - - - - - - - - -- - - - - \par
-\par
-To view specified number of lines from top of the file \par
-\par
-head  abc.txt\par
-\par
-It will display only 10 lines from top of file .\par
-10 is the default value for head command.\par
-\par
-head  -n  15 abc.txt     or    head    -15    abc.txt\par
-\par
-head -5  abc.txt\par
-\par
-head  -n   -5  abc.txt \par
-It will display all lines from top except last 5 lines.\par
-\par
-head -c  100  abc.txt\par
-\par
-It will display the first 100 charectors of the file \par
-\par
-In linux every charector will take one byte. Hence it will display first 100 bytes of the file  Content. \par
-\par
-\b\fs32 tail command:\b0\fs28  \par
-- - - - - - - - - - - -- - \par
-\par
-To view file content from bottom of the file  ---> tail command \par
-It is opposit to head command.\par
-\par
-1. tail   abc.txt\par
-Last 10 lines will be dispayed\par
-\par
-2. tail -n 5  abc.txt\par
- Last 5 lines \par
-\par
- tail -5  abc .txt \par
-  Last 5 lines \par
-\par
-tail -5 -n abc.txt\par
-Last 5 lines           //in head command except last 5 remaining will display but here that is not implimented\par
-\par
-3. tail -c 100 abc.txt\par
-    It will display 100 bytes of content from bottom of the file.\par
-\par
-Q. Assume file contains enough data. \par
-\par
-write command to display from 3rd line to 7th line?\par
-\par
-head  -7 abc.txt  | tail -5 \par
-\par
-\b\fs32 Word count command ( wc command ) :\par
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -\par
-\par
-\b0\fs28 we can use wc command to count number of lines,words and charectors present in the given file\par
-\par
-$ wc  filename \par
- \par
-no_of_lines       no_of_words      no_of_charectors    file_name\par
-\par
-durga@durga - VirtualBox:~/Desktop$   wc file1.txt\par
- 4    24     135   file1.txt \par
-\par
-\par
-4  -----> No of lines\par
-24 -----> No of words \par
-135 ----> No of charectors ( no of bytes or filesize)\par
-\par
-we can use the following options with wc command \par
-\par
--l      ====> To print only number of lines \par
--w    ====> To print only number of words \par
--c     ====> To print only number of charectors\par
--lw   ====> To print only number of lines and words\par
--lc    ====> To print only number of lines and charectors\par
--wc  ====> To print only number of words  and charectors\par
--L     =====>To print number of charectors present in Longest Line \par
-\par
-We can use  wc command for multiple files simultanously.\par
-\par
-wc  a.txt  b.txt  c.txt\par
-\par
-durga@durga - VirtualBox:~/Desktop$   wc file1.txt    file2.txt   file3.txt\par
-\par
-4    24    135    file1.txt\par
-4    24    135   file2.txt\par
-3    9      47      file3.txt\par
-11  57   317    total\par
-\par
-\par
-\par
-\b\fs32 What is Piping:\b0\fs28   \par
-- - - - - - - - - - - - - \par
-some times we can use output of one command as an input to other command. This concept is called piping.\par
-\par
-By using piping, multiple commands will work together to fulfill  our requirements\par
-\par
-we can implement piping by using vertical bar  (|)\par
-\par
-eg-1:\par
-durga@durga-VirtualBox:~Desktop$   ls -l  /etc | wc -l\par
-222\par
-\par
-standard output of ls command will become standard input to wc command \par
-\par
-eg -2:\par
-ls -l /etc  | more\par
-\par
-eg -3:\par
-ls -l  /etc  |  head -5\par
-\par
-eg -4 : ls -l  /etc  | wc  |wc -1\par
-\par
-the output is always 1.\par
-\par
-\b Requirement:\b0  \par
-The output of ls command should be saved to the file  output.txt  and should be provided as input to wc command ?\par
-\par
-ls - l  > output.txt  | wc  -l\par
-\par
-In the middle of piping if we use redirection then it breaks piping concept.\par
-\par
-ls -l\par
-\par
-\par
-\b tee command:\par
-- - - - - - - - - - - \par
-\par
-\b0 ls  - l  | tee  output.txt  |wc\par
-\par
-In piping, if we want to save the output of one command to a file and if we want to pass that output as input to next command simoultaniously  then we should use tee command .\par
-\par
-eg1:  To save the output of ls command to a fille and display to the terminal simultaneously\par
-\par
-ls   - l   | tee output.txt\par
-\par
-eg 2:\par
-If i want to save the result of ls -l in output.txt and pass the output to wc command and save that output in wc.txt ?\par
-\par
-ls -l  | tee output.txt |wc  | tee  wc.txt\par
-\par
-\par
-\b Requirement 2:\par
-- - - - - - - - - - - \par
- \b0 Assume input.txt  contains filenames.\par
-\par
-input.txt\par
-- - - - - - \par
-\par
-file1.txt \par
-file2.txt\par
-file3.txt\par
-\par
-Read file names from the input.txt  and remove each file.\par
-\par
-cat input.txt  ===> standard output \par
-rm  file1.txt    file2.txt   file3.txt    ===>  remove 3 files\par
-\par
-remove command always expecting from command line arguments only.\par
- But in piping the input is always stream.\par
-\par
-cat   input.txt | rm\par
-\par
-we have to convert that stream into command line arguments\par
-\par
-xargs  command:\par
-- - - - - - - - - - - - \par
-cat  input.txt  | xargs  rm\par
-\par
-xargs command:  to convert output stream into command line argument  \par
-\par
-\par
-eg2: Assume input.txt contains multiple file names. Read all these file names from input.txt and display the files content to the terminal ?\par
-\par
-cat input.txt \par
-       a.txt\par
-\tab\tab b.txt\par
-\tab\tab c.txt\par
-\par
-cat a.txt  b.txt   cat c.txt\par
-\par
-cat input.txt  |  xargs  cat\par
-\par
-eg3: Display the output of date command by using echo command with piping concept?\par
-\par
-date | xargs echo\par
-\par
-eg:4\par
-List out all contents of  /dev folder and save to file1.txt\b\par
-\b0 List out all contents of /bin folder and save to file2.txt\par
-\par
-write a single pipeline for the following requirement:\par
-read contents of file1.txt and file2.txt and save to file3.txt. By using  sort command reverse the content of  file3.txt and saved to sorted.txt file.\par
-\par
-ls  /dev  >file1.txt \par
-\par
-ls  /bin  > file2.txt\par
-\par
- // cat file1.txt   file2.txt   >file3.txt  sort   -r  file3.txt  >  sorted.txt\par
-\par
-cat file1.txt  file2.txt | tee file3.txt | sort  -r >sorted.txt\par
-\par
-\par
-\par
-\b\fs36 Command  Aliasing:\par
-\b0\fs28 - - - - - - - - - - - - - - - - - - -\par
-\par
-Alias means alternative name or nick name.\par
-\par
-we can give our own more convinient nicknames for unix commands. This concept is called command aliasing.\par
-\par
-How to create alias name:\par
-- - - - - - - - - - - - - - - - - - - \par
-we have to use alias command \par
-$ alias\par
-\par
-\par
-$ alias nickname='original command '\par
-\par
-$ alias nickname="original command"\par
-\par
-$ alias nickname=original command\par
-\par
-Note: No spaces allowed before or after = symbol .\par
-\par
-How to remove alias name:\par
-- - - - - - - - - - - - - - - - - - - - \par
-we have to use unalias\par
-\par
-$ unalias   command_name\par
-\par
-$ unalias  cls\par
-\par
-$ unalias  -a\par
- \par
-\par
-I want to define alias name, but how to check is it available already?\par
-\par
-Just use type command\par
-\par
-\par
-\par
-durga@durga - VirtualBox:~/Desktop$  type cls\par
-\par
-cls is alialsed to clear\par
-\par
-durga@durga - VirtualBox:~/Desktop$ type cls1\par
-\par
-bash:type :cls1: not found\par
-\par
-\par
-Where we can use aliasing :\par
-- - - - - - - - - - - - - - - - - - - - -\par
-1. If any lengthy command repeatedly required, then we can create shortcut alias name and we can use that shortcut everytime.\par
-\par
-eg:\par
-mkdir dir1;  touch dir1/file1\{1..20\}.txt\par
-\par
-alias d20f ='mkdir dir1;  touch dir1/file1\{1..20\}.txt'\par
-\par
-eg2: To list out all files present in current working directory, save this data to output.txt  and display the number of lines to the terminal. Define alias name  'current'  for this total activity?\par
-\par
-alias  current = 'ls-l | tee  output. txt  | wc -l'\par
-\par
-2. To use our home operating  system commands in linux directoly \par
-\par
-windows \par
-mac\par
- alias  cls ='clear'\par
- alias  rename ='mv'\par
-\par
-3. To handle typing mistakes\par
-\par
-grep \par
-grpe\par
-alias grpe='grep'\par
-\par
-4. To handle language barriers:\par
-- - - - - - - - - - - - - - - - - - - - - - - \par
-\par
-In germany =====>datum\par
-\par
-alias datum = 'date'\par
-\par
-cp \par
-koopy\par
-\par
-alias koopy = 'cp'\par
-\par
-How to persist aliases perminently:\par
-- - - - - - - - - - - - - - - - - - - - - - - - - -\par
-we can make our created aliases permanently in our system by using 2 ways \par
-\par
-1st way:\par
-- - - - - -\par
-.bashrc  file inside our user home directory\par
-\par
-# my own aliases \par
-\par
-alias  cls='clear'\par
-alias  ddd='date;date;date'\par
-alias  dd='date;date;\par
-\par
-To reflect these changes  we have to restart terminal\par
-\par
-instead of restarting terminal we can use       source   .bashrc     // not working\par
-\par
-2nd way:\par
-- - - - - - - \par
-Instead of editing  .bashrc file, we can create our own file to maintain our defined aliases .\par
-\par
-The name of the file should be  .bash_aliasis and should be present in our home directory.\par
- \par
-\b\fs36 Regular expressions :\par
-\b0\fs28 - - - - - - - - - - - - - - - - - - - - - \par
-\par
-1. To list out all files present in current working directory?\par
-\par
-$ ls  *\par
-\par
-2. To list out all files with some extension?\par
-$ ls  *.*\par
-\par
-3. To list out all  .txt files\par
-$ ls  *.txt\par
-\par
-4. To list out only  .java files \par
- $ ls  * .java\par
-\par
-5. To list out all files starts with  a\par
-$ la a*\par
-\par
-6. To list out all files where file name contains only  2 charectors and first charectors should be  a\par
-\par
-$ ls  a?\par
-\par
-7. To list out all files where file name contains only  2 charectors \par
-\par
-$ ls   ??\par
-\par
-8. To list out all files where file name contains only  3 charectors \par
-$ ls  ???\par
-\par
-9. To list out all files where file name contains atleast 3 charectors \par
-$ ls  ???*\par
-\par
-10. To list out all files where file name starts with a or b or c\par
-\par
-$ ls  [abc] *\par
-\par
-11. To list out all files where file name should not starts with a or b or c\par
-\par
-$ ls  [!abc]*\par
-\par
-12. To list out all files where file name starts with lowercase alphabet symbol?\par
-\par
-$ ls [a-z] *\par
-$ ls [[:lower:]]*\par
-\par
-13.To list out all files where file name starts with uppercase alphabet symbol?\par
-\par
-$ ls  [A-Z]*\par
-$ ls [[:upper:]]*\par
-\par
-14. To list out all files where file name starts with digit?\par
-$ ls [0-9]*\par
-$ ls [[:digit:]]*\par
-\par
-15. To list out  all files where first letter should be upper case alphabet symbol, second letter should be digit and third letter should be lower case alphabet symbol?\par
-\par
-$ ls [A-Z] [0-9] [a-z]\par
-$ ls [[:upper:]] [0-9] [[:lower:]]\par
-$ ls [[:upper:]] [[:digit:]] [[:lower:]]\par
-\par
-16. To list out all files starts with special symbol.\par
-$ ls [![:alnum:]]*\par
-\par
-17.To list out all files with .java or .py extension?\par
-$  ls \{* .java, * .py\}\par
-$  ls *.\{java ,py\}\par
-\par
-Note: we can use regular expression and wild card charecters with other commands also  like  rm,cp, mv, etc\par
-\par
-18. To copy all files starts with digit to dir1 directory?\par
-\par
-cp [0-9]*  dir1\par
-\par
-cp [[:digit:]]*  dir1\par
-\par
-19. To move all files starts with alphabet symbol and with  .txt extension to dir2  directory?\par
-\par
-$  mv [[:alpha:]]* .txt    dir2\par
-\par
-20. Remove all files starts with a or b or c and ends with e or t?\par
-\par
-$ rm [abc]* [et]\par
-\par
-\par
-Q1: which command will list all files that has exactly three charecters present in current working directory?\par
-\par
-$ ls ???\par
-\par
-Q2: which command will copy all files that ends with  .pdf to dir1?\par
-\par
-cp  * .pdf   dir1\par
-\par
-Q3: which command will move all the files that begins with letter a and ends with letter n to dir1?\par
-$ mv a* n  dir1\par
-\par
-Q4: which command will display content of all files that begins with a digit and ends with a or e or i or o or u?\par
-\par
-cat [0-9] * [aeiou]\par
-\par
-cat [[:digit:]] * [aeiou]\par
-\par
-Q5:which command will list all files that begins with a lower case alphabet symbol and has a letter d in the third charecter position, and ends  with an upper case letter?\par
-\par
-$ ls [[: lower :]] ? d*[[:upper:]]\par
-\par
-Q6: which command will list all  .jpg files present in Pictures  directory ?\par
-\par
-ls  /home/durga/Pictures/ *.jpg\par
-\par
-ls ~/Pictures/*.jpg\par
-\par
-Q7. which of the following regular expression will match file named with demoA.txt?\par
-\par
-demoA.txt\par
-\par
-A) *\par
-B)  demo ? .txt\par
-C) demo*\par
-D) * .txt\par
-E) demo [A-Z].txt\par
-F) All of the above\par
-\par
-Ans: F\par
-\par
-Q8. which of the following regular expressions can represent the files:\par
-student_reportA.pdf\par
-student_reportB.pdf\par
-student_reportC.pdf\par
-\par
-a) ??.\par
-b) report*.pdf\par
-c) *[A-Z]\par
-d) student*.pdf\par
-\par
-Ans:c,d\par
-\par
-\par
-\b\fs32 JACKPOT ASSIGNMENT :\par
-\b0\fs28 - - - - - - - - - - -  - - - - - - - - - -\par
-\par
-mkdir  jackpot /dir\{1..100\}\par
-touch jackpot/dir\{1..100\}/file\{1..100\}.txt\par
-\par
-touch jackpot/dir $ (shuf -i  1-100  -n 1) /sunny.txt\par
-\par
-find sunny.txt and move to desktop\par
-\par
-find jackpot  -type  f  -name  'sunnt.txt'  -exec  mv  \{ \}  ~/Desktop  \\;\par
-\par
-mv sunny.txt   ~/Desktop\par
-\par
-Remove all text files in jackpot directory\par
-\par
-find  jackpot  -type  f  -name  '*.txt'  -exec  rm \{ \}  \\;\par
-\par
-Remove all files inside jackpot directory including jackpot directory\par
-\par
-find jackpot  -type  d -exec  rm -r  \{\}  \\;\par
-\par
-Q1: The command uses a database to search files and directories?\par
-\par
-a) true\par
-b) false\par
-\par
-Q2: To find files and directories inside  /dev folder and limits its search to only 2 levels of depth?\par
-find   /dev   -maxdepth  2\par
-\par
-Q3: To find only directories inside   /dev  folder and limits its search to only 2 levels of depth?\par
-\par
-find   /dev   -maxdepth  2  -type d\par
-\par
-Q4: To find only files starts from root directory  (/) where file name ends with  .txt?\par
-\par
-find / -type  f  -name  ' *.txt'\par
-\par
-find  / -type  f -iname '*.txt'\par
-\par
-Q5: To find all files and directories inside  /dev  directory  upto maximum 3 levels of deep and size is greater than  200kilo bytes?\par
-\par
-find  /dev  -maxdepth 3  -size +200k\par
-\par
-Q6: which command will find all files below our home Directory where file size is greater than 3 mega Bytes and remove all those files?\par
-\par
-find  ~  -type  f  -size  +3M  -exce rm  \{\}  \\; \par
-\par
-Q7: find command make our life is very easy to delete last 6 months files\par
-\par
-/usr/bin/find/home/stack/zabbix_metrics/*.csv  -mtime  +180  -exec  rm -rf  \{\} /; >dev/null 2>&1\par
-\par
-find   /home/stack/zabbix_metrics/*.csv  -mtime  +180  -exec  rm -rf  \{\} /; >dev/null 2>&1\par
-\par
-\par
-\b\fs36 Grep (global regular expression print):\par
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - -\fs28\par
-\b0\par
-grep [options]   pattern   [file]\par
-\par
-cat filename  |  grep pattern\par
-\par
-with out any option we can use like this\par
-grep "UNIX" grepfilter.txt\par
-cat  grepfilter.txt   | grep  "Linux"\par
-\par
-Options:\par
-- - - - - - \par
-1) c:   grep  -c  pattern file  -display number of matching lines\par
-\par
-grep  -c "UNIX"  grepfilter.txt\par
-\par
-\par
-2) h:   grep -h pattern file -display all matching lines\par
-\par
-grep  -h "UNIX"  grepfilter.txt\par
-\par
-3) l:   grep -l  pattern * -display all the file names in which pattern matches\par
-\par
-grep -l "o" *\par
-\par
-4) n :   grep  -n  pattern file  -display all the matching lines with Line numbers \par
-\par
-grep -n  "UNIX" grepfilter.txt\par
-\par
-\par
-5) v:   grep  -v pattern file  -display all the non matching lines\par
-\par
-grep -v  "UNIX" grepfilter.txt\par
-\par
-6) o:   grep -o pattern file -display only the matching pattern\par
-\par
-grep -o "Unix" grepfilter.txt\par
-\par
-7) e:   grep -e pattern file  -use multiple search patterns\par
-\par
-grep  -e "UNIX"   -e  "LINUX"  grepfilter.txt\par
-\par
-8) ^:    grep ^ pattern file -match the lines which starts with given pattern\par
-\par
-grep  ^ Welcome   grepfilter.txt\par
-\par
-9) $ :   grep pattern $ file  -display the lines which ends with given pattern\par
-\par
-grep  ands$  grepfilter.txt\par
-\par
-10) i :  grep pattern file  -case insensitive searching\par
-\par
-grep -i "unix" grepfilter.txt\par
-\par
-\par
-\b egrep command:\par
-- - - - - - - - - - - - - \par
-\b0\par
-Instead of using  -e option we can use  egrep command.\par
-\par
-egrep means extended grep\par
-\par
-egrep    '(java|linux)'   demo.txt\par
-\par
-egrep  command can understand this pattern and process this pattern.\par
-\par
-grep command always looking for the match: "(java|linux)"\par
-\par
-\par
-grep command can understand patterns  --> yes but not all patterns\par
-\par
-'^linux'   is understandable by grep \par
-'(java| linux)'  cannot understandable by grep\par
-'[0-9] \{9\} ' cannot understandable by grep\par
-\par
-egrep command can understand patterns  ---> yes all patterns \par
-\par
-'^linux'\par
-'(java|linux)'\par
-\par
-\par
-grep command with -F options:\par
-- - - - - - - - - - - - - - - - - - - - - - - -\par
--F  means Fixed Strings \par
-\par
-If we want to search for a group of fixed strings then we should go for -F option.\par
-\par
-grep  -F  "java\par
->linux\par
->python" demo.txt\par
-\par
-The strings should be seperated by  new line charactor.\par
-\par
-Instead of  -F option, we can use  fgrep  command \par
-\par
-fgrep  means   ----> Fixed String Global Regular Expression print\par
-\par
-fgrep command can understand patterns ---> no\par
-\par
-we have to provide only fixed strings\par
-\par
-in file1.txt \par
-java\par
-linux\par
-python\par
-\par
-we have a file called demo.txt so we need to search three words in that file those three words are java, linux, python is saved inside file1.txt\par
-\par
-fgrep  -f  file1.txt  demo.txt\par
-\par
-\par
-\b\fs36 cut command:\par
-- - - - - - -- - - - -\par
-\b0\fs28 we can use cut command to extract data from the file.\par
-The file can be either normal file or tabular file.\par
-\par
-nornal file:\par
-- - - - - - - - \par
-first line \par
-second line\par
-third line \par
-\par
-tabular file:\par
-- - - - - - - - - \par
-\par
-emp.dat\par
-\par
-e.no | ename | esal | eadrs |dept  |gender\par
-100  | sunny   | 100 |hyd\tab     |hr       |male\par
-200  | tejas     | 200 |wgl\tab     |dvps   |male\par
-300  | sharma| 100 |hyd\tab     |hr       |male\par
-\par
-\par
-1. Display character on the specific position in every record ?\par
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -\par
-\par
-cut  -c  9  emp.dat\par
-\par
--c means for specific charector\par
-\par
-2. Display range of charaters in every record:\par
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - \par
-\par
-cut -c  5-9 emp.dat\par
- \par
-    It will display 5th to 9th charactor in every record\par
-\par
-cut  -c   5 -   emp.dat\par
-    It will display  5th character to last character in every record\par
-\par
-cut -c  -3  emp.dat\par
-   \par
-It will display 1st charactor to 3rd charactor in every record\par
-\par
-cut -c  3-5,7-10  emp.dat \par
-  It will  display 3rd to 5th characters and 7th to 10th charactars in every line \par
-\par
-3. Display specific column data:\par
-- - - - - - - - - - - - - - - - - - - - - - - -\b\fs36\par
-\b0\fs28 $ cut -d  "|" -f  3  emp .dat\par
-\par
--d means delimiter  (seperator). The default delimeter is tab.\par
-\par
--f means field \par
-\par
-4. Display Range of Columns:\par
-- - - - - - - - - - - - - - - - - - - - - -\par
-cut  -d  "|"  -f  2-4  emp.dat\par
-\par
-cut -d   "|"  -f   2-   emp.dat\par
-\par
-cut -d   "|"   -f   -4    emp.dat\par
-\par
-To display 1st, 3rd and 5th columns \par
-\par
-cut  -d  "|"  -f  1,3,5  emp.dat\par
-\par
-5. Skip specific Column :\par
-- - - - - - - - - - - - - - - - - -\par
-Display all columns except specific column \par
---compliment \par
-\par
-cut   -d   "|"   --compliment   -f  3,5  emp.dat \par
-\par
-It will  display all columns except 3 and 5 .\par
-\par
-cut  -d  "|"  --compliment   -f  3,5  emp.dat\par
-cut  -d  "|"  --compliment   -f  3-5  emp.dat\par
-cut   -d  "|"  --compliment  -f   3 -  emp.dat\par
-\par
-\par
-\b\fs36 Paste  command:\par
-- - - - - - - - - - - - - \par
-\b0\fs28 we can use paste command to join two or more files horizontally by using some delimator. Default delimator is Tab .\par
-\par
-paste file1.txt  file2.txt  file3.txt  .....\par
-\par
-subjects.txt\par
-- - - - - - - - -\par
-Core java  \par
-Adv Java\par
-Python\par
-Ui\par
-Linux\par
-\par
-fee.txt\par
-- - - - - \par
-1000\par
-2000\par
-3000\par
-4000\par
-5000\par
-\b\fs36\par
-\b0\fs28\par
-\par
-  \par
-\par
-\par
- \par
-\par
-\b\par
-\par
-\par
-\b0\par
-\par
-\b\fs32\par
-\b0\fs28\par
-\par
-\par
-\par
-     \par
-\par
-\b\fs32\par
-\b0\fs28\par
-\par
-\par
-\par
- \fs22\par
-
-\pard\sa200\sl276\slmult1\par
-}
- 
+\par }{\rtlch\fcs1 \ab\af37\afs28 \ltrch\fcs0 \b\f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 \hich\af37\dbch\af31505\loch\f37 - - - - - - - - - - - - - - - 
+\par }{\rtlch\fcs1 \af37\afs28 \ltrch\fcs0 \f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 \hich\af37\dbch\af31505\loch\f37 To run virtual computers in our system without effecting original computer 
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 Computer ===>
+\par \hich\af37\dbch\af31505\loch\f37 Virtual Box ===>
+\par \hich\af37\dbch\af31505\loch\f37          Virtual computer ===> Linux 
+\par \tab \tab \hich\af37\dbch\af31505\loch\f37   Virtual Computer ===> Mac
+\par \hich\af37\dbch\af31505\loch\f37          Virtual Computer ===> Sun solaries
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 By using this virtual box we can ru\hich\af37\dbch\af31505\loch\f37 n multiple operating system simultanously.
+\par 
+\par 
+\par }{\rtlch\fcs1 \ab\af37\afs28 \ltrch\fcs0 \b\f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 \hich\af37\dbch\af31505\loch\f37 Oracle Virtual Box Installation:
+\par \hich\af37\dbch\af31505\loch\f37 - - - - - - - - - - - - - - - - - - - - - - - -
+\par 
+\par }{\rtlch\fcs1 \af37\afs28 \ltrch\fcs0 \f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 \hich\af37\dbch\af31505\loch\f37 Download virtual box software from virtualbox.org}{\rtlch\fcs1 \ab\af37\afs28 \ltrch\fcs0 
+\b\f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 
+\par }{\rtlch\fcs1 \af37\afs28 \ltrch\fcs0 \f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 
+\par \hich\af37\dbch\af31505\loch\f37 In this virtual box, we have to create virtual computer with ubuntu operating \hich\af37\dbch\af31505\loch\f37 system
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 ubuntu software must be required.
+\par \hich\af37\dbch\af31505\loch\f37  download ubuntu from ubuntu.com
+\par 
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 1. ls command:
+\par \hich\af37\dbch\af31505\loch\f37 - - - - - - - - - - - 
+\par \hich\af37\dbch\af31505\loch\f37 list out all files and directories present in the given directory.If we are not providing any directory then it will list out in current working directory.
+\par \hich\af37\dbch\af31505\loch\f37 $ ls dir1
+\par \hich\af37\dbch\af31505\loch\f37 $ ls
+\par \hich\af37\dbch\af31505\loch\f37 $ man command
+\par \hich\af37\dbch\af31505\loch\f37 $ man ls
+\par \hich\af37\dbch\af31505\loch\f37 various options for ls commands:  
+\par \hich\af37\dbch\af31505\loch\f37 - - - - - - - - - - - - - -\hich\af37\dbch\af31505\loch\f37  - - - - - - - - - - 
+\par \hich\af37\dbch\af31505\loch\f37 1. ls 
+\par \hich\af37\dbch\af31505\loch\f37 It will list out all files and directories present in current working directory in alphabetical order.
+\par \hich\af37\dbch\af31505\loch\f37 2. ls -r 
+\par \hich\af37\dbch\af31505\loch\f37 -r means reverse 
+\par \hich\af37\dbch\af31505\loch\f37 It will list out all files and directories  in riverse of alphabetical order.
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 3. ls -l 
+\par \hich\af37\dbch\af31505\loch\f37 To disp\hich\af37\dbch\af31505\loch\f37 lay in long listing form 
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 -rw-r - - r - - 1  durga durga                0  Mar 23  12:40  abcdef.txt
+\par \hich\af37\dbch\af31505\loch\f37  
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 4. ls -t
+\par \hich\af37\dbch\af31505\loch\f37 -t means creation or last modified time.
+\par \hich\af37\dbch\af31505\loch\f37 Most recent will be at the top and old are at the bottom.
+\par \hich\af37\dbch\af31505\loch\f37 5. ls -ltr
+\par \hich\af37\dbch\af31505\loch\f37 old files should be at top and most recent should be at bottom.
+\par \hich\af37\dbch\af31505\loch\f37 6. ls -a 
+\par \hich\af37\dbch\af31505\loch\f37  -a means all.
+\par \hich\af37\dbch\af31505\loch\f37 7. ls -A
+\par \hich\af37\dbch\af31505\loch\f37 -A means almost all
+\par \hich\af37\dbch\af31505\loch\f37 except  . and . .  all remaining things will be displayed \tab 
+\par \hich\af37\dbch\af31505\loch\f37 8. ls -F
+\par \hich\af37\dbch\af31505\loch\f37 To display all files by type
+\par \hich\af37\dbch\af31505\loch\f37 directory  ----> /
+\par \hich\af37\dbch\af31505\loch\f37 executable file ---->\hich\af37\dbch\af31505\loch\f37  *
+\par \hich\af37\dbch\af31505\loch\f37 link file -----> @
+\par \hich\af37\dbch\af31505\loch\f37 9. ls -f 
+\par \hich\af37\dbch\af31505\loch\f37 list out all files including hidden files but disable  colors.
+\par \hich\af37\dbch\af31505\loch\f37 10. ls  -i
+\par \hich\af37\dbch\af31505\loch\f37 To display all files including inode number 
+\par \hich\af37\dbch\af31505\loch\f37 inode ===>index node
+\par \hich\af37\dbch\af31505\loch\f37 i- node is the adress of location where file attributes are stored. file attributes \hich\af37\dbch\af31505\loch\f37 includes
+\par \hich\af37\dbch\af31505\loch\f37 The size of the file.
+\par \hich\af37\dbch\af31505\loch\f37 The number of links in the file.
+\par \hich\af37\dbch\af31505\loch\f37 owner name
+\par \hich\af37\dbch\af31505\loch\f37 group name
+\par \hich\af37\dbch\af31505\loch\f37 creation time
+\par \hich\af37\dbch\af31505\loch\f37 last modified time
+\par \hich\af37\dbch\af31505\loch\f37 11. ls -R
+\par \hich\af37\dbch\af31505\loch\f37   -R Means recursive
+\par \hich\af37\dbch\af31505\loch\f37 which is used to show all sub directories in each individual sub directory.
+\par \hich\af37\dbch\af31505\loch\f37 12. ls -s 
+\par \hich\af37\dbch\af31505\loch\f37 -s means size 
+\par \hich\af37\dbch\af31505\loch\f37 the number of blocs used 
+\par \hich\af37\dbch\af31505\loch\f37 1 block =1kB or 4KB
+\par \hich\af37\dbch\af31505\loch\f37 13. ls -h
+\par \hich\af37\dbch\af31505\loch\f37 -h means human readable form for memory statistics.
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 Note:
+\par \hich\af37\dbch\af31505\loch\f37 ls  -l  /etc  ===> 212 entries
+\par \hich\af37\dbch\af31505\loch\f37 ls  -l  \hich\af37\dbch\af31505\loch\f37 |  head  ====> top 10 entries
+\par \hich\af37\dbch\af31505\loch\f37 ls   -l  | head  -20  ===> top 20 entries
+\par \hich\af37\dbch\af31505\loch\f37 ls   -l  | head -30   ====> top 30 entries
+\par \hich\af37\dbch\af31505\loch\f37 ls   -l   | tail   ===> last 10 lines
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 ls  -l  /etc  | more   ===> only in farward direction 
+\par \hich\af37\dbch\af31505\loch\f37 ls  -l  /etc  | less    ===> both in forward an\hich\af37\dbch\af31505\loch\f37 d backward direction
+\par 
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 Command Line Arguments:
+\par \hich\af37\dbch\af31505\loch\f37 - - - - - - - - - - - - - - -- - - - - - 
+\par \hich\af37\dbch\af31505\loch\f37 The  Arguments which are passing from command prompt  ===> 
+\par \hich\af37\dbch\af31505\loch\f37 $   ./test.sh  10   20   30   40
+\par \tab \hich\af37\dbch\af31505\loch\f37         10,20,30,40
+\par \hich\af37\dbch\af31505\loch\f37 $  ./test.sh   learning linux is very easy 
+\par \hich\af37\dbch\af31505\loch\f37 learning,\hich\af37\dbch\af31505\loch\f37  linux, is, very,easy
+\par \hich\af37\dbch\af31505\loch\f37 $ #  ----> Number of arguments  (5)
+\par \hich\af37\dbch\af31505\loch\f37 $ 0  -----> Script Name (./test.sh)     test.sh ====> /home/durga/ scripts /test.sh
+\par \hich\af37\dbch\af31505\loch\f37 $ 1  -----> First argument (learning) 
+\par \hich\af37\dbch\af31505\loch\f37 $ 2  -----> Second argument (linux)
+\par \hich\af37\dbch\af31505\loch\f37 $ 3  ----- > Third argument (is)
+\par \hich\af37\dbch\af31505\loch\f37 $ 4 -----> Fourth argument ( very)
+\par \hich\af37\dbch\af31505\loch\f37 $ 5  -----> Fifth argument (easy)
+\par \hich\af37\dbch\af31505\loch\f37 $ *  ------> all arguments  (learning linux is very easy)
+\par \hich\af37\dbch\af31505\loch\f37 $ @ ------> All arguments ( learning linux is very easy)
+\par \hich\af37\dbch\af31505\loch\f37 $ ?  -------> Represents exit code of P\hich\af37\dbch\af31505\loch\f37 reviuosly executed  command or Script.
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 test.sh File 
+\par \hich\af37\dbch\af31505\loch\f37 #!   /bin /bash
+\par \hich\af37\dbch\af31505\loch\f37 echo   "The number of arguments  : $#"
+\par \hich\af37\dbch\af31505\loch\f37 echo  "Script file name : $0"
+\par \hich\af37\dbch\af31505\loch\f37 echo "First argument :$1"
+\par \hich\af37\dbch\af31505\loch\f37 echo "Second argument: $2"
+\par \hich\af37\dbch\af31505\loch\f37 echo "Third argument : $3"
+\par \hich\af37\dbch\af31505\loch\f37 echo "Fourth argument :$4"
+\par \hich\af37\dbch\af31505\loch\f37 echo "Fift\hich\af37\dbch\af31505\loch\f37 h  argument :$5"
+\par \hich\af37\dbch\af31505\loch\f37 echo "All arguments with * : $*"
+\par \hich\af37\dbch\af31505\loch\f37 echo "all arguments with @ :$@"
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 Difference between $@ and $*:
+\par \hich\af37\dbch\af31505\loch\f37 - - - - - - - - - - - - - - - - -- - - - - -
+\par \hich\af37\dbch\af31505\loch\f37 $@:  -----> All commands line arguments with space seperator.
+\par \hich\af37\dbch\af31505\loch\f37                      "$1"    "$2"   "$3"   "$4"    "$5"
+\par \hich\af37\dbch\af31505\loch\f37                      learning linux is very easy
+\par \hich\af37\dbch\af31505\loch\f37 $*   ------>  All  command line arguments as single  string .
+\par \hich\af37\dbch\af31505\loch\f37                      "$1c$2c$3c$4c$5"
+\par \hich\af37\dbch\af31505\loch\f37                      where c is the first charecter\hich\af37\dbch\af31505\loch\f37  of the IFS  (Internal file seperator) . The default is \tab \tab     space .
+\par \tab \hich\af37\dbch\af31505\loch\f37    learning  linux is very easy.
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 How to check default  IFS :
+\par \hich\af37\dbch\af31505\loch\f37 - - - - - - - - - - - - - - - - -  - - -
+\par \hich\af37\dbch\af31505\loch\f37 $ set  | grep  "IFS"
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 IFS =$  '   \\t\\n'
+\par }{\rtlch\fcs1 \ab\af37\afs28 \ltrch\fcs0 \b\f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 
+\par \hich\af37\dbch\af31505\loch\f37 What is the main purpuse of command line \hich\af37\dbch\af31505\loch\f37 arguments:
+\par \hich\af37\dbch\af31505\loch\f37 - - - - - - - - - - - - - - - - -  - - - - -  - - - - - -- - - - - - - - - - - - - - - 
+\par 
+\par }{\rtlch\fcs1 \af37\afs28 \ltrch\fcs0 \f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 \hich\af37\dbch\af31505\loch\f37 we can customize behaviour  of the script Based on our arguments the script will work.
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 test.sh:
+\par \hich\af37\dbch\af31505\loch\f37 - - - - - 
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 #! /bin/bash
+\par \hich\af37\dbch\af31505\loch\f37 len = $(echo -n "APPLE" | wc -c)
+\par \hich\af37\dbch\af31505\loch\f37 e\hich\af37\dbch\af31505\loch\f37 cho "The length of given string :$len"
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 The script will always work for the string :APPLE
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 test.sh:
+\par \hich\af37\dbch\af31505\loch\f37 - - - - - -
+\par \hich\af37\dbch\af31505\loch\f37 #! /bin /bash
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 len =$(echo -n "1$" |wc -c)
+\par \hich\af37\dbch\af31505\loch\f37 echo "The length of given String $1 : $len"
+\par 
+\par 
+\par }{\rtlch\fcs1 \ab\af37\afs28 \ltrch\fcs0 \b\f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 \hich\af37\dbch\af31505\loch\f37 Variable Substitution and command substitution:
+\par \hich\af37\dbch\af31505\loch\f37 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 write a script to create a log file with time stamp:
+\par \hich\af37\dbch\af31505\loch\f37  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  - -
+\par 
+\par }{\rtlch\fcs1 \af37\afs28 \ltrch\fcs0 \f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 \hich\af37\dbch\af31505\loch\f37 test.sh:
+\par \hich\af37\dbch\af31505\loch\f37 - - - - - 
+\par \hich\af37\dbch\af31505\loch\f37 #!  /bin/bash
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 timestamp = $ (date  +%d_%m_%Y_%H_%M_%S)
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 echo "Hello " > abc.text   overwrite existing data
+\par \hich\af37\dbch\af31505\loch\f37 echo "Hello"  >> abc.txt   append to existing data
+\par \hich\af37\dbch\af31505\loch\f37 echo  "This is data to log file " >> $ \{timestamp\}.log
+\par \hich\af37\dbch\af31505\loch\f37 date  >> $ \{timestamp\}.log
+\par 
+\par 
+\par 
+\par }{\rtlch\fcs1 \ab\af37\afs32 \ltrch\fcs0 \b\f37\fs32\lang9\langfe16393\kerning0\langnp9\insrsid8736750 \hich\af37\dbch\af31505\loch\f37 How to view content of the file:
+\par }{\rtlch\fcs1 \af37\afs28 \ltrch\fcs0 \f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 \hich\af37\dbch\af31505\loch\f37 - - - - - - - - - -  - - - - - - - - - - - - - - - - - - -
+\par \hich\af37\dbch\af31505\loch\f37 we can view the content of the file by using the following commands:
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 1. cat 
+\par \hich\af37\dbch\af31505\loch\f37 2. tac
+\par \hich\af37\dbch\af31505\loch\f37 3. rev
+\par \hich\af37\dbch\af31505\loch\f37 4. head
+\par \hich\af37\dbch\af31505\loch\f37 5. tail
+\par \hich\af37\dbch\af31505\loch\f37 6. more 
+\par \hich\af37\dbch\af31505\loch\f37 7. less
+\par \hich\af37\dbch\af31505\loch\f37  
+\par }{\rtlch\fcs1 \ab\af37\afs28 \ltrch\fcs0 \b\f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 \hich\af37\dbch\af31505\loch\f37 View content by using cat:
+\par \hich\af37\dbch\af31505\loch\f37 - - - - - - - - - - - - - - - - - - - - -
+\par }{\rtlch\fcs1 \af37\afs28 \ltrch\fcs0 \f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 \hich\af37\dbch\af31505\loch\f37 cat  < file.txt
+\par \hich\af37\dbch\af31505\loch\f37 where  < is optional.
+\par \hich\af37\dbch\af31505\loch\f37 cat file1.txt
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 while d\hich\af37\dbch\af31505\loch\f37 isplay data if we want line numbers, we have to use -n option.
+\par \hich\af37\dbch\af31505\loch\f37 cat  -n file1.txt
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 Numbering skipped for blank lines then we should use -b option
+\par 
+\par }{\rtlch\fcs1 \ab\af37\afs28 \ltrch\fcs0 \b\f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 \hich\af37\dbch\af31505\loch\f37 To View Multiple files content simultanously:
+\par \hich\af37\dbch\af31505\loch\f37 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+\par }{\rtlch\fcs1 \af37\afs28 \ltrch\fcs0 \f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 \hich\af37\dbch\af31505\loch\f37 cat file1.txt   file2.txt    file3.txt   
+\par 
+\par }{\rtlch\fcs1 \ab\af37\afs28 \ltrch\fcs0 \b\f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 \hich\af37\dbch\af31505\loch\f37 Various utilities of cat command:}{\rtlch\fcs1 \af37\afs28 \ltrch\fcs0 
+\f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 
+\par \hich\af37\dbch\af31505\loch\f37 - - - - - - - - - - - - - - - - - - - - - - - - - 
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 1. create a new file with some content 
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 cat > file1.txt
+\par \hich\af37\dbch\af31505\loch\f37 r\hich\af37\dbch\af31505\loch\f37 equired data
+\par \hich\af37\dbch\af31505\loch\f37 ctrl+d   ---> to save and exit
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 2. To append some extra data to an existing file:
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 cat  > > file1.txt
+\par \hich\af37\dbch\af31505\loch\f37 some more extra data
+\par \hich\af37\dbch\af31505\loch\f37 ctrl+d  ----> to save and exit
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 3. To view content of the \tab file:
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 cat < file1.txt      or     cat  file1.txt
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 4 . To cop\hich\af37\dbch\af31505\loch\f37 y content of one file to onether file:
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 cp file.txt    file2.txt
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 cat file1.txt   > file2.txt
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 5. To append one file to onether file:
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 cat    file1.txt  >>   file2.txt
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 6. To copy contents of multiple files to a single file:
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 cat  a.txt    b.txt    c.txt   d.txt     >total.txt
+\par 
+\par }{\rtlch\fcs1 \ab\af37\afs32 \ltrch\fcs0 \b\f37\fs32\lang9\langfe16393\kerning0\langnp9\insrsid8736750 \hich\af37\dbch\af31505\loch\f37 2. tac command
+\par 
+\par }{\rtlch\fcs1 \af37\afs28 \ltrch\fcs0 \f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 \hich\af37\dbch\af31505\loch\f37 It is the reverse of cat 
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 It will display file content in riverse order of lines.
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 this is vertical riversal.
+\par 
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 Sunny 
+\par \hich\af37\dbch\af31505\loch\f37 Bunny 
+\par \hich\af37\dbch\af31505\loch\f37 chi\hich\af37\dbch\af31505\loch\f37 nny
+\par \hich\af37\dbch\af31505\loch\f37 vinny
+\par \hich\af37\dbch\af31505\loch\f37 pinny
+\par 
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 Pinny
+\par \hich\af37\dbch\af31505\loch\f37 vinny
+\par \hich\af37\dbch\af31505\loch\f37 chinny
+\par \hich\af37\dbch\af31505\loch\f37 bunny
+\par \hich\af37\dbch\af31505\loch\f37 sunny
+\par 
+\par }{\rtlch\fcs1 \ab\af37\afs32 \ltrch\fcs0 \b\f37\fs32\lang9\langfe16393\kerning0\langnp9\insrsid8736750 \hich\af37\dbch\af31505\loch\f37 3. rev command:
+\par }{\rtlch\fcs1 \af37\afs28 \ltrch\fcs0 \f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 
+\par \hich\af37\dbch\af31505\loch\f37 rev means reversal.
+\par \hich\af37\dbch\af31505\loch\f37 Here each line will be reversed.
+\par \hich\af37\dbch\af31505\loch\f37 It is horizontal reversal.
+\par 
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 Sunny 
+\par \hich\af37\dbch\af31505\loch\f37 Bunny
+\par \hich\af37\dbch\af31505\loch\f37 Chinny
+\par \hich\af37\dbch\af31505\loch\f37 Vinny
+\par \hich\af37\dbch\af31505\loch\f37 Pinny
+\par 
+\par 
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 ynnuS
+\par \hich\af37\dbch\af31505\loch\f37 ynnuB
+\par \hich\af37\dbch\af31505\loch\f37 ynnuhC
+\par \hich\af37\dbch\af31505\loch\f37 ynnuV
+\par \hich\af37\dbch\af31505\loch\f37 ynnuP
+\par 
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 cat command will display total file content at a time. It is best suitable for small files. If the file contains thousands of lines it is not recommended to use cat command. For this requirement we should go for
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 head 
+\par \hich\af37\dbch\af31505\loch\f37 tail
+\par \hich\af37\dbch\af31505\loch\f37 more 
+\par \hich\af37\dbch\af31505\loch\f37 less
+\par 
+\par 
+\par }{\rtlch\fcs1 \ab\af37\afs32 \ltrch\fcs0 \b\f37\fs32\lang9\langfe16393\kerning0\langnp9\insrsid8736750 \hich\af37\dbch\af31505\loch\f37 head command:}{\rtlch\fcs1 \af37\afs28 \ltrch\fcs0 \f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 
+\hich\af37\dbch\af31505\loch\f37  
+\par \hich\af37\dbch\af31505\loch\f37 - - \hich\af37\dbch\af31505\loch\f37 - - - - - - - -- - - - - 
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 To view specified number of lines from top of the file 
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 head  abc.txt
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 It will display only 10 lines from top of file .
+\par \hich\af37\dbch\af31505\loch\f37 10 is the default value for head command.
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 head  -n  15 abc.txt     or    head    -15    abc.txt
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 head -5  a\hich\af37\dbch\af31505\loch\f37 bc.txt
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 head  -n   -5  abc.txt 
+\par \hich\af37\dbch\af31505\loch\f37 It will display all lines from top except last 5 lines.
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 head -c  100  abc.txt
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 It will display the first 100 charectors of the file 
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 In linux every charector will take one byte. Hence it will display first 100 bytes of the file  Content. 
+\par 
+\par }{\rtlch\fcs1 \ab\af37\afs32 \ltrch\fcs0 \b\f37\fs32\lang9\langfe16393\kerning0\langnp9\insrsid8736750 \hich\af37\dbch\af31505\loch\f37 tail command:}{\rtlch\fcs1 \af37\afs28 \ltrch\fcs0 \f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 
+\hich\af37\dbch\af31505\loch\f37  
+\par \hich\af37\dbch\af31505\loch\f37 - - - - - - - - - - - -- - 
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 To view file content from bottom of the file  ---> tail command 
+\par \hich\af37\dbch\af31505\loch\f37 It is opposit to head command.
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 1. tail \hich\af37\dbch\af31505\loch\f37   abc.txt
+\par \hich\af37\dbch\af31505\loch\f37 Last 10 lines will be dispayed
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 2. tail -n 5  abc.txt
+\par \hich\af37\dbch\af31505\loch\f37  Last 5 lines 
+\par 
+\par \hich\af37\dbch\af31505\loch\f37  tail -5  abc .txt 
+\par \hich\af37\dbch\af31505\loch\f37   Last 5 lines 
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 tail -5 -n abc.txt
+\par \hich\af37\dbch\af31505\loch\f37 Last 5 lines           //in head command except last 5 remaining will display but here that is not implimented
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 3. tail \hich\af37\dbch\af31505\loch\f37 -c 100 abc.txt
+\par \hich\af37\dbch\af31505\loch\f37     It will display 100 bytes of content from bottom of the file.
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 Q. Assume file contains enough data. 
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 write command to display from 3rd line to 7th line?
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 head  -7 abc.txt  | tail -5 
+\par 
+\par }{\rtlch\fcs1 \ab\af37\afs32 \ltrch\fcs0 \b\f37\fs32\lang9\langfe16393\kerning0\langnp9\insrsid8736750 \hich\af37\dbch\af31505\loch\f37 Word count command ( wc command ) :
+\par \hich\af37\dbch\af31505\loch\f37 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+\par 
+\par }{\rtlch\fcs1 \af37\afs28 \ltrch\fcs0 \f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 \hich\af37\dbch\af31505\loch\f37 we can use wc command to count number of lines,words and charectors present in the given file
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 $ wc  filename 
+\par \hich\af37\dbch\af31505\loch\f37  
+\par \hich\af37\dbch\af31505\loch\f37 no_of_lines       no_of_words      no_of_cha\hich\af37\dbch\af31505\loch\f37 rectors    file_name
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 durga@durga - VirtualBox:~/Desktop$   wc file1.txt
+\par \hich\af37\dbch\af31505\loch\f37  4    24     135   file1.txt 
+\par 
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 4  -----> No of lines
+\par \hich\af37\dbch\af31505\loch\f37 24 -----> No of words 
+\par \hich\af37\dbch\af31505\loch\f37 135 ----> No of charectors ( no of bytes or filesize)
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 we can use the following options with wc command 
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 -l      ====> To print only number of lines 
+\par \hich\af37\dbch\af31505\loch\f37 -w    ====> To print only number of words 
+\par \hich\af37\dbch\af31505\loch\f37 -c     ====> To print only number of charectors
+\par \hich\af37\dbch\af31505\loch\f37 -lw   ====> To print only number of lines and words
+\par \hich\af37\dbch\af31505\loch\f37 -lc    ====> To print only number of lines and charectors
+\par \hich\af37\dbch\af31505\loch\f37 -wc  ====\hich\af37\dbch\af31505\loch\f37 > To print only number of words  and charectors
+\par \hich\af37\dbch\af31505\loch\f37 -L     =====>To print number of charectors present in Longest Line 
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 We can use  wc command for multiple files simultanously.
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 wc  a.txt  b.txt  c.txt
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 durga@durga - VirtualBox:~/Desktop$   wc file1.txt    fi\hich\af37\dbch\af31505\loch\f37 le2.txt   file3.txt
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 4    24    135    file1.txt
+\par \hich\af37\dbch\af31505\loch\f37 4    24    135   file2.txt
+\par \hich\af37\dbch\af31505\loch\f37 3    9      47      file3.txt
+\par \hich\af37\dbch\af31505\loch\f37 11  57   317    total
+\par 
+\par 
+\par 
+\par }{\rtlch\fcs1 \ab\af37\afs32 \ltrch\fcs0 \b\f37\fs32\lang9\langfe16393\kerning0\langnp9\insrsid8736750 \hich\af37\dbch\af31505\loch\f37 What is Piping:}{\rtlch\fcs1 \af37\afs28 \ltrch\fcs0 \f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 
+\hich\af37\dbch\af31505\loch\f37   
+\par \hich\af37\dbch\af31505\loch\f37 - - - - - - - - - - - - - 
+\par \hich\af37\dbch\af31505\loch\f37 some times we can use output of one command as an input to other command. This c\hich\af37\dbch\af31505\loch\f37 oncept is called piping.
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 By using piping, multiple commands will work together to fulfill  our requirements
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 we can implement piping by using vertical bar  (|)
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 eg-1:
+\par \hich\af37\dbch\af31505\loch\f37 durga@durga-VirtualBox:~Desktop$   ls -l  /etc | wc -l
+\par \hich\af37\dbch\af31505\loch\f37 222
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 standard output of ls command will become standard input to wc command 
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 eg -2:
+\par \hich\af37\dbch\af31505\loch\f37 ls -l /etc  | more
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 eg -3:
+\par \hich\af37\dbch\af31505\loch\f37 ls -l  /etc  |  head -5
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 eg -4 : ls -l  /etc  | wc  |wc -1
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 the output is always 1.
+\par 
+\par }{\rtlch\fcs1 \ab\af37\afs28 \ltrch\fcs0 \b\f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 \hich\af37\dbch\af31505\loch\f37 Requ\hich\af37\dbch\af31505\loch\f37 irement:}{\rtlch\fcs1 \af37\afs28 \ltrch\fcs0 
+\f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 \hich\af37\dbch\af31505\loch\f37  
+\par \hich\af37\dbch\af31505\loch\f37 The output of ls command should be saved to the file  output.txt  and should be provided as input to wc command ?
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 ls - l  > output.txt  | wc  -l
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 In the middle of piping if we use redirection then it breaks piping concept.
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 ls -l
+\par 
+\par 
+\par }{\rtlch\fcs1 \ab\af37\afs28 \ltrch\fcs0 \b\f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 \hich\af37\dbch\af31505\loch\f37 tee command:
+\par \hich\af37\dbch\af31505\loch\f37 - - - - - - - - - - - 
+\par 
+\par }{\rtlch\fcs1 \af37\afs28 \ltrch\fcs0 \f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 \hich\af37\dbch\af31505\loch\f37 ls  - l  | tee  output.txt  |wc
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 In piping, if we want to save the output of one command to a file and if we want to pass that output as input to next command simoultaniously  then we should use tee command .
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 eg1:  To \hich\af37\dbch\af31505\loch\f37 save the output of ls command to a fille and display to the terminal simultaneously
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 ls   - l   | tee output.txt
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 eg 2:
+\par \hich\af37\dbch\af31505\loch\f37 If i want to save the result of ls -l in output.txt and pass the output to wc command and save that output in wc.txt ?
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 ls -l  | tee out\hich\af37\dbch\af31505\loch\f37 put.txt |wc  | tee  wc.txt
+\par 
+\par 
+\par }{\rtlch\fcs1 \ab\af37\afs28 \ltrch\fcs0 \b\f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 \hich\af37\dbch\af31505\loch\f37 Requirement 2:
+\par \hich\af37\dbch\af31505\loch\f37 - - - - - - - - - - - 
+\par \hich\af37\dbch\af31505\loch\f37  }{\rtlch\fcs1 \af37\afs28 \ltrch\fcs0 \f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 \hich\af37\dbch\af31505\loch\f37 Assume input.txt  contains filenames.
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 input.txt
+\par \hich\af37\dbch\af31505\loch\f37 - - - - - - 
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 file1.txt 
+\par \hich\af37\dbch\af31505\loch\f37 file2.txt
+\par \hich\af37\dbch\af31505\loch\f37 file3.txt
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 Read file names from the input.txt  and remove each file.
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 cat input.txt  ===> standard output 
+\par \hich\af37\dbch\af31505\loch\f37 rm  file1.txt    file2.txt   file3.txt    ===>  remove 3 files
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 remove command always expecting from command line arguments only.
+\par \hich\af37\dbch\af31505\loch\f37  But in piping the input is al\hich\af37\dbch\af31505\loch\f37 ways stream.
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 cat   input.txt | rm
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 we have to convert that stream into command line arguments
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 xargs  command:
+\par \hich\af37\dbch\af31505\loch\f37 - - - - - - - - - - - - 
+\par \hich\af37\dbch\af31505\loch\f37 cat  input.txt  | xargs  rm
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 xargs command:  to convert output stream into command line argument  
+\par 
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 eg2: Assume input.\hich\af37\dbch\af31505\loch\f37 txt contains multiple file names. Read all these file names from input.txt and display the files content to the terminal ?
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 cat input.txt 
+\par \hich\af37\dbch\af31505\loch\f37        a.txt
+\par \tab \tab \hich\af37\dbch\af31505\loch\f37 b.txt
+\par \tab \tab \hich\af37\dbch\af31505\loch\f37 c.txt
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 cat a.txt  b.txt   cat c.txt
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 cat input.txt  |  xargs  cat
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 eg3: Display the output of date command by using echo command with piping concept?
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 date | xargs echo
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 eg:4
+\par \hich\af37\dbch\af31505\loch\f37 List out all contents of  /dev folder and save to file1.txt}{\rtlch\fcs1 \ab\af37\afs28 \ltrch\fcs0 \b\f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 
+\par }{\rtlch\fcs1 \af37\afs28 \ltrch\fcs0 \f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 \hich\af37\dbch\af31505\loch\f37 List out all contents of /bin folder and save to file2.txt
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 write a single pipeline for \hich\af37\dbch\af31505\loch\f37 the following requirement:
+\par \hich\af37\dbch\af31505\loch\f37 read contents of file1.txt and file2.txt and save to file3.txt. By using  sort command reverse the content of  file3.txt and saved to sorted.txt file.
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 ls  /dev  >file1.txt 
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 ls  /bin  > file2.txt
+\par 
+\par \hich\af37\dbch\af31505\loch\f37  // cat file1.txt   file2.txt  \hich\af37\dbch\af31505\loch\f37  >file3.txt  sort   -r  file3.txt  >  sorted.txt
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 cat file1.txt  file2.txt | tee file3.txt | sort  -r >sorted.txt
+\par 
+\par 
+\par 
+\par }{\rtlch\fcs1 \ab\af37\afs36 \ltrch\fcs0 \b\f37\fs36\lang9\langfe16393\kerning0\langnp9\insrsid8736750 \hich\af37\dbch\af31505\loch\f37 Command  Aliasing:
+\par }{\rtlch\fcs1 \af37\afs28 \ltrch\fcs0 \f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 \hich\af37\dbch\af31505\loch\f37 - - - - - - - - - - - - - - - - - - -
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 Alias means alternative name or nick name.
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 we can give our own more convinient nicknames for unix commands. This concept is called command aliasing.
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 How to create alias name:
+\par \hich\af37\dbch\af31505\loch\f37 - - - - - - - - - - - - - - - - - - - 
+\par \hich\af37\dbch\af31505\loch\f37 we have to use alias command 
+\par \hich\af37\dbch\af31505\loch\f37 $ alias
+\par 
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 $ alias nickname='original command '
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 $ alias nickname="original command"
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 $ alias nickname=original command
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 Note: No spaces allowed before or after = symbol .
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 How to remove alias name:
+\par \hich\af37\dbch\af31505\loch\f37 - - - - - - - - - - - - - - - - - - - - 
+\par \hich\af37\dbch\af31505\loch\f37 we have to use unalias
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 $ unalias   command_name
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 $ unalias  cls
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 $ unalias  -a
+\par \hich\af37\dbch\af31505\loch\f37  
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 I want to define alias name, but how to check is it available already?
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 Just use type command
+\par 
+\par 
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 durga@durga - VirtualBox:~/Desktop$\hich\af37\dbch\af31505\loch\f37   type cls
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 cls is alialsed to clear
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 durga@durga - VirtualBox:~/Desktop$ type cls1
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 bash:type :cls1: not found
+\par 
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 Where we can use aliasing :
+\par \hich\af37\dbch\af31505\loch\f37 - - - - - - - - - - - - - - - - - - - - -
+\par \hich\af37\dbch\af31505\loch\f37 1. If any lengthy command repeatedly required, then we can create shortcut alias name and we can use that shortcut everytime.
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 eg:
+\par \hich\af37\dbch\af31505\loch\f37 mkdir dir1;  touch dir1/file1\{1..20\}.txt
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 alias d20f ='mkdir dir1;  touch dir1/file1\{1..20\}.txt'
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 eg2: To list out all files \hich\af37\dbch\af31505\loch\f37 
+present in current working directory, save this data to output.txt  and display the number of lines to the terminal. Define alias name  'current'  for this total activity?
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 alias  current = 'ls-l | tee  output. txt  | wc -l'
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 2. To use our home operating  \hich\af37\dbch\af31505\loch\f37 system commands in linux directoly 
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 windows 
+\par \hich\af37\dbch\af31505\loch\f37 mac
+\par \hich\af37\dbch\af31505\loch\f37  alias  cls ='clear'
+\par \hich\af37\dbch\af31505\loch\f37  alias  rename ='mv'
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 3. To handle typing mistakes
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 grep 
+\par \hich\af37\dbch\af31505\loch\f37 grpe
+\par \hich\af37\dbch\af31505\loch\f37 alias grpe='grep'
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 4. To handle language barriers:
+\par \hich\af37\dbch\af31505\loch\f37 - - - - - - - - - - - - - - - - - - - - - - - 
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 In germany =====>datum
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 alias datum = 'date'
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 cp 
+\par \hich\af37\dbch\af31505\loch\f37 koopy
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 alias koopy = 'cp'
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 How to persist aliases perminently:
+\par \hich\af37\dbch\af31505\loch\f37 - - - - - - - - - - - - - - - - - - - - - - - - - -
+\par \hich\af37\dbch\af31505\loch\f37 we can make our created aliases permanently\hich\af37\dbch\af31505\loch\f37  in our system by using 2 ways 
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 1st way:
+\par \hich\af37\dbch\af31505\loch\f37 - - - - - -
+\par \hich\af37\dbch\af31505\loch\f37 .bashrc  file inside our user home directory
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 # my own aliases 
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 alias  cls='clear'
+\par \hich\af37\dbch\af31505\loch\f37 alias  ddd='date;date;date'
+\par \hich\af37\dbch\af31505\loch\f37 alias  dd='date;date;
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 To reflect these changes  we have to restart terminal
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 instead of restarting terminal we can use       source   .bashrc     // not working
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 2nd way:
+\par \hich\af37\dbch\af31505\loch\f37 - - - - - - - 
+\par \hich\af37\dbch\af31505\loch\f37 Instead of editing  .bashrc file, we can create our own file to maintain our defined aliases\hich\af37\dbch\af31505\loch\f37  .
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 The name of the file should be  .bash_aliasis and should be present in our home directory.
+\par \hich\af37\dbch\af31505\loch\f37  
+\par }{\rtlch\fcs1 \ab\af37\afs36 \ltrch\fcs0 \b\f37\fs36\lang9\langfe16393\kerning0\langnp9\insrsid8736750 \hich\af37\dbch\af31505\loch\f37 Regular expressions :
+\par }{\rtlch\fcs1 \af37\afs28 \ltrch\fcs0 \f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 \hich\af37\dbch\af31505\loch\f37 - - - - - - - - - - - - - - - - - - - - - 
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 1. To list out all files present in current working directory?
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 $ ls  *
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 2. To list out all f\hich\af37\dbch\af31505\loch\f37 iles with some extension?
+\par \hich\af37\dbch\af31505\loch\f37 $ ls  *.*
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 3. To list out all  .txt files
+\par \hich\af37\dbch\af31505\loch\f37 $ ls  *.txt
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 4. To list out only  .java files 
+\par \hich\af37\dbch\af31505\loch\f37  $ ls  * .java
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 5. To list out all files starts with  a
+\par \hich\af37\dbch\af31505\loch\f37 $ la a*
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 6. To list out all files where file name contains only  2 charectors and first charectors should be  a
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 $ ls  a?
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 7. To list out all files where file name contains only  2 charectors 
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 $ ls   ??
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 8. To list out all files where file name contains only  3 ch\hich\af37\dbch\af31505\loch\f37 arectors 
+\par \hich\af37\dbch\af31505\loch\f37 $ ls  ???
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 9. To list out all files where file name contains atleast 3 charectors 
+\par \hich\af37\dbch\af31505\loch\f37 $ ls  ???*
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 10. To list out all files where file name starts with a or b or c
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 $ ls  [abc] *
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 11. To list out all files where file name should not starts with a or\hich\af37\dbch\af31505\loch\f37  b or c
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 $ ls  [!abc]*
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 12. To list out all files where file name starts with lowercase alphabet symbol?
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 $ ls [a-z] *
+\par \hich\af37\dbch\af31505\loch\f37 $ ls [[:lower:]]*
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 13.To list out all files where file \hich\af37\dbch\af31505\loch\f37 name starts with uppercase alphabet symbol?
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 $ ls  [A-Z]*
+\par \hich\af37\dbch\af31505\loch\f37 $ ls [[:upper:]]*
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 14. To list out all files where file name starts with digit?
+\par \hich\af37\dbch\af31505\loch\f37 $ ls [0-9]*
+\par \hich\af37\dbch\af31505\loch\f37 $ ls [[:digit:]]*
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 15. To list out  all files where first letter should be upper case alphabet symbol, sec\hich\af37\dbch\af31505\loch\f37 ond letter should be digit and third letter should be lower case alphabet symbol?
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 $ ls [A-Z] [0-9] [a-z]
+\par \hich\af37\dbch\af31505\loch\f37 $ ls [[:upper:]] [0-9] [[:lower:]]
+\par \hich\af37\dbch\af31505\loch\f37 $ ls [[:upper:]] [[:digit:]] [[:lower:]]
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 16. To list out all files starts with special symbol.
+\par \hich\af37\dbch\af31505\loch\f37 $ ls [![:alnum:]]*
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 17.To list out all files with .java or .py extension?
+\par \hich\af37\dbch\af31505\loch\f37 $  ls \{* .java, * .py\}
+\par \hich\af37\dbch\af31505\loch\f37 $  ls *.\{java ,py\}
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 Note: we can use regular expression and wild card charecters with other commands also  like  rm,cp, mv, etc
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 18. To copy all files starts with digit to dir1 directory?
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 cp [0-9]*  dir1
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 cp [[:digit:]]*  dir1
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 19. To move all files starts with alphabet symb\hich\af37\dbch\af31505\loch\f37 ol and with  .txt extension to dir2  directory?
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 $  mv [[:alpha:]]* .txt    dir2
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 20. Remove all files starts with a or b or c and ends with e or t?
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 $ rm [abc]* [et]
+\par 
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 Q1: which command will list all files that has exactly three charecters present in curr\hich\af37\dbch\af31505\loch\f37 ent working directory?
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 $ ls ???
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 Q2: which command will copy all files that ends with  .pdf to dir1?
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 cp  * .pdf   dir1
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 Q3: which command will move all the files that begins with letter a and ends with letter n to dir1?
+\par \hich\af37\dbch\af31505\loch\f37 $ mv a* n  dir1
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 Q4: which command will display content of all files that begins with a digit and ends with a or e or i or o or u?
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 cat [0-9] * [aeiou]
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 cat [[:digit:]] * [aeiou]
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 Q5:which command will list all files that begins with a lower case alphabet symbol and has a \hich\af37\dbch\af31505\loch\f37 letter d in the third charecter position, and ends  with an upper case letter?
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 $ ls [[: lower :]] ? d*[[:upper:]]
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 Q6: which command will list all  .jpg files present in Pictures  directory ?
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 ls  /home/durga/Pictures/ *.jpg
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 ls ~/Pictures/*.jpg
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 Q7. whic\hich\af37\dbch\af31505\loch\f37 h of the following regular expression will match file named with demoA.txt?
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 demoA.txt
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 A) *
+\par \hich\af37\dbch\af31505\loch\f37 B)  demo ? .txt
+\par \hich\af37\dbch\af31505\loch\f37 C) demo*
+\par \hich\af37\dbch\af31505\loch\f37 D) * .txt
+\par \hich\af37\dbch\af31505\loch\f37 E) demo [A-Z].txt
+\par \hich\af37\dbch\af31505\loch\f37 F) All of the above
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 Ans: F
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 Q8. which of the following regular expressions can represent the files:
+\par \hich\af37\dbch\af31505\loch\f37 student_reportA.pdf
+\par \hich\af37\dbch\af31505\loch\f37 student_reportB.pdf
+\par \hich\af37\dbch\af31505\loch\f37 student_reportC.pdf
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 a) ??.
+\par \hich\af37\dbch\af31505\loch\f37 b) report*.pdf
+\par \hich\af37\dbch\af31505\loch\f37 c) *[A-Z]
+\par \hich\af37\dbch\af31505\loch\f37 d) student*.pdf
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 Ans:c,d
+\par 
+\par 
+\par }{\rtlch\fcs1 \ab\af37\afs32 \ltrch\fcs0 \b\f37\fs32\lang9\langfe16393\kerning0\langnp9\insrsid8736750 \hich\af37\dbch\af31505\loch\f37 JACKPOT ASSIGNMENT :
+\par }{\rtlch\fcs1 \af37\afs28 \ltrch\fcs0 \f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 \hich\af37\dbch\af31505\loch\f37 - - - - - - - - - - -  - - - - - - - - - -
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 mkdir  jackpot /dir\{1..100\}
+\par \hich\af37\dbch\af31505\loch\f37 touch jackpot/dir\{1..100\}/file\{1..100\}.txt
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 touch jackpot/dir $ (shuf -i  1-100  -n 1) /sunny.txt
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 find sunny.txt and move to desktop
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 find jackpot  -type  f  -name  'sunnt.txt'  -exec  mv  \{ \}  ~/Desktop  \\;
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 mv sunny.txt   ~/Desktop
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 Remove all text files in jackpot directory
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 find  jackpot  -type  f  -name  '*.txt'  -exec  rm \{ \}  \\;
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 Remove all files inside jackpot directory including\hich\af37\dbch\af31505\loch\f37  jackpot directory
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 find jackpot  -type  d -exec  rm -r  \{\}  \\;
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 Q1: The command uses a database to search files and directories?
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 a) true
+\par \hich\af37\dbch\af31505\loch\f37 b) false
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 Q2: To find files and directories inside  /dev folder and limits its search to only 2 levels of depth?
+\par \hich\af37\dbch\af31505\loch\f37 find\hich\af37\dbch\af31505\loch\f37    /dev   -maxdepth  2
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 Q3: To find only directories inside   /dev  folder and limits its search to only 2 levels of depth?
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 find   /dev   -maxdepth  2  -type d
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 Q4: To find only files starts from root directory  (/) where file name ends with  .txt?
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 find / -type  f  -name  ' *.txt'
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 find  / -type  f -iname '*.txt'
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 Q5: To find all files and directories inside  /dev  directory  upto maximum 3 levels of deep and siz\hich\af37\dbch\af31505\loch\f37 e is greater than  200kilo bytes?
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 find  /dev  -maxdepth 3  -size +200k
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 Q6: which command will find all files below our home Directory where file size is greater than 3 mega Bytes and remove all those files?
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 find  ~  -type  f  -size  +3M  -exce rm  \{\}  \\\hich\af37\dbch\af31505\loch\f37 ; 
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 Q7: find command make our life is very easy to delete last 6 months files
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 /usr/bin/find/home/stack/zabbix_metrics/*.csv  -mtime  +180  -exec  rm -rf  \{\} /; >dev/null 2>&1
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 find   /home/stack/zabbix_metrics/*.csv  -mtime  +180  -exec  rm -rf  \{\} /; >de\hich\af37\dbch\af31505\loch\f37 v/null 2>&1
+\par 
+\par 
+\par }{\rtlch\fcs1 \ab\af37\afs36 \ltrch\fcs0 \b\f37\fs36\lang9\langfe16393\kerning0\langnp9\insrsid8736750 \hich\af37\dbch\af31505\loch\f37 Grep (global regular expression print):
+\par \hich\af37\dbch\af31505\loch\f37 - - - - - - - - - - - - - - - - - - - - - - - - - - - - -}{\rtlch\fcs1 \ab\af37\afs28 \ltrch\fcs0 \b\f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 
+\par }{\rtlch\fcs1 \af37\afs28 \ltrch\fcs0 \f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 
+\par \hich\af37\dbch\af31505\loch\f37 grep [options]   pattern   [file]
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 cat filename  |  grep pattern
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 with out any option we can use like this
+\par \hich\af37\dbch\af31505\loch\f37 grep "UNIX" grepfilter.txt
+\par \hich\af37\dbch\af31505\loch\f37 cat  grepfilter.txt   | grep  "Linux"
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 Options:
+\par \hich\af37\dbch\af31505\loch\f37 - - - - - - 
+\par \hich\af37\dbch\af31505\loch\f37 1) c:   grep  -c  pattern file  -display number of matching lines
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 grep  -c "UNIX"  grepfilter.txt
+\par 
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 2) h:   grep -h pattern fi\hich\af37\dbch\af31505\loch\f37 le -display all matching lines
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 grep  -h "UNIX"  grepfilter.txt
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 3) l:   grep -l  pattern * -display all the file names in which pattern matches
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 grep -l "o" *
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 4) n :   grep  -n  pattern file  -display all the matching lines with Line numbers 
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 grep -n  "\hich\af37\dbch\af31505\loch\f37 UNIX" grepfilter.txt
+\par 
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 5) v:   grep  -v pattern file  -display all the non matching lines
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 grep -v  "UNIX" grepfilter.txt
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 6) o:   grep -o pattern file -display only the matching pattern
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 grep -o "Unix" grepfilter.txt
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 7) e:   grep -e pattern file  -use multiple search patterns
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 grep  -e "UNIX"   -e  "LINUX"  grepfilter.txt
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 8) ^:    grep ^ pattern file -match the lines which starts with given pattern
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 grep  ^ Welcome   grepfilter.txt
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 9) $ :   grep pattern $ file  -disp\hich\af37\dbch\af31505\loch\f37 lay the lines which ends with given pattern
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 grep  ands$  grepfilter.txt
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 10) i :  grep pattern file  -case insensitive searching
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 grep -i "unix" grepfilter.txt
+\par 
+\par 
+\par }{\rtlch\fcs1 \ab\af37\afs28 \ltrch\fcs0 \b\f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 \hich\af37\dbch\af31505\loch\f37 egrep command:
+\par \hich\af37\dbch\af31505\loch\f37 - - - - - - - - - - - - - 
+\par }{\rtlch\fcs1 \af37\afs28 \ltrch\fcs0 \f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 
+\par \hich\af37\dbch\af31505\loch\f37 Instead of using  -e option we can use  egrep command.
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 egrep means extended grep
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 egrep    '(java|linux)'   demo.txt
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 egrep  command can understand this pattern and process this pattern.
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 grep command always looking for the match: "(java|linux)"
+\par 
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 grep co\hich\af37\dbch\af31505\loch\f37 mmand can understand patterns  --> yes but not all patterns
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 '^linux'   is understandable by grep 
+\par \hich\af37\dbch\af31505\loch\f37 '(java| linux)'  cannot understandable by grep
+\par \hich\af37\dbch\af31505\loch\f37 '[0-9] \{9\} ' cannot understandable by grep
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 egrep command can understand patterns  ---> yes all patterns 
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 '^l\hich\af37\dbch\af31505\loch\f37 inux'
+\par \hich\af37\dbch\af31505\loch\f37 '(java|linux)'
+\par 
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 grep command with -F options:
+\par \hich\af37\dbch\af31505\loch\f37 - - - - - - - - - - - - - - - - - - - - - - - -
+\par \hich\af37\dbch\af31505\loch\f37 -F  means Fixed Strings 
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 If we want to s\hich\af37\dbch\af31505\loch\f37 earch for a group of fixed strings then we should go for -F option.
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 grep  -F  "java
+\par \hich\af37\dbch\af31505\loch\f37 >linux
+\par \hich\af37\dbch\af31505\loch\f37 >python" demo.txt
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 The strings should be seperated by  new line charactor.
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 Instead of  -F option, we can use  fgrep  command 
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 fgrep  means   ----> Fixed String Gl\hich\af37\dbch\af31505\loch\f37 obal Regular Expression print
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 fgrep command can understand patterns ---> no
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 we have to provide only fixed strings
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 in file1.txt 
+\par \hich\af37\dbch\af31505\loch\f37 java
+\par \hich\af37\dbch\af31505\loch\f37 linux
+\par \hich\af37\dbch\af31505\loch\f37 python
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 we have a file called demo.txt so we need to search three words in that file those three words are java, l\hich\af37\dbch\af31505\loch\f37 inux, python is saved inside file1.txt
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 fgrep  -f  file1.txt  demo.txt
+\par 
+\par 
+\par }{\rtlch\fcs1 \ab\af37\afs36 \ltrch\fcs0 \b\f37\fs36\lang9\langfe16393\kerning0\langnp9\insrsid8736750 \hich\af37\dbch\af31505\loch\f37 cut command:
+\par \hich\af37\dbch\af31505\loch\f37 - - - - - - -- - - - -
+\par }{\rtlch\fcs1 \af37\afs28 \ltrch\fcs0 \f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 \hich\af37\dbch\af31505\loch\f37 we can use cut command to extract data from the file.
+\par \hich\af37\dbch\af31505\loch\f37 The file can be either normal file or tabular file.
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 nornal file:
+\par \hich\af37\dbch\af31505\loch\f37 - - - - - - - - 
+\par \hich\af37\dbch\af31505\loch\f37 first line 
+\par \hich\af37\dbch\af31505\loch\f37 second line
+\par \hich\af37\dbch\af31505\loch\f37 third line 
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 tabular file:
+\par \hich\af37\dbch\af31505\loch\f37 - - - - - - - - - 
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 emp.dat
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 e.no | ename | esal | eadrs |dept  |gender
+\par \hich\af37\dbch\af31505\loch\f37 100  | sunny   | 100 |hyd\tab     |hr       |male
+\par \hich\af37\dbch\af31505\loch\f37 200 \hich\af37\dbch\af31505\loch\f37  | tejas     | 200 |wgl\tab     |dvps   |male
+\par \hich\af37\dbch\af31505\loch\f37 300  | sharma| 100 |hyd\tab     |hr       |male
+\par 
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 1. Display character on the specific position in every record ?
+\par \hich\af37\dbch\af31505\loch\f37 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 cut  -c  9  emp.dat
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 -c means for specific charector
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 2. Display range of charaters in every record:
+\par \hich\af37\dbch\af31505\loch\f37 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - \hich\af37\dbch\af31505\loch\f37 - - - 
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 cut -c  5-9 emp.dat
+\par \hich\af37\dbch\af31505\loch\f37  
+\par \hich\af37\dbch\af31505\loch\f37     It will display 5th to 9th charactor in every record
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 cut  -c   5 -   emp.dat
+\par \hich\af37\dbch\af31505\loch\f37     It will display  5th character to last character in every record
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 cut -c  -3  emp.dat
+\par \hich\af37\dbch\af31505\loch\f37    
+\par \hich\af37\dbch\af31505\loch\f37 It will display 1st charactor to 3rd charactor in \hich\af37\dbch\af31505\loch\f37 every record
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 cut -c  3-5,7-10  emp.dat 
+\par \hich\af37\dbch\af31505\loch\f37   It will  display 3rd to 5th characters and 7th to 10th charactars in every line 
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 3. Display specific column data:
+\par \hich\af37\dbch\af31505\loch\f37 - - - - - - - - - - - - - - - - - - - - - - - -}{\rtlch\fcs1 \ab\af37\afs36 \ltrch\fcs0 \b\f37\fs36\lang9\langfe16393\kerning0\langnp9\insrsid8736750 
+\par }{\rtlch\fcs1 \af37\afs28 \ltrch\fcs0 \f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 \hich\af37\dbch\af31505\loch\f37 $ cut -d  "|" -f  3  emp .dat
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 -d means delimiter  (seperator). The default delimeter is tab.
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 -f means field 
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 4. Display Range of Columns:
+\par \hich\af37\dbch\af31505\loch\f37 - - - - - - - - - - - - - - - - - - - - - -
+\par \hich\af37\dbch\af31505\loch\f37 cut  -d  "|"  -f  2-4  emp.dat
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 cut -d   "|"  -f   2-   emp.dat
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 cut -d   "|"   -f   -4    emp.dat
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 To\hich\af37\dbch\af31505\loch\f37  display 1st, 3rd and 5th columns 
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 cut  -d  "|"  -f  1,3,5  emp.dat
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 5. Skip specific Column :
+\par \hich\af37\dbch\af31505\loch\f37 - - - - - - - - - - - - - - - - - -
+\par \hich\af37\dbch\af31505\loch\f37 Display all columns except specific column 
+\par \hich\af37\dbch\af31505\loch\f37 --compliment 
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 cut   -d   "|"   --compliment   -f  3,5  emp.dat 
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 It will  displ\hich\af37\dbch\af31505\loch\f37 ay all columns except 3 and 5 .
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 cut  -d  "|"  --compliment   -f  3,5  emp.dat
+\par \hich\af37\dbch\af31505\loch\f37 cut  -d  "|"  --compliment   -f  3-5  emp.dat
+\par \hich\af37\dbch\af31505\loch\f37 cut   -d  "|"  --compliment  -f   3 -  emp.dat
+\par 
+\par 
+\par }{\rtlch\fcs1 \ab\af37\afs36 \ltrch\fcs0 \b\f37\fs36\lang9\langfe16393\kerning0\langnp9\insrsid8736750 \hich\af37\dbch\af31505\loch\f37 Paste  command:
+\par \hich\af37\dbch\af31505\loch\f37 - - - - - - - - - - - - - 
+\par }{\rtlch\fcs1 \af37\afs28 \ltrch\fcs0 \f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 \hich\af37\dbch\af31505\loch\f37 we can use paste command to join two or more files horizontally by using some delimator. Default delimator is Tab .
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 paste file1.txt  file2.txt  file3.txt  .....
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 subjects.txt
+\par \hich\af37\dbch\af31505\loch\f37 - - - - - - - - -
+\par \hich\af37\dbch\af31505\loch\f37 Core java  
+\par \hich\af37\dbch\af31505\loch\f37 Adv Java
+\par \hich\af37\dbch\af31505\loch\f37 Python
+\par \hich\af37\dbch\af31505\loch\f37 Ui
+\par \hich\af37\dbch\af31505\loch\f37 Linux
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 fee.txt
+\par \hich\af37\dbch\af31505\loch\f37 - - - - - 
+\par \hich\af37\dbch\af31505\loch\f37 1000
+\par \hich\af37\dbch\af31505\loch\f37 2000
+\par \hich\af37\dbch\af31505\loch\f37 3000
+\par \hich\af37\dbch\af31505\loch\f37 4000
+\par \hich\af37\dbch\af31505\loch\f37 5000
+\par }{\rtlch\fcs1 \ab\af37\afs36 \ltrch\fcs0 \b\f37\fs36\lang9\langfe16393\kerning0\langnp9\insrsid8736750 
+\par }{\rtlch\fcs1 \af37\afs28 \ltrch\fcs0 \f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid15346519 \hich\af37\dbch\af31505\loch\f37 W\hich\af37\dbch\af31505\loch\f37 e \hich\af37\dbch\af31505\loch\f37 can specify our own delimeter by using -d optio
+\hich\af37\dbch\af31505\loch\f37 n.
+\par }{\rtlch\fcs1 \af37\afs28 \ltrch\fcs0 \f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid15346519\charrsid15346519 
+\par }{\rtlch\fcs1 \af37\afs28 \ltrch\fcs0 \f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid15346519 \hich\af37\dbch\af31505\loch\f37 -d means delim}{\rtlch\fcs1 \af37\afs28 \ltrch\fcs0 \f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 
+\par }{\rtlch\fcs1 \af37\afs28 \ltrch\fcs0 \f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid15346519 
+\par \hich\af37\dbch\af31505\loch\f37 p\hich\af37\dbch\af31505\loch\f37 aste \hich\af37\dbch\af31505\loch\f37 -d \hich\af37\dbch\af31505\loch\f37  \loch\af37\dbch\af31505\hich\f37 \lquote -\loch\af37\dbch\af31505\hich\f37 \lquote 
+\hich\af37\dbch\af31505\loch\f37   subjects.txt 
+\par }{\rtlch\fcs1 \af37\afs28 \ltrch\fcs0 \f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid5070607 
+\par \hich\af37\dbch\af31505\loch\f37 paste \hich\af37\dbch\af31505\loch\f37 -d \hich\af37\dbch\af31505\loch\f37  \loch\af37\dbch\af31505\hich\f37 \lquote -\hich\af37\dbch\af31505\loch\f37  -\hich\af37\dbch\af31505\loch\f37  -\hich\af37\dbch\af31505\loch\f37  
+-\hich\af37\dbch\af31505\loch\f37 >\loch\af37\dbch\af31505\hich\f37 \rquote \hich\af37\dbch\af31505\loch\f37  subjects.txt\hich\af37\dbch\af31505\loch\f37  \hich\af37\dbch\af31505\loch\f37  \hich\af37\dbch\af31505\loch\f37 fee.
+\hich\af37\dbch\af31505\loch\f37 txt
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 Core java\hich\af37\dbch\af31505\loch\f37 - - - - - \hich\af37\dbch\af31505\loch\f37 >\hich\af37\dbch\af31505\loch\f37 1000
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 Delimiter should be only one \hich\af37\dbch\af31505\loch\f37 character\hich\af37\dbch\af31505\loch\f37 . If we are providing more than one \hich\af37\dbch\af31505\loch\f37 character\hich\af37\dbch\af31505\loch\f37  
+\hich\af37\dbch\af31505\loch\f37 then it will consider only fi\hich\af37\dbch\af31505\loch\f37 rst \hich\af37\dbch\af31505\loch\f37 character.
+\par }{\rtlch\fcs1 \af37\afs28 \ltrch\fcs0 \f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid1456317 \hich\af37\dbch\af31505\loch\f37    
+\par }\pard \ltrpar\ql \li0\ri-449\nowidctlpar\tx142\tx426\tx994\wrapdefault\faauto\rin-449\lin0\itap0\pararsid1456317 {\rtlch\fcs1 \ab\af37\afs36 \ltrch\fcs0 \b\f37\fs36\lang9\langfe16393\kerning0\langnp9\insrsid1456317\charrsid1456317 
+\hich\af37\dbch\af31505\loch\f37 t\hich\af37\dbch\af31505\loch\f37 r command}{\rtlch\fcs1 \ab\af37\afs36 \ltrch\fcs0 \b\f37\fs36\lang9\langfe16393\kerning0\langnp9\insrsid1456317 \hich\af37\dbch\af31505\loch\f37  :
+\par \hich\af37\dbch\af31505\loch\f37 - - - - -\hich\af37\dbch\af31505\loch\f37  - - - - -
+\par }{\rtlch\fcs1 \af37\afs28 \ltrch\fcs0 \f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid1456317 \hich\af37\dbch\af31505\loch\f37 tr means translate 
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 This command translates char\hich\af37\dbch\af31505\loch\f37 acter b\hich\af37\dbch\af31505\loch\f37 y character 
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 W\hich\af37\dbch\af31505\loch\f37 hile \hich\af37\dbch\af31505\loch\f37 Learning Linux\hich\af37\dbch\af31505\loch\f37 , It is Not Required To Eat An\hich\af37\dbch\af31505\loch\f37 ything.
+\par }{\rtlch\fcs1 \ab\af37\afs28 \ltrch\fcs0 \b\f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid1456317 \hich\af37\dbch\af31505\loch\f37 1}{\rtlch\fcs1 \af37\afs28 \ltrch\fcs0 \f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid6254650 
+\hich\af37\dbch\af31505\loch\f37 . tr \loch\af37\dbch\af31505\hich\f37 \lquote \hich\af37\dbch\af31505\loch\f37 aeiou\loch\af37\dbch\af31505\hich\f37 \rquote \hich\af37\dbch\af31505\loch\f37  \hich\af37\dbch\af31505\loch\f37   
+\loch\af37\dbch\af31505\hich\f37 \lquote \hich\af37\dbch\af31505\loch\f37 AEIOU\loch\af37\dbch\af31505\hich\f37 \rquote \hich\af37\dbch\af31505\loch\f37  < demo.txt
+\par \hich\af37\dbch\af31505\loch\f37   \hich\af37\dbch\af31505\loch\f37 It will trans\hich\af37\dbch\af31505\loch\f37 late\hich\af37\dbch\af31505\loch\f37  lower case vowels to upp\hich\af37\dbch\af31505\loch\f37 er case vowels.}{\rtlch\fcs1 \af37\afs28 
+\ltrch\fcs0 \f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid1456317 
+\par }{\rtlch\fcs1 \af37\afs28 \ltrch\fcs0 \f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid6254650 
+\par \hich\af37\dbch\af31505\loch\f37 2. \hich\af37\dbch\af31505\loch\f37 tr \loch\af37\dbch\af31505\hich\f37 \lquote \hich\af37\dbch\af31505\loch\f37 [a-z]\loch\af37\dbch\af31505\hich\f37 \rquote \hich\af37\dbch\af31505\loch\f37   
+\loch\af37\dbch\af31505\hich\f37 \lquote \hich\af37\dbch\af31505\loch\f37 [A-\hich\af37\dbch\af31505\loch\f37 Z]\loch\af37\dbch\af31505\hich\f37 \rquote \hich\af37\dbch\af31505\loch\f37  \hich\af37\dbch\af31505\loch\f37 < demo.txt
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 Lower case alp\hich\af37\dbch\af31505\loch\f37 habet symbol will be replaced with uppercase a\hich\af37\dbch\af31505\loch\f37 lp\hich\af37\dbch\af31505\loch\f37 habet symbol.
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 3. tr \loch\af37\dbch\af31505\hich\f37 \lquote \hich\af37\dbch\af31505\loch\f37 [a-\hich\af37\dbch\af31505\loch\f37 z][A\hich\af37\dbch\af31505\loch\f37 -Z]\loch\af37\dbch\af31505\hich\f37 \rquote 
+\hich\af37\dbch\af31505\loch\f37   \loch\af37\dbch\af31505\hich\f37 \lquote \hich\af37\dbch\af31505\loch\f37 [A-\hich\af37\dbch\af31505\loch\f37 Z\hich\af37\dbch\af31505\loch\f37 ]\hich\af37\dbch\af31505\loch\f37  \hich\af37\dbch\af31505\loch\f37 [a-z]
+\loch\af37\dbch\af31505\hich\f37 \rquote \hich\af37\dbch\af31505\loch\f37  <demo.txt
+\par \hich\af37\dbch\af31505\loch\f37 Lower case alphabet is replace with upper case and upper cas\hich\af37\dbch\af31505\loch\f37 e replace with lower case.
+\par 
+\par }{\rtlch\fcs1 \af37\afs28 \ltrch\fcs0 \f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid15144822 \hich\af37\dbch\af31505\loch\f37 4. tr \loch\af37\dbch\af31505\hich\f37 \lquote \hich\af37\dbch\af31505\loch\f37 a\hich\af37\dbch\af31505\loch\f37 eiou
+\loch\af37\dbch\af31505\hich\f37 \rquote \hich\af37\dbch\af31505\loch\f37   \loch\af37\dbch\af31505\hich\f37 \lquote \hich\af37\dbch\af31505\loch\f37 7\loch\af37\dbch\af31505\hich\f37 \rquote \hich\af37\dbch\af31505\loch\f37   < demo.txt
+\par \hich\af37\dbch\af31505\loch\f37 A\hich\af37\dbch\af31505\loch\f37 eiou \hich\af37\dbch\af31505\loch\f37 is replaced with 7
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 5. tr -d \hich\af37\dbch\af31505\loch\f37  \loch\af37\dbch\af31505\hich\f37 \lquote \hich\af37\dbch\af31505\loch\f37 a\loch\af37\dbch\af31505\hich\f37 \rquote \hich\af37\dbch\af31505\loch\f37  
+\hich\af37\dbch\af31505\loch\f37  \hich\af37\dbch\af31505\loch\f37 <\hich\af37\dbch\af31505\loch\f37 demo.txt
+\par \hich\af37\dbch\af31505\loch\f37 It will delete all \hich\af37\dbch\af31505\loch\f37 occurance of  a in demo.\hich\af37\dbch\af31505\loch\f37 txt
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 6. tr -d \loch\af37\dbch\af31505\hich\f37 \lquote \hich\af37\dbch\af31505\loch\f37 aeiou\loch\af37\dbch\af31505\hich\f37 \rquote \hich\af37\dbch\af31505\loch\f37  < demo.txt
+\par \hich\af37\dbch\af31505\loch\f37 It will delete all lower case vowels in demo.txt
+\par \hich\af37\dbch\af31505\loch\f37 7.\hich\af37\dbch\af31505\loch\f37 tr -s \loch\af37\dbch\af31505\hich\f37 \lquote \hich\af37\dbch\af31505\loch\f37 a\loch\af37\dbch\af31505\hich\f37 \rquote \hich\af37\dbch\af31505\loch\f37  
+\hich\af37\dbch\af31505\loch\f37 <demo.txt
+\par 
+\par \hich\af37\dbch\af31505\loch\f37 -s means of a\loch\af37\dbch\af31505\hich\f37 \rquote \hich\af37\dbch\af31505\loch\f37 s will be replace with single a.
+\par }{\rtlch\fcs1 \ab\af37\afs36 \ltrch\fcs0 \b\f37\fs36\lang9\langfe16393\kerning0\langnp9\insrsid15144822\charrsid1456317 
+\par }\pard \ltrpar\ql \li0\ri-449\nowidctlpar\tx142\tx426\tx994\wrapdefault\faauto\rin-449\lin0\itap0 {\rtlch\fcs1 \ab\af37\afs36 \ltrch\fcs0 \b\f37\fs36\lang9\langfe16393\kerning0\langnp9\insrsid1456317\charrsid1456317 
+\par }{\rtlch\fcs1 \af37\afs28 \ltrch\fcs0 \f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid5070607 
+\par }{\rtlch\fcs1 \af37\afs28 \ltrch\fcs0 \f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 
+\par \hich\af37\dbch\af31505\loch\f37   
+\par 
+\par 
+\par \hich\af37\dbch\af31505\loch\f37  
+\par 
+\par }{\rtlch\fcs1 \ab\af37\afs28 \ltrch\fcs0 \b\f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 
+\par 
+\par 
+\par }{\rtlch\fcs1 \af37\afs28 \ltrch\fcs0 \f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 
+\par 
+\par }{\rtlch\fcs1 \ab\af37\afs32 \ltrch\fcs0 \b\f37\fs32\lang9\langfe16393\kerning0\langnp9\insrsid8736750 
+\par }{\rtlch\fcs1 \af37\afs28 \ltrch\fcs0 \f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 
+\par 
+\par 
+\par 
+\par \hich\af37\dbch\af31505\loch\f37      
+\par 
+\par }{\rtlch\fcs1 \ab\af37\afs32 \ltrch\fcs0 \b\f37\fs32\lang9\langfe16393\kerning0\langnp9\insrsid8736750 
+\par }{\rtlch\fcs1 \af37\afs28 \ltrch\fcs0 \f37\fs28\lang9\langfe16393\kerning0\langnp9\insrsid8736750 
+\par 
+\par 
+\par 
+\par \hich\af37\dbch\af31505\loch\f37  }{\rtlch\fcs1 \af37 \ltrch\fcs0 \f37\lang9\langfe16393\kerning0\langnp9\insrsid8736750 
+\par }\pard \ltrpar\ql \li0\ri0\sa200\sl276\slmult1\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af37 \ltrch\fcs0 \f37\lang9\langfe16393\kerning0\langnp9\insrsid8736750 
+\par }{\*\themedata 504b030414000600080000002100e9de0fbfff0000001c020000130000005b436f6e74656e745f54797065735d2e786d6cac91cb4ec3301045f748fc83e52d4a
+9cb2400825e982c78ec7a27cc0c8992416c9d8b2a755fbf74cd25442a820166c2cd933f79e3be372bd1f07b5c3989ca74aaff2422b24eb1b475da5df374fd9ad
+5689811a183c61a50f98f4babebc2837878049899a52a57be670674cb23d8e90721f90a4d2fa3802cb35762680fd800ecd7551dc18eb899138e3c943d7e503b6
+b01d583deee5f99824e290b4ba3f364eac4a430883b3c092d4eca8f946c916422ecab927f52ea42b89a1cd59c254f919b0e85e6535d135a8de20f20b8c12c3b0
+0c895fcf6720192de6bf3b9e89ecdbd6596cbcdd8eb28e7c365ecc4ec1ff1460f53fe813d3cc7f5b7f020000ffff0300504b030414000600080000002100a5d6
+a7e7c0000000360100000b0000005f72656c732f2e72656c73848fcf6ac3300c87ef85bd83d17d51d2c31825762fa590432fa37d00e1287f68221bdb1bebdb4f
+c7060abb0884a4eff7a93dfeae8bf9e194e720169aaa06c3e2433fcb68e1763dbf7f82c985a4a725085b787086a37bdbb55fbc50d1a33ccd311ba548b6309512
+0f88d94fbc52ae4264d1c910d24a45db3462247fa791715fd71f989e19e0364cd3f51652d73760ae8fa8c9ffb3c330cc9e4fc17faf2ce545046e37944c69e462
+a1a82fe353bd90a865aad41ed0b5b8f9d6fd010000ffff0300504b0304140006000800000021006b799616830000008a0000001c0000007468656d652f746865
+6d652f7468656d654d616e616765722e786d6c0ccc4d0ac3201040e17da17790d93763bb284562b2cbaebbf600439c1a41c7a0d29fdbd7e5e38337cedf14d59b
+4b0d592c9c070d8a65cd2e88b7f07c2ca71ba8da481cc52c6ce1c715e6e97818c9b48d13df49c873517d23d59085adb5dd20d6b52bd521ef2cdd5eb9246a3d8b
+4757e8d3f729e245eb2b260a0238fd010000ffff0300504b030414000600080000002100b6f4679893070000c9200000160000007468656d652f7468656d652f
+7468656d65312e786d6cec59cd8b1bc915bf07f23f347d97f5d5ad8fc1f2a24fcfda33b6b164873dd648a5eef2547789aad28cc56208de532e81c026e49085bd
+ed21842cecc22eb9e48f31d8249b3f22afaa5bdd5552c99e191c3061463074977eefd5afde7bf5de53d5ddcf5e26d4bbc05c1096f6fcfa9d9aefe174ce16248d
+7afeb3d9a4d2f13d2151ba4094a5b8e76fb0f03fbbf7eb5fdd454732c609f6403e1547a8e7c752ae8eaa5531876124eeb0154ee1bb25e30992f0caa3ea82a34b
+d09bd06aa3566b55134452df4b51026a1f2f97648ebd9952e9dfdb2a1f53784da5500373caa74a35b6243476715e5708b11143cabd0b447b3eccb3609733fc52
+fa1e4542c2173dbfa6fffceabdbb5574940b517940d6909be8bf5c2e17589c37f49c3c3a2b260d823068f50bfd1a40e53e6edc1eb7c6ad429f06a0f91c569a71
+b175b61bc320c71aa0ecd1a17bd41e35eb16ded0dfdce3dc0fd5c7c26b50a63fd8c34f2643b0a285d7a00c1feee1c3417730b2f56b50866fede1dbb5fe28685b
+fa3528a6243ddf43d7c25673b85d6d0159327aec8477c360d26ee4ca4b144443115d6a8a254be5a1584bd00bc6270050408a24493db959e1259a43140f112567
+9c7827248a21f056286502866b8ddaa4d684ffea13e827ed5174849121ad780113b137a4f87862cec94af6fc07a0d537206f7ffef9cdeb1fdfbcfee9cd575fbd
+79fdf77c6eadca923b466964cafdf2dd1ffef3cd6fbd7ffff0ed2f5fff319b7a172f4cfcbbbffdeedd3ffef93ef5b0e2d2146ffff4fdbb1fbf7ffbe7dfffebaf
+5f3bb4f7393a33e1339260e13dc297de5396c0021dfcf119bf9ec42c46c494e8a791402952b338f48f656ca11f6d10450edc00db767cce21d5b880f7d72f2cc2
+d398af2571687c182716f094313a60dc6985876a2ec3ccb3751ab927e76b13f714a10bd7dc43945a5e1eaf579063894be530c616cd2714a5124538c5d253dfb1
+738c1dabfb8210cbaea764ce99604be97d41bc01224e93ccc899154da5d03149c02f1b1741f0b7659bd3e7de8051d7aa47f8c246c2de40d4417e86a965c6fb68
+2d51e252394309350d7e8264ec2239ddf0b9891b0b099e8e3065de78818570c93ce6b05ec3e90f21cdb8dd7e4a37898de4929cbb749e20c64ce4889d0f6394ac
+5cd829496313fbb938871045de13265df05366ef10f50e7e40e941773f27d872f787b3c133c8b026a53240d4376beef0e57dccacf89d6ee8126157aae9f3c44a
+b17d4e9cd131584756689f604cd1255a60ec3dfbdcc160c05696cd4bd20f62c82ac7d815580f901dabea3dc5027a25d5dcece7c91322ac909de2881de073bad9
+493c1b9426881fd2fc08bc6eda7c0ca52e7105c0633a3f37818f08f480102f4ea33c16a0c308ee835a9fc4c82a60ea5db8e375c32dff5d658fc1be7c61d1b8c2
+be04197c6d1948eca6cc7b6d3343d49aa00c9819822ec3956e41c4727f29a28aab165b3be596f6a62ddd00dd91d5f42424fd6007b4d3fb84ffbbde073a8cb77f
+f9c6b10f3e4ebfe3566c25ab6b763a8792c9f14e7f7308b7dbd50c195f904fbfa919a175fa04431dd9cf58b73dcd6d4fe3ffdff73487f6f36d2773a8dfb8ed64
+7ce8306e3b99fc70e5e3743265f3027d8d3af0c80e7af4b14f72f0d46749289dca0dc527421ffc08f83db398c0a092d3279eb838055cc5f0a8ca1c4c60e1228e
+b48cc799fc0d91f134462b381daafb4a492472d591f0564cc0a1911e76ea5678ba4e4ed9223becacd7d5c16656590592e5782d2cc6e1a04a66e856bb3cc02bd4
+6bb6913e68dd1250b2d721614c6693683a48b4b783ca48fa58178ce620a157f65158741d2c3a4afdd6557b2c805ae115f8c1edc1cff49e1f06200242701e07cd
+f942f92973f5d6bbda991fd3d3878c69450034d8db08283ddd555c0f2e4fad2e0bb52b78da2261849b4d425b46377822869fc17974aad1abd0b8aeafbba54b2d
+7aca147a3e08ad9246bbf33e1637f535c8ede6069a9a9982a6de65cf6f35430899395af5fc251c1ac363b282d811ea3717a211dcbccc25cf36fc4d32cb8a0b39
+4222ce0cae934e960d122231f728497abe5a7ee1069aea1ca2b9d51b90103e59725d482b9f1a3970baed64bc5ce2b934dd6e8c284b67af90e1b35ce1fc568bdf
+1cac24d91adc3d8d1797de195df3a708422c6cd795011744c0dd413db3e682c0655891c8caf8db294c79da356fa3740c65e388ae62945714339967709dca0b3a
+faadb081f196af190c6a98242f8467912ab0a651ad6a5a548d8cc3c1aafb6121653923699635d3ca2aaa6abab39835c3b60cecd8f26645de60b53531e434b3c2
+67a97b37e576b7b96ea74f28aa0418bcb09fa3ea5ea12018d4cac92c6a8af17e1a56393b1fb56bc776811fa07695226164fdd656ed8edd8a1ae19c0e066f54f9
+416e376a6168b9ed2bb5a5f5adb979b1cdce5e40f2184197bba6526857c2c92e47d0104d754f92a50dd8222f65be35e0c95b73d2f3bfac85fd60d80887955a27
+1c57826650ab74c27eb3d20fc3667d1cd66ba341e31514161927f530bbb19fc00506dde4f7f67a7cefee3ed9ded1dc99b3a4caf4dd7c5513d777f7f5c6e1bb7b
+8f40d2f9b2d598749bdd41abd26df627956034e854bac3d6a0326a0ddba3c9681876ba9357be77a1c141bf390c5ae34ea5551f0e2b41aba6e877ba9576d068f4
+8376bf330efaaff23606569ea58fdc16605ecdebde7f010000ffff0300504b0304140006000800000021000dd1909fb60000001b010000270000007468656d65
+2f7468656d652f5f72656c732f7468656d654d616e616765722e786d6c2e72656c73848f4d0ac2301484f78277086f6fd3ba109126dd88d0add40384e4350d36
+3f2451eced0dae2c082e8761be9969bb979dc9136332de3168aa1a083ae995719ac16db8ec8e4052164e89d93b64b060828e6f37ed1567914b284d262452282e
+3198720e274a939cd08a54f980ae38a38f56e422a3a641c8bbd048f7757da0f19b017cc524bd62107bd5001996509affb3fd381a89672f1f165dfe514173d985
+0528a2c6cce0239baa4c04ca5bbabac4df000000ffff0300504b01022d0014000600080000002100e9de0fbfff0000001c020000130000000000000000000000
+0000000000005b436f6e74656e745f54797065735d2e786d6c504b01022d0014000600080000002100a5d6a7e7c0000000360100000b00000000000000000000
+000000300100005f72656c732f2e72656c73504b01022d00140006000800000021006b799616830000008a0000001c0000000000000000000000000019020000
+7468656d652f7468656d652f7468656d654d616e616765722e786d6c504b01022d0014000600080000002100b6f4679893070000c92000001600000000000000
+000000000000d60200007468656d652f7468656d652f7468656d65312e786d6c504b01022d00140006000800000021000dd1909fb60000001b01000027000000
+000000000000000000009d0a00007468656d652f7468656d652f5f72656c732f7468656d654d616e616765722e786d6c2e72656c73504b050600000000050005005d010000980b00000000}
+{\*\colorschememapping 3c3f786d6c2076657273696f6e3d22312e302220656e636f64696e673d225554462d3822207374616e64616c6f6e653d22796573223f3e0d0a3c613a636c724d
+617020786d6c6e733a613d22687474703a2f2f736368656d61732e6f70656e786d6c666f726d6174732e6f72672f64726177696e676d6c2f323030362f6d6169
+6e22206267313d226c743122207478313d22646b3122206267323d226c743222207478323d22646b322220616363656e74313d22616363656e74312220616363
+656e74323d22616363656e74322220616363656e74333d22616363656e74332220616363656e74343d22616363656e74342220616363656e74353d22616363656e74352220616363656e74363d22616363656e74362220686c696e6b3d22686c696e6b2220666f6c486c696e6b3d22666f6c486c696e6b222f3e}
+{\*\latentstyles\lsdstimax376\lsdlockeddef0\lsdsemihiddendef0\lsdunhideuseddef0\lsdqformatdef0\lsdprioritydef99{\lsdlockedexcept \lsdqformat1 \lsdpriority0 \lsdlocked0 Normal;\lsdqformat1 \lsdpriority9 \lsdlocked0 heading 1;
+\lsdsemihidden1 \lsdunhideused1 \lsdqformat1 \lsdpriority9 \lsdlocked0 heading 2;\lsdsemihidden1 \lsdunhideused1 \lsdqformat1 \lsdpriority9 \lsdlocked0 heading 3;\lsdsemihidden1 \lsdunhideused1 \lsdqformat1 \lsdpriority9 \lsdlocked0 heading 4;
+\lsdsemihidden1 \lsdunhideused1 \lsdqformat1 \lsdpriority9 \lsdlocked0 heading 5;\lsdsemihidden1 \lsdunhideused1 \lsdqformat1 \lsdpriority9 \lsdlocked0 heading 6;\lsdsemihidden1 \lsdunhideused1 \lsdqformat1 \lsdpriority9 \lsdlocked0 heading 7;
+\lsdsemihidden1 \lsdunhideused1 \lsdqformat1 \lsdpriority9 \lsdlocked0 heading 8;\lsdsemihidden1 \lsdunhideused1 \lsdqformat1 \lsdpriority9 \lsdlocked0 heading 9;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 index 1;
+\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 index 2;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 index 3;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 index 4;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 index 5;
+\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 index 6;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 index 7;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 index 8;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 index 9;
+\lsdsemihidden1 \lsdunhideused1 \lsdpriority39 \lsdlocked0 toc 1;\lsdsemihidden1 \lsdunhideused1 \lsdpriority39 \lsdlocked0 toc 2;\lsdsemihidden1 \lsdunhideused1 \lsdpriority39 \lsdlocked0 toc 3;
+\lsdsemihidden1 \lsdunhideused1 \lsdpriority39 \lsdlocked0 toc 4;\lsdsemihidden1 \lsdunhideused1 \lsdpriority39 \lsdlocked0 toc 5;\lsdsemihidden1 \lsdunhideused1 \lsdpriority39 \lsdlocked0 toc 6;
+\lsdsemihidden1 \lsdunhideused1 \lsdpriority39 \lsdlocked0 toc 7;\lsdsemihidden1 \lsdunhideused1 \lsdpriority39 \lsdlocked0 toc 8;\lsdsemihidden1 \lsdunhideused1 \lsdpriority39 \lsdlocked0 toc 9;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Normal Indent;
+\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 footnote text;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 annotation text;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 header;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 footer;
+\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 index heading;\lsdsemihidden1 \lsdunhideused1 \lsdqformat1 \lsdpriority35 \lsdlocked0 caption;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 table of figures;
+\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 envelope address;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 envelope return;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 footnote reference;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 annotation reference;
+\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 line number;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 page number;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 endnote reference;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 endnote text;
+\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 table of authorities;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 macro;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 toa heading;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 List;
+\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 List Bullet;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 List Number;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 List 2;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 List 3;
+\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 List 4;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 List 5;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 List Bullet 2;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 List Bullet 3;
+\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 List Bullet 4;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 List Bullet 5;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 List Number 2;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 List Number 3;
+\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 List Number 4;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 List Number 5;\lsdqformat1 \lsdpriority10 \lsdlocked0 Title;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Closing;
+\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Signature;\lsdsemihidden1 \lsdunhideused1 \lsdpriority1 \lsdlocked0 Default Paragraph Font;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Body Text;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Body Text Indent;
+\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 List Continue;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 List Continue 2;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 List Continue 3;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 List Continue 4;
+\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 List Continue 5;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Message Header;\lsdqformat1 \lsdpriority11 \lsdlocked0 Subtitle;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Salutation;
+\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Date;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Body Text First Indent;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Body Text First Indent 2;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Note Heading;
+\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Body Text 2;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Body Text 3;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Body Text Indent 2;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Body Text Indent 3;
+\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Block Text;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Hyperlink;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 FollowedHyperlink;\lsdqformat1 \lsdpriority22 \lsdlocked0 Strong;
+\lsdqformat1 \lsdpriority20 \lsdlocked0 Emphasis;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Document Map;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Plain Text;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 E-mail Signature;
+\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 HTML Top of Form;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 HTML Bottom of Form;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Normal (Web);\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 HTML Acronym;
+\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 HTML Address;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 HTML Cite;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 HTML Code;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 HTML Definition;
+\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 HTML Keyboard;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 HTML Preformatted;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 HTML Sample;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 HTML Typewriter;
+\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 HTML Variable;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Normal Table;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 annotation subject;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 No List;
+\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Outline List 1;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Outline List 2;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Outline List 3;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Table Simple 1;
+\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Table Simple 2;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Table Simple 3;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Table Classic 1;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Table Classic 2;
+\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Table Classic 3;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Table Classic 4;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Table Colorful 1;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Table Colorful 2;
+\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Table Colorful 3;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Table Columns 1;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Table Columns 2;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Table Columns 3;
+\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Table Columns 4;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Table Columns 5;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Table Grid 1;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Table Grid 2;
+\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Table Grid 3;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Table Grid 4;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Table Grid 5;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Table Grid 6;
+\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Table Grid 7;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Table Grid 8;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Table List 1;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Table List 2;
+\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Table List 3;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Table List 4;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Table List 5;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Table List 6;
+\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Table List 7;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Table List 8;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Table 3D effects 1;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Table 3D effects 2;
+\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Table 3D effects 3;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Table Contemporary;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Table Elegant;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Table Professional;
+\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Table Subtle 1;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Table Subtle 2;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Table Web 1;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Table Web 2;
+\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Table Web 3;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Balloon Text;\lsdpriority39 \lsdlocked0 Table Grid;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Table Theme;\lsdsemihidden1 \lsdlocked0 Placeholder Text;
+\lsdqformat1 \lsdpriority1 \lsdlocked0 No Spacing;\lsdpriority60 \lsdlocked0 Light Shading;\lsdpriority61 \lsdlocked0 Light List;\lsdpriority62 \lsdlocked0 Light Grid;\lsdpriority63 \lsdlocked0 Medium Shading 1;\lsdpriority64 \lsdlocked0 Medium Shading 2;
+\lsdpriority65 \lsdlocked0 Medium List 1;\lsdpriority66 \lsdlocked0 Medium List 2;\lsdpriority67 \lsdlocked0 Medium Grid 1;\lsdpriority68 \lsdlocked0 Medium Grid 2;\lsdpriority69 \lsdlocked0 Medium Grid 3;\lsdpriority70 \lsdlocked0 Dark List;
+\lsdpriority71 \lsdlocked0 Colorful Shading;\lsdpriority72 \lsdlocked0 Colorful List;\lsdpriority73 \lsdlocked0 Colorful Grid;\lsdpriority60 \lsdlocked0 Light Shading Accent 1;\lsdpriority61 \lsdlocked0 Light List Accent 1;
+\lsdpriority62 \lsdlocked0 Light Grid Accent 1;\lsdpriority63 \lsdlocked0 Medium Shading 1 Accent 1;\lsdpriority64 \lsdlocked0 Medium Shading 2 Accent 1;\lsdpriority65 \lsdlocked0 Medium List 1 Accent 1;\lsdsemihidden1 \lsdlocked0 Revision;
+\lsdqformat1 \lsdpriority34 \lsdlocked0 List Paragraph;\lsdqformat1 \lsdpriority29 \lsdlocked0 Quote;\lsdqformat1 \lsdpriority30 \lsdlocked0 Intense Quote;\lsdpriority66 \lsdlocked0 Medium List 2 Accent 1;\lsdpriority67 \lsdlocked0 Medium Grid 1 Accent 1;
+\lsdpriority68 \lsdlocked0 Medium Grid 2 Accent 1;\lsdpriority69 \lsdlocked0 Medium Grid 3 Accent 1;\lsdpriority70 \lsdlocked0 Dark List Accent 1;\lsdpriority71 \lsdlocked0 Colorful Shading Accent 1;\lsdpriority72 \lsdlocked0 Colorful List Accent 1;
+\lsdpriority73 \lsdlocked0 Colorful Grid Accent 1;\lsdpriority60 \lsdlocked0 Light Shading Accent 2;\lsdpriority61 \lsdlocked0 Light List Accent 2;\lsdpriority62 \lsdlocked0 Light Grid Accent 2;\lsdpriority63 \lsdlocked0 Medium Shading 1 Accent 2;
+\lsdpriority64 \lsdlocked0 Medium Shading 2 Accent 2;\lsdpriority65 \lsdlocked0 Medium List 1 Accent 2;\lsdpriority66 \lsdlocked0 Medium List 2 Accent 2;\lsdpriority67 \lsdlocked0 Medium Grid 1 Accent 2;\lsdpriority68 \lsdlocked0 Medium Grid 2 Accent 2;
+\lsdpriority69 \lsdlocked0 Medium Grid 3 Accent 2;\lsdpriority70 \lsdlocked0 Dark List Accent 2;\lsdpriority71 \lsdlocked0 Colorful Shading Accent 2;\lsdpriority72 \lsdlocked0 Colorful List Accent 2;\lsdpriority73 \lsdlocked0 Colorful Grid Accent 2;
+\lsdpriority60 \lsdlocked0 Light Shading Accent 3;\lsdpriority61 \lsdlocked0 Light List Accent 3;\lsdpriority62 \lsdlocked0 Light Grid Accent 3;\lsdpriority63 \lsdlocked0 Medium Shading 1 Accent 3;\lsdpriority64 \lsdlocked0 Medium Shading 2 Accent 3;
+\lsdpriority65 \lsdlocked0 Medium List 1 Accent 3;\lsdpriority66 \lsdlocked0 Medium List 2 Accent 3;\lsdpriority67 \lsdlocked0 Medium Grid 1 Accent 3;\lsdpriority68 \lsdlocked0 Medium Grid 2 Accent 3;\lsdpriority69 \lsdlocked0 Medium Grid 3 Accent 3;
+\lsdpriority70 \lsdlocked0 Dark List Accent 3;\lsdpriority71 \lsdlocked0 Colorful Shading Accent 3;\lsdpriority72 \lsdlocked0 Colorful List Accent 3;\lsdpriority73 \lsdlocked0 Colorful Grid Accent 3;\lsdpriority60 \lsdlocked0 Light Shading Accent 4;
+\lsdpriority61 \lsdlocked0 Light List Accent 4;\lsdpriority62 \lsdlocked0 Light Grid Accent 4;\lsdpriority63 \lsdlocked0 Medium Shading 1 Accent 4;\lsdpriority64 \lsdlocked0 Medium Shading 2 Accent 4;\lsdpriority65 \lsdlocked0 Medium List 1 Accent 4;
+\lsdpriority66 \lsdlocked0 Medium List 2 Accent 4;\lsdpriority67 \lsdlocked0 Medium Grid 1 Accent 4;\lsdpriority68 \lsdlocked0 Medium Grid 2 Accent 4;\lsdpriority69 \lsdlocked0 Medium Grid 3 Accent 4;\lsdpriority70 \lsdlocked0 Dark List Accent 4;
+\lsdpriority71 \lsdlocked0 Colorful Shading Accent 4;\lsdpriority72 \lsdlocked0 Colorful List Accent 4;\lsdpriority73 \lsdlocked0 Colorful Grid Accent 4;\lsdpriority60 \lsdlocked0 Light Shading Accent 5;\lsdpriority61 \lsdlocked0 Light List Accent 5;
+\lsdpriority62 \lsdlocked0 Light Grid Accent 5;\lsdpriority63 \lsdlocked0 Medium Shading 1 Accent 5;\lsdpriority64 \lsdlocked0 Medium Shading 2 Accent 5;\lsdpriority65 \lsdlocked0 Medium List 1 Accent 5;\lsdpriority66 \lsdlocked0 Medium List 2 Accent 5;
+\lsdpriority67 \lsdlocked0 Medium Grid 1 Accent 5;\lsdpriority68 \lsdlocked0 Medium Grid 2 Accent 5;\lsdpriority69 \lsdlocked0 Medium Grid 3 Accent 5;\lsdpriority70 \lsdlocked0 Dark List Accent 5;\lsdpriority71 \lsdlocked0 Colorful Shading Accent 5;
+\lsdpriority72 \lsdlocked0 Colorful List Accent 5;\lsdpriority73 \lsdlocked0 Colorful Grid Accent 5;\lsdpriority60 \lsdlocked0 Light Shading Accent 6;\lsdpriority61 \lsdlocked0 Light List Accent 6;\lsdpriority62 \lsdlocked0 Light Grid Accent 6;
+\lsdpriority63 \lsdlocked0 Medium Shading 1 Accent 6;\lsdpriority64 \lsdlocked0 Medium Shading 2 Accent 6;\lsdpriority65 \lsdlocked0 Medium List 1 Accent 6;\lsdpriority66 \lsdlocked0 Medium List 2 Accent 6;
+\lsdpriority67 \lsdlocked0 Medium Grid 1 Accent 6;\lsdpriority68 \lsdlocked0 Medium Grid 2 Accent 6;\lsdpriority69 \lsdlocked0 Medium Grid 3 Accent 6;\lsdpriority70 \lsdlocked0 Dark List Accent 6;\lsdpriority71 \lsdlocked0 Colorful Shading Accent 6;
+\lsdpriority72 \lsdlocked0 Colorful List Accent 6;\lsdpriority73 \lsdlocked0 Colorful Grid Accent 6;\lsdqformat1 \lsdpriority19 \lsdlocked0 Subtle Emphasis;\lsdqformat1 \lsdpriority21 \lsdlocked0 Intense Emphasis;
+\lsdqformat1 \lsdpriority31 \lsdlocked0 Subtle Reference;\lsdqformat1 \lsdpriority32 \lsdlocked0 Intense Reference;\lsdqformat1 \lsdpriority33 \lsdlocked0 Book Title;\lsdsemihidden1 \lsdunhideused1 \lsdpriority37 \lsdlocked0 Bibliography;
+\lsdsemihidden1 \lsdunhideused1 \lsdqformat1 \lsdpriority39 \lsdlocked0 TOC Heading;\lsdpriority41 \lsdlocked0 Plain Table 1;\lsdpriority42 \lsdlocked0 Plain Table 2;\lsdpriority43 \lsdlocked0 Plain Table 3;\lsdpriority44 \lsdlocked0 Plain Table 4;
+\lsdpriority45 \lsdlocked0 Plain Table 5;\lsdpriority40 \lsdlocked0 Grid Table Light;\lsdpriority46 \lsdlocked0 Grid Table 1 Light;\lsdpriority47 \lsdlocked0 Grid Table 2;\lsdpriority48 \lsdlocked0 Grid Table 3;\lsdpriority49 \lsdlocked0 Grid Table 4;
+\lsdpriority50 \lsdlocked0 Grid Table 5 Dark;\lsdpriority51 \lsdlocked0 Grid Table 6 Colorful;\lsdpriority52 \lsdlocked0 Grid Table 7 Colorful;\lsdpriority46 \lsdlocked0 Grid Table 1 Light Accent 1;\lsdpriority47 \lsdlocked0 Grid Table 2 Accent 1;
+\lsdpriority48 \lsdlocked0 Grid Table 3 Accent 1;\lsdpriority49 \lsdlocked0 Grid Table 4 Accent 1;\lsdpriority50 \lsdlocked0 Grid Table 5 Dark Accent 1;\lsdpriority51 \lsdlocked0 Grid Table 6 Colorful Accent 1;
+\lsdpriority52 \lsdlocked0 Grid Table 7 Colorful Accent 1;\lsdpriority46 \lsdlocked0 Grid Table 1 Light Accent 2;\lsdpriority47 \lsdlocked0 Grid Table 2 Accent 2;\lsdpriority48 \lsdlocked0 Grid Table 3 Accent 2;
+\lsdpriority49 \lsdlocked0 Grid Table 4 Accent 2;\lsdpriority50 \lsdlocked0 Grid Table 5 Dark Accent 2;\lsdpriority51 \lsdlocked0 Grid Table 6 Colorful Accent 2;\lsdpriority52 \lsdlocked0 Grid Table 7 Colorful Accent 2;
+\lsdpriority46 \lsdlocked0 Grid Table 1 Light Accent 3;\lsdpriority47 \lsdlocked0 Grid Table 2 Accent 3;\lsdpriority48 \lsdlocked0 Grid Table 3 Accent 3;\lsdpriority49 \lsdlocked0 Grid Table 4 Accent 3;
+\lsdpriority50 \lsdlocked0 Grid Table 5 Dark Accent 3;\lsdpriority51 \lsdlocked0 Grid Table 6 Colorful Accent 3;\lsdpriority52 \lsdlocked0 Grid Table 7 Colorful Accent 3;\lsdpriority46 \lsdlocked0 Grid Table 1 Light Accent 4;
+\lsdpriority47 \lsdlocked0 Grid Table 2 Accent 4;\lsdpriority48 \lsdlocked0 Grid Table 3 Accent 4;\lsdpriority49 \lsdlocked0 Grid Table 4 Accent 4;\lsdpriority50 \lsdlocked0 Grid Table 5 Dark Accent 4;
+\lsdpriority51 \lsdlocked0 Grid Table 6 Colorful Accent 4;\lsdpriority52 \lsdlocked0 Grid Table 7 Colorful Accent 4;\lsdpriority46 \lsdlocked0 Grid Table 1 Light Accent 5;\lsdpriority47 \lsdlocked0 Grid Table 2 Accent 5;
+\lsdpriority48 \lsdlocked0 Grid Table 3 Accent 5;\lsdpriority49 \lsdlocked0 Grid Table 4 Accent 5;\lsdpriority50 \lsdlocked0 Grid Table 5 Dark Accent 5;\lsdpriority51 \lsdlocked0 Grid Table 6 Colorful Accent 5;
+\lsdpriority52 \lsdlocked0 Grid Table 7 Colorful Accent 5;\lsdpriority46 \lsdlocked0 Grid Table 1 Light Accent 6;\lsdpriority47 \lsdlocked0 Grid Table 2 Accent 6;\lsdpriority48 \lsdlocked0 Grid Table 3 Accent 6;
+\lsdpriority49 \lsdlocked0 Grid Table 4 Accent 6;\lsdpriority50 \lsdlocked0 Grid Table 5 Dark Accent 6;\lsdpriority51 \lsdlocked0 Grid Table 6 Colorful Accent 6;\lsdpriority52 \lsdlocked0 Grid Table 7 Colorful Accent 6;
+\lsdpriority46 \lsdlocked0 List Table 1 Light;\lsdpriority47 \lsdlocked0 List Table 2;\lsdpriority48 \lsdlocked0 List Table 3;\lsdpriority49 \lsdlocked0 List Table 4;\lsdpriority50 \lsdlocked0 List Table 5 Dark;
+\lsdpriority51 \lsdlocked0 List Table 6 Colorful;\lsdpriority52 \lsdlocked0 List Table 7 Colorful;\lsdpriority46 \lsdlocked0 List Table 1 Light Accent 1;\lsdpriority47 \lsdlocked0 List Table 2 Accent 1;\lsdpriority48 \lsdlocked0 List Table 3 Accent 1;
+\lsdpriority49 \lsdlocked0 List Table 4 Accent 1;\lsdpriority50 \lsdlocked0 List Table 5 Dark Accent 1;\lsdpriority51 \lsdlocked0 List Table 6 Colorful Accent 1;\lsdpriority52 \lsdlocked0 List Table 7 Colorful Accent 1;
+\lsdpriority46 \lsdlocked0 List Table 1 Light Accent 2;\lsdpriority47 \lsdlocked0 List Table 2 Accent 2;\lsdpriority48 \lsdlocked0 List Table 3 Accent 2;\lsdpriority49 \lsdlocked0 List Table 4 Accent 2;
+\lsdpriority50 \lsdlocked0 List Table 5 Dark Accent 2;\lsdpriority51 \lsdlocked0 List Table 6 Colorful Accent 2;\lsdpriority52 \lsdlocked0 List Table 7 Colorful Accent 2;\lsdpriority46 \lsdlocked0 List Table 1 Light Accent 3;
+\lsdpriority47 \lsdlocked0 List Table 2 Accent 3;\lsdpriority48 \lsdlocked0 List Table 3 Accent 3;\lsdpriority49 \lsdlocked0 List Table 4 Accent 3;\lsdpriority50 \lsdlocked0 List Table 5 Dark Accent 3;
+\lsdpriority51 \lsdlocked0 List Table 6 Colorful Accent 3;\lsdpriority52 \lsdlocked0 List Table 7 Colorful Accent 3;\lsdpriority46 \lsdlocked0 List Table 1 Light Accent 4;\lsdpriority47 \lsdlocked0 List Table 2 Accent 4;
+\lsdpriority48 \lsdlocked0 List Table 3 Accent 4;\lsdpriority49 \lsdlocked0 List Table 4 Accent 4;\lsdpriority50 \lsdlocked0 List Table 5 Dark Accent 4;\lsdpriority51 \lsdlocked0 List Table 6 Colorful Accent 4;
+\lsdpriority52 \lsdlocked0 List Table 7 Colorful Accent 4;\lsdpriority46 \lsdlocked0 List Table 1 Light Accent 5;\lsdpriority47 \lsdlocked0 List Table 2 Accent 5;\lsdpriority48 \lsdlocked0 List Table 3 Accent 5;
+\lsdpriority49 \lsdlocked0 List Table 4 Accent 5;\lsdpriority50 \lsdlocked0 List Table 5 Dark Accent 5;\lsdpriority51 \lsdlocked0 List Table 6 Colorful Accent 5;\lsdpriority52 \lsdlocked0 List Table 7 Colorful Accent 5;
+\lsdpriority46 \lsdlocked0 List Table 1 Light Accent 6;\lsdpriority47 \lsdlocked0 List Table 2 Accent 6;\lsdpriority48 \lsdlocked0 List Table 3 Accent 6;\lsdpriority49 \lsdlocked0 List Table 4 Accent 6;
+\lsdpriority50 \lsdlocked0 List Table 5 Dark Accent 6;\lsdpriority51 \lsdlocked0 List Table 6 Colorful Accent 6;\lsdpriority52 \lsdlocked0 List Table 7 Colorful Accent 6;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Mention;
+\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Smart Hyperlink;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Hashtag;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Unresolved Mention;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Smart Link;}}{\*\datastore 01050000
+02000000180000004d73786d6c322e534158584d4c5265616465722e362e3000000000000000000000060000
+d0cf11e0a1b11ae1000000000000000000000000000000003e000300feff090006000000000000000000000001000000010000000000000000100000feffffff00000000feffffff0000000000000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+fffffffffffffffffdfffffffeffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffff52006f006f007400200045006e00740072007900000000000000000000000000000000000000000000000000000000000000000000000000000000000000000016000500ffffffffffffffffffffffff0c6ad98892f1d411a65f0040963251e500000000000000000000000050fc
+f827cbb4d901feffffff00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000ffffffffffffffffffffffff00000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000ffffffffffffffffffffffff0000000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000ffffffffffffffffffffffff000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000105000000000000}}
